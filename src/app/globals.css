@@ -2,11 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { --paper: #fffaf5; --ink: #201a18; --rose: #d83a62; --sand: #f3e8df; --font-body: Arial, sans-serif; --font-display: Georgia, serif; }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body), Arial, sans-serif; }
-::selection { background: #ffc2d0; color: var(--ink); }
-.display { font-family: var(--font-display), Arial, sans-serif; }
-.grain { background-image: radial-gradient(rgba(32,26,24,.13) .7px, transparent .7px); background-size: 6px 6px; }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+:root {
+  --paper: #ffffff;
+  --ink: #201a18;
+  --rose: #d83a62;
+  --sand: #f3e8df;
+  --font-body: Arial, sans-serif;
+  --font-display: Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), Arial, sans-serif;
+}
+
+::selection {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.display {
+  font-family: var(--font-display), Arial, sans-serif;
+}
+
+.grain {
+  background-image: radial-gradient(rgba(32, 26, 24, .13) .7px, transparent .7px);
+  background-size: 6px 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}

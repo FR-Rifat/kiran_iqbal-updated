@@ -1,15 +1,27 @@
-import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
-import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import React from "react";
+import { FiPhone } from "react-icons/fi";
 
-const buttonVariants = cva(
-  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 text-sm font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
-  { variants: { variant: { default: "bg-[#201a18] text-white hover:-translate-y-0.5 hover:bg-rose-700", outline: "border border-[#201a18]/15 bg-white text-[#201a18] hover:border-[#201a18] hover:bg-rose-50" } }, defaultVariants: { variant: "default" } }
-);
-
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> { asChild?: boolean }
-export function Button({ className, variant, asChild = false, ...props }: ButtonProps) {
-  const Comp = asChild ? Slot : "button";
-  return <Comp className={cn(buttonVariants({ variant }), className)} {...props} />;
+interface ButtonProps {
+  variant?: "primary" | "secondary";
+  children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+  showIcon?: boolean;
+  icon?: React.ReactNode;
 }
+
+const Button = ({ variant = "primary", children, onClick, className = "", showIcon = true, icon }: ButtonProps) => {
+  const isPrimary = variant === "primary";
+
+  return (
+    <button onClick={onClick} className={`group inline-flex justify-center items-center gap-3.5 px-6 py-3.5 rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-1 active:translate-y-0 ${isPrimary ? "bg-green-600 shadow-[0px_6px_0px_0px_rgba(6,120,6,1)] hover:shadow-[0px_8px_0px_0px_rgba(6,120,6,1)] text-white" : "bg-white outline outline-2 outline-offset-[-2px] outline-green-600 text-green-600 hover:bg-green-600 hover:text-white"} ${className}`}>
+      {showIcon && (icon || <FiPhone className={`size-4 shrink-0 stroke-[1.8] transition-colors duration-200`} />)}
+
+      <span className={`text-center text-xl font-bold font-['Barlow_Condensed'] uppercase leading-5 tracking-wide transition-colors duration-200 ${isPrimary ? "text-white" : "text-green-600 group-hover:text-white"}`}>
+        {children}
+      </span>
+    </button>
+  );
+};
+
+export default Button;

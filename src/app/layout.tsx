@@ -1,8 +1,36 @@
 import type { Metadata } from "next";
+import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/sheard/Navbar";
+import Footer from "@/components/sheard/Footer";
 
-export const metadata: Metadata = { title: "Kiran Iqbal — Independent Designer", description: "A considered digital portfolio." };
+const barlowCondensed = Barlow_Condensed({
+  variable: "--font-barlow-condensed",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  title: "Kiran Iqbal — Independent Designer",
+  description: "A considered digital portfolio.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body className={`${barlowCondensed.variable} ${inter.variable}`}>
+        <Navbar />
+        {children}
+        <Footer/>
+      </body>
+    </html>
+  );
 }

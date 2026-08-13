@@ -51,7 +51,9 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center gap-3 pt-2">
-            <Button variant="primary">Get My Free Quote</Button>
+            <Button variant="primary" showIcon={false}>
+              Get My Free Quote
+            </Button>
 
             <Button variant="secondary">
               (855)-430-6250

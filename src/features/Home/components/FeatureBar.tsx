@@ -3,7 +3,7 @@ import { trustBarItems } from "@/Content/data";
 const TrustBar = () => {
   return (
     <section className="w-full bg-green-600">
-      <div className="mx-auto grid w-full max-w-[1160px] grid-cols-1 gap-3 px-5 py-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid w-full container grid-cols-1 gap-3 px-5 py-4 sm:grid-cols-2 lg:grid-cols-4">
         {trustBarItems.map((item) => {
           const Icon = item.icon;
 

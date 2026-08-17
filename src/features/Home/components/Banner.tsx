@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <section className="w-full overflow-hidden bg-[radial-gradient(circle_at_85%_-14%,rgba(33,159,33,.11),transparent_27%),linear-gradient(180deg,#fff_0%,#f3f5f3_100%)]">
-      <div className="container mx-auto grid w-full max-w-[1160px] grid-cols-1 items-start gap-8 px-5 py-10 lg:grid-cols-[500px_1fr] lg:gap-12 lg:py-16">
+      <div className="container mx-auto grid w-full grid-cols-1 items-center gap-8 px-5 py-10 lg:grid-cols-[1fr_1fr] lg:gap-12 lg:py-16">
         <QuoteForm />
 
         <div className="flex min-w-0 flex-col items-start pt-1 lg:pt-5">
@@ -52,7 +52,7 @@ const Hero = () => {
 
           <div className="mt-5 flex flex-wrap items-center gap-3">
             <a href="#quote"><Button variant="primary" showIcon={false}>Get My Free Quote</Button></a>
-            <a href="tel:2815550142"><Button variant="secondary"><FiPhone className="size-4" />(281) 555-0142</Button></a>
+            <a href="tel:2815550142"><Button variant="secondary">(281) 555-0142</Button></a>
           </div>
 
           <div className="mt-5 flex items-center gap-2.5">

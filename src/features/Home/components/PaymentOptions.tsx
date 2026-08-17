@@ -5,7 +5,7 @@ const PaymentOptions = () => {
 
   return (
     <section className="w-full px-5 py-12 sm:py-14">
-      <div className="mx-auto flex w-full max-w-[1160px] flex-col items-center gap-7">
+      <div className="mx-auto flex w-full container flex-col items-center gap-7">
         <div className="flex w-full flex-col items-center gap-1">
           <span className="text-center text-sm font-bold uppercase leading-4 tracking-widest text-green-600 font-['Barlow_Condensed']">
             {eyebrow}

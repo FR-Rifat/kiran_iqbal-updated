@@ -16,7 +16,7 @@ const policySections: PolicySection[] = [
 ];
 
 const PrivacyPolicyContent = () => (
-  <section className="bg-white px-5 py-16 sm:py-20"><div className="container mx-auto max-w-6xl space-y-7">{policySections.map((section) => <article key={section.title} className="border-l-4 border-green-600 pl-4 sm:pl-5"><h2 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase tracking-tight text-slate-900">{section.title}</h2><div className="mt-3 space-y-3 text-sm leading-relaxed text-slate-600 sm:text-base">{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.items && <ul className="space-y-1.5">{section.items.map((item) => <li key={item} className="flex gap-2"><span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-green-600" />{item}</li>)}</ul>}</div></article>)}</div></section>
+  <section className="bg-white px-5 py-16 sm:py-20"><div className="container mx-auto max-w-6xl space-y-12">{policySections.map((section) => <article key={section.title} className="border-l-4 border-green-600 pl-4 sm:pl-5"><h2 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase tracking-tight text-slate-900">{section.title}</h2><div className="mt-3 space-y-3 text-sm leading-relaxed text-slate-600 sm:text-base">{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.items && <ul className="space-y-1.5">{section.items.map((item) => <li key={item} className="flex gap-2"><span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-green-600" />{item}</li>)}</ul>}</div></article>)}</div></section>
 );
 
 export default PrivacyPolicyContent;

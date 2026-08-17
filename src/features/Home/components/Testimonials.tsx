@@ -6,7 +6,7 @@ const Testimonials = () => {
 
   return (
     <section className="w-full bg-[#e8f7ea] px-5 py-12 sm:py-14">
-      <div className="mx-auto flex w-full max-w-[1160px] flex-col items-center">
+      <div className="mx-auto flex w-full container flex-col items-center">
         <div className="flex w-full flex-col items-center gap-2 text-center">
           <span className="text-sm font-bold uppercase leading-6 tracking-[0.2em] text-green-600 font-['Barlow_Condensed']">
             {eyebrow}

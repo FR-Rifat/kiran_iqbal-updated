@@ -1,7 +1,7 @@
-import { WHOWEARE } from "@/Content/data";
+import { HowitWork1 } from "@/Content/data";
 
-const WhoWeAre = () => {
-  const { eyebrow, title, description, steps } = WHOWEARE;
+const HowItWorks1 = () => {
+  const { eyebrow, title, description, steps } = HowitWork1;
 
   return (
     <section className="w-full px-6 py-20 lg:px-36">
@@ -53,4 +53,4 @@ const WhoWeAre = () => {
   );
 };
 
-export default WhoWeAre;
+export default HowItWorks1;

@@ -57,6 +57,59 @@ export const howItWorksData = {
   ],
 };
 
+export const howItWorksData2 = {
+  eyebrow: "Simple & Fast",
+  title: "GET THE RIGHT TRANSMISSION IN 3 STEPS",
+  description:
+    "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
+  steps: [
+    {
+      number: "01",
+      title: "GET YOUR QUOTE",
+      description:
+        "Tell us the year, make, model and part. We match it to in-stock, low-mileage inventory and give you a firm price fast.",
+    },
+    {
+      number: "02",
+      title: "CONFIRM & PAY",
+      description:
+        "We verify fitment by VIN so you get the right unit the first time. Secure checkout, financing, or split payments.",
+    },
+    {
+      number: "03",
+      title: "FAST SHIP-OUT",
+      description:
+        "Most units ship in 5–7 business days to your home or shop, with tracking and your warranty in writing.",
+    },
+  ],
+};
+
+export const HowitWork2 = {
+  eyebrow: "NATIONWIDE SHIPPING",
+  title: "WE SHIP REPLACEMENT PARTS ACROSS THE USA",
+  description:
+    "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
+  steps: [
+    {
+      number: "01",
+      title: "RESIDENTIAL DELIVERY",
+      description:
+        "Replacement parts can be shipped to residential locations where available.",
+    },
+    {
+      number: "02",
+      title: "COMMERCIAL DELIVERY",
+      description:
+        "Ship to a repair shop, business, warehouse, or approved location.",
+    },
+    {
+      number: "03",
+      title: "TRACKING INFORMATION",
+      description:
+        "Tracking information is provided when available so you can follow your shipment.",
+    },
+  ],
+};
 
 export const whyChooseUsData = {
   eyebrow: "Why Buyers Choose Us",
@@ -191,11 +244,9 @@ export const footerData = {
   services: [
     { label: "Shipping & Warranty", href: "/shipping-warranty" },
     { label: "Refunds & Returns", href: "/refunds-returns" },
-    { label: "Support", href: "/support" },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms of Service", href: "/terms-of-service" },
     { label: "Disclaimer", href: "/disclaimer" },
   ],
   copyright: "© 2026 Northline Parts. All rights reserved.",
@@ -261,6 +312,33 @@ export const WHOWEARE = {
       number: "03",
       title: "REAL SUPPORT",
       description: "Talk to knowledgeable people who understand automotive parts.",
+    },
+  ],
+};
+
+export const HowitWork1 = {
+  eyebrow: "SIMPLE & FAST",
+  title: "GET THE RIGHT ENGINE IN 3 STEPS",
+  description:
+    "No runaround, no rebuilding guesswork. We help you find the right engine for your vehicle.",
+  steps: [
+    {
+      number: "01",
+      title: "GET YOUR QUOTE",
+      description:
+        "Tell us the year, make, model and part. We match it to in-stock, low-mileage inventory and give you a firm price fast.",
+    },
+    {
+      number: "02",
+      title: "CONFIRM & PAY",
+      description:
+        "We verify fitment by VIN so you get the right unit the first time. Secure checkout, financing, or split payments.",
+    },
+    {
+      number: "03",
+      title: "FAST SHIP-OUT",
+      description:
+        "Most units ship in 5–7 business days to your home or shop, with tracking and your warranty in writing.",
     },
   ],
 };

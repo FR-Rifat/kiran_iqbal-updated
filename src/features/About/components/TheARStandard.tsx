@@ -1,44 +1,11 @@
-import { FiShield, FiCheckCircle, FiTarget, FiTruck, FiCreditCard, FiHeadphones } from "react-icons/fi";
-
-const standards = [
-  {
-    title: "3-YEAR WARRANTY",
-    description: "Unlimited-mileage warranty coverage.",
-    icon: FiShield,
-  },
-  {
-    title: "TESTED & INSPECTED",
-    description: "Parts are inspected before shipping.",
-    icon: FiCheckCircle,
-  },
-  {
-    title: "VIN-VERIFIED FITMENT",
-    description: "We help match the correct part to your vehicle.",
-    icon: FiTarget,
-  },
-  {
-    title: "NATIONWIDE SHIPPING",
-    description: "Fast and reliable delivery across the USA.",
-    icon: FiTruck,
-  },
-  {
-    title: "FLEXIBLE PAYMENT OPTIONS",
-    description: "Multiple payment options available.",
-    icon: FiCreditCard,
-  },
-  {
-    title: "REAL U.S. SUPPORT",
-    description: "Talk directly with knowledgeable specialists.",
-    icon: FiHeadphones,
-  },
-];
+import { standards } from "@/Content/data";
 
 const TheARStandard = () => {
   return (
     <section className="w-full border-t border-b border-gray-200 bg-white px-6 py-16 lg:px-20 lg:py-20">
-      <div className="mx-auto flex w-full container flex-col items-center gap-10">
+      <div className="mx-auto flex w-full container flex-col items-center gap-10 ">
         {/* Header */}
-        <div className="flex flex-col items-center gap-3 text-center">
+        <div className="flex flex-col items-center gap-3 text-center w-full">
           <span className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 tracking-widest text-green-600">
             THE A&R STANDARD
           </span>
@@ -51,8 +18,9 @@ const TheARStandard = () => {
             <span className="text-gray-900">US</span>
           </h2>
 
-          <p className="max-w-2xl font-['Inter'] text-base font-normal leading-5 text-gray-600">
-            Our mission is to make the process of finding a replacement engine or transmission simple, transparent, and reliable.
+          <p className="max-w-4xl font-['Inter'] text-base font-normal leading-5 text-gray-600">
+            Our mission is to make the process of finding a replacement engine
+            or transmission simple, transparent, and reliable.
           </p>
         </div>
 

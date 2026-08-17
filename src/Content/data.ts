@@ -1,6 +1,7 @@
 import { FiShield, FiTruck, FiCheckCircle, FiCreditCard, FiTarget, FiHeadphones } from "react-icons/fi";
 
 
+
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -263,4 +264,37 @@ export const WHOWEARE = {
     },
   ],
 };
+
+export const standards = [
+  {
+    title: "3-YEAR WARRANTY",
+    description: "Unlimited-mileage warranty coverage.",
+    icon: FiShield,
+  },
+  {
+    title: "TESTED & INSPECTED",
+    description: "Parts are inspected before shipping.",
+    icon: FiCheckCircle,
+  },
+  {
+    title: "VIN-VERIFIED FITMENT",
+    description: "We help match the correct part to your vehicle.",
+    icon: FiTarget,
+  },
+  {
+    title: "NATIONWIDE SHIPPING",
+    description: "Fast and reliable delivery across the USA.",
+    icon: FiTruck,
+  },
+  {
+    title: "FLEXIBLE PAYMENT OPTIONS",
+    description: "Multiple payment options available.",
+    icon: FiCreditCard,
+  },
+  {
+    title: "REAL U.S. SUPPORT",
+    description: "Talk directly with knowledgeable specialists.",
+    icon: FiHeadphones,
+  },
+];
 

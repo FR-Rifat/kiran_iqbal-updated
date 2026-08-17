@@ -3,6 +3,8 @@ import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/sheard/Navbar";
 import Footer from "@/components/sheard/Footer";
+import WhatsAppButton from "@/components/sheard/WhatsAppButton";
+import SiteMotion from "@/components/sheard/SiteMotion";
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
@@ -30,6 +32,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer/>
+        <WhatsAppButton />
+        <SiteMotion />
       </body>
     </html>
   );

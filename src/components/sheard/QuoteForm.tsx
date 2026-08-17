@@ -15,26 +15,28 @@ interface QuoteFormProps {
   phoneNumber?: string;
 }
 
-const QuoteForm = ({ title = "Get My Quote", badge = "Under 2 Min", need = "Used Engine", year = "2015", make = "Ford", model = "F-150 5.0L", name = "First name", phone = "(___) ___-____", phoneNumber = "(855)-430-6250" }: QuoteFormProps) => {
+const QuoteForm = ({ title = "Get Your Quote", badge = "Under 2 Min", need = "Used Engine", year = "2015", make = "Ford", model = "F-150 5.0L", name = "First name", phone = "(___) ___-____", phoneNumber = "(281)-555-0142" }: QuoteFormProps) => {
   return (
-    <div className="w-full max-w-[600px] overflow-hidden rounded-2xl bg-white pb-6 shadow-[0px_20px_50px_0px_rgba(8,42,84,0.15)] border border-slate-200/90">
-      <div className="flex w-full items-center justify-between bg-green-600 px-6 py-4">
-        <h3 className="text-2xl font-extrabold uppercase leading-6 tracking-wide text-white font-['Barlow_Condensed']">{title}</h3>
-        <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-extrabold uppercase leading-none tracking-wider text-green-600 font-['Barlow_Condensed'] shadow-xs">{badge}</span>
+    <div id="quote" className="w-full max-w-[500px] scroll-mt-28 overflow-hidden rounded-2xl bg-white p-5 shadow-[0px_8px_15px_rgba(0,0,0,0.08)] border border-[#e0e3e7] sm:p-7">
+      <div className="flex w-full items-center justify-between gap-3">
+        <h3 className="text-3xl font-extrabold uppercase leading-7 tracking-wide text-[#0a0a0a] font-['Barlow_Condensed']">{title}</h3>
+        <span className="shrink-0 rounded-full border border-[#318c29] px-2.5 py-1 text-[11px] font-extrabold uppercase leading-none tracking-wider text-[#318c29] font-['Barlow_Condensed']">● {badge}</span>
       </div>
 
-      <div className="flex w-full flex-col gap-3 px-5 pt-5">
-        <div className="flex flex-col gap-2.5">
+      <p className="mt-2 text-sm text-[#5b5b5b]">Tell us about your vehicle and we&apos;ll get you a firm price fast.</p>
+
+      <div className="flex w-full flex-col gap-3 pt-4">
+        <div className="flex flex-col gap-3">
           <FormField label="What Do You Need?" value={need} />
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <FormField label="Year" value={year} />
             <FormField label="Make" value={make} />
           </div>
 
           <FormField label="Model & Engine Size" value={model} />
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <FormField label="Your Name" value={name} />
             <FormField label="Phone" value={phone} />
           </div>
@@ -72,8 +74,8 @@ const FormField = ({ label, value }: FormFieldProps) => {
   return (
     <div className="flex w-full flex-col gap-1.5">
       <label className="text-xs font-bold uppercase leading-4 tracking-wider text-slate-600 font-['Inter']">{label}</label>
-      <div className="flex min-h-[46px] w-full items-center rounded-xl bg-slate-50/60 px-3.5 py-3 border border-slate-200 transition-all duration-200 hover:bg-white hover:border-green-600/40 shadow-2xs">
-        <span className="text-base font-normal text-neutral-500 font-['Inter']">{value}</span>
+      <div className="flex min-h-[44px] w-full items-center rounded-lg bg-[#f8f9f6] px-3.5 py-2.5 border border-[#e0e3e7] transition-all duration-200 hover:bg-white hover:border-green-600/40 shadow-2xs">
+        <span className="text-sm font-normal text-neutral-500 font-['Inter']">{value}</span>
       </div>
     </div>
   );

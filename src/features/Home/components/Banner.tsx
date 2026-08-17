@@ -11,38 +11,38 @@ const Hero = () => {
   ];
 
   return (
-    <section className="w-full overflow-hidden bg-radial-[at_85%_-10%] from-green-600/10 to-green-600/0 to-60%">
-      <div className="mx-auto flex w-full container items-start gap-12 py-20">
+    <section className="w-full overflow-hidden bg-[radial-gradient(circle_at_85%_-14%,rgba(33,159,33,.11),transparent_27%),linear-gradient(180deg,#fff_0%,#f3f5f3_100%)]">
+      <div className="container mx-auto grid w-full max-w-[1160px] grid-cols-1 items-start gap-8 px-5 py-10 lg:grid-cols-[500px_1fr] lg:gap-12 lg:py-16">
         <QuoteForm />
 
-        <div className="flex flex-1 flex-col items-start gap-5">
-          <div className="rounded-full bg-white px-3.5 py-1.5 outline outline-1 outline-offset-[-1px] outline-green-600">
-            <span className="text-sm font-semibold uppercase leading-5 tracking-widest text-green-600 font-['Barlow_Condensed']">
+        <div className="flex min-w-0 flex-col items-start pt-1 lg:pt-5">
+          <div className="mb-3 rounded-full bg-white px-3 py-1 outline outline-1 outline-offset-[-1px] outline-green-600">
+            <span className="text-[11px] font-semibold uppercase leading-5 tracking-[.08em] text-green-600 font-['Barlow_Condensed']">
               ● Trusted U.S. Used-Parts Supplier
             </span>
           </div>
 
-          <h1 className="text-8xl font-extrabold uppercase text-zinc-900 font-['Barlow_Condensed']">
+          <h1 className="max-w-[590px] text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-zinc-900 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
             Quality Used{" "}
             <span className="text-green-600">Engines</span>  & {" "}
             <span className="text-green-600">Transmissions</span>, <br /> Shipped Fast
           </h1>
 
-          <p className="py-3 text-xl text-slate-600 font-['Inter']">
+          <p className="mt-5 max-w-[590px] text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
             Low-mileage, Tested & Inspected Units Backed by a{" "}
             <span className="font-semibold">3-year Unlimited</span>-mileage
             Warranty. Get a Firm Quote in Minutes Most Orders Ship in 5–7
             Business Days.
           </p>
 
-          <div className="flex w-full flex-wrap items-center gap-3">
+          <div className="mt-5 flex max-w-[620px] flex-wrap items-center gap-2">
             {trustItems.map((item) => {
               const Icon = item.icon;
 
               return (
-                <div key={item.label} className="flex items-center gap-1.5 rounded-full bg-white px-3.5 py-1.5 outline outline-1 outline-offset-[-1px] outline-green-600">
+                <div key={item.label} className="flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 outline outline-1 outline-offset-[-1px] outline-green-600">
                   <Icon className="size-3.5 text-green-600" />
-                  <span className="text-sm font-semibold leading-5 text-green-600 font-['Inter']">
+                  <span className="text-[11px] font-semibold leading-5 text-green-600 font-['Inter']">
                     {item.label}
                   </span>
                 </div>
@@ -50,18 +50,13 @@ const Hero = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-3 pt-2">
-            <Button variant="primary" showIcon={false}>
-              Get My Free Quote
-            </Button>
-
-            <Button variant="secondary">
-              (855)-430-6250
-            </Button>
+          <div className="mt-5 flex flex-wrap items-center gap-3">
+            <a href="#quote"><Button variant="primary" showIcon={false}>Get My Free Quote</Button></a>
+            <a href="tel:2815550142"><Button variant="secondary"><FiPhone className="size-4" />(281) 555-0142</Button></a>
           </div>
 
-          <div className="flex items-center gap-2.5">
-            <span className="text-base tracking-widest text-green-600">
+          <div className="mt-5 flex items-center gap-2.5">
+            <span className="text-xs tracking-[.15em] text-green-600">
               ★★★★★
             </span>
             <span className="text-sm leading-6 text-slate-600 font-['Inter']">

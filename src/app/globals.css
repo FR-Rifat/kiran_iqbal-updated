@@ -21,6 +21,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body), Arial, sans-serif;
@@ -40,6 +41,42 @@ body {
   background-size: 6px 6px;
 }
 
+/* Shared, transform-only motion system: one clear entrance for each section. */
+.motion-enabled .motion-reveal {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity 420ms cubic-bezier(.22, 1, .36, 1), transform 420ms cubic-bezier(.22, 1, .36, 1);
+  will-change: opacity, transform;
+}
+
+.motion-enabled .motion-reveal.motion-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.motion-enabled .motion-reveal .motion-stagger-item {
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+}
+
+.motion-enabled .motion-reveal.motion-in .motion-stagger-item {
+  animation: motion-card-in 320ms cubic-bezier(.22, 1, .36, 1) var(--motion-delay, 0ms) both;
+}
+
+.whatsapp-intro {
+  animation: whatsapp-intro 480ms cubic-bezier(.22, 1, .36, 1) 900ms 2;
+}
+
+@keyframes motion-card-in {
+  from { opacity: 0; transform: translate3d(0, 14px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes whatsapp-intro {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   *,
@@ -49,5 +86,14 @@ body {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: .01ms !important;
+  }
+
+  .motion-enabled .motion-reveal,
+  .motion-enabled .motion-reveal .motion-stagger-item,
+  .whatsapp-intro {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }

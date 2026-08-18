@@ -1,7 +1,11 @@
+"use client"
 import Button from "@/components/ui/button";
 import Image from "next/image";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const OurStory = () => {
+  const { openModal } = useQuoteModal();
+
   return (
     <section className="w-full border-y border-gray-200 px-6 py-20 lg:px-20 lg:py-20">
       <div className="mx-auto flex w-full container flex-col items-center gap-10 lg:flex-row">
@@ -34,7 +38,7 @@ const OurStory = () => {
             </p>
           </div>
 
-          <Button variant="primary" className="mt-4">
+          <Button variant="primary" className="mt-4" showIcon={false} onClick={openModal}>
             Learn About Our Process
           </Button>
         </div>

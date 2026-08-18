@@ -1,8 +1,13 @@
+"use client";
+
 import { FiPhone, FiShield, FiTruck, FiCheckCircle, FiCreditCard } from "react-icons/fi";
 import Button from "@/components/ui/button";
 import QuoteForm from "@/components/sheard/QuoteForm";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const Hero = () => {
+  const { openModal } = useQuoteModal();
+
   const trustItems = [
     { label: "3-Year Warranty", icon: FiShield },
     { label: "Tested & Inspected", icon: FiCheckCircle },
@@ -50,10 +55,12 @@ const Hero = () => {
             })}
           </div>
 
-          <div className="mt-5 flex flex-wrap items-center gap-3">
-            <a href="#quote"><Button variant="primary" showIcon={false}>Get My Free Quote</Button></a>
+          {/* <div className="mt-5 flex flex-wrap items-center gap-3">
+            <Button variant="primary" showIcon={false} onClick={openModal}>
+              Get My Free Quote
+            </Button>
             <a href="tel:2815550142"><Button variant="secondary">(281) 555-0142</Button></a>
-          </div>
+          </div> */}
 
           <div className="mt-5 flex items-center gap-2.5">
             <span className="text-xs tracking-[.15em] text-green-600">
@@ -70,3 +77,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

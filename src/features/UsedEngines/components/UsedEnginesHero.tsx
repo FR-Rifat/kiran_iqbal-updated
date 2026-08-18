@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { FiCheckCircle, FiShield, FiTarget } from "react-icons/fi";
 import QuoteForm from "@/components/sheard/QuoteForm";
 import Button from "@/components/ui/button";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const proofPoints = [
   { label: "3-Year Warranty", icon: FiShield },
@@ -11,6 +14,8 @@ const proofPoints = [
 ];
 
 const UsedEnginesHero = () => {
+  const { openModal } = useQuoteModal();
+
   return (
     <section className="overflow-hidden bg-[radial-gradient(circle_at_85%_-10%,rgba(33,159,33,0.1),transparent_26rem),linear-gradient(180deg,#ffffff_0%,#f3f5f3_100%)]">
       <div className="mx-auto flex container flex-col gap-10 px-5 py-12 sm:py-14 lg:flex-row lg:items-center lg:gap-12 lg:py-16">
@@ -54,16 +59,14 @@ const UsedEnginesHero = () => {
               </span>
             ))}
           </div>
-          <div className="mt-5 flex flex-wrap items-center gap-3">
-            <a href="#quote">
-              <Button variant="primary" showIcon={false}>
-                Get My Free Quote
-              </Button>
-            </a>
+          {/* <div className="mt-5 flex flex-wrap items-center gap-3">
+            <Button variant="primary" showIcon={false} onClick={openModal}>
+              Get My Free Quote
+            </Button>
             <a href="tel:2815550142">
               <Button variant="secondary">(281) 555-0142</Button>
             </a>
-          </div>
+          </div> */}
 
           {/* Rating */}
           <div className="flex flex-wrap items-center gap-2">
@@ -82,3 +85,4 @@ const UsedEnginesHero = () => {
 };
 
 export default UsedEnginesHero;
+

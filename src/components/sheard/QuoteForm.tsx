@@ -229,7 +229,7 @@ export default function QuoteForm({
       </label>
 
       <div className="mt-5">
-        <Button variant="primary" type="submit" className="w-full">
+        <Button variant="primary" showIcon={false} type="submit" className="w-full">
           {isSubmitted ? "Quote Requested" : "Get My Free Quote"}
         </Button>
       </div>

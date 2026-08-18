@@ -6,6 +6,7 @@ import Footer from "@/components/sheard/Footer";
 import WhatsAppButton from "@/components/sheard/WhatsAppButton";
 import SiteMotion from "@/components/sheard/SiteMotion";
 import SmoothScroll from "@/components/sheard/SmoothScroll";
+import { QuoteModalProvider } from "@/components/sheard/QuoteModal";
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
@@ -30,14 +31,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlowCondensed.variable} ${inter.variable}`}>
-        <SmoothScroll>
-          <Navbar />
-          {children}
-          <Footer />
-          <WhatsAppButton />
-          <SiteMotion />
-        </SmoothScroll>
+        <QuoteModalProvider>
+          <SmoothScroll>
+            <Navbar />
+            {children}
+            <Footer />
+            <WhatsAppButton />
+            <SiteMotion />
+          </SmoothScroll>
+        </QuoteModalProvider>
       </body>
     </html>
   );
 }
+

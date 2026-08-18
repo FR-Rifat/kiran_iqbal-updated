@@ -1,7 +1,11 @@
+"use client";
+
 import Button from "@/components/ui/button";
 import { aboutData } from "@/Content/data";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const AboutHero = () => {
+  const { openModal } = useQuoteModal();
   const { eyebrow, title, description, badges, rating } = aboutData;
 
   return (
@@ -30,7 +34,7 @@ const AboutHero = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3 pt-1">
-          <Button variant="primary" showIcon={false}>
+          <Button variant="primary" showIcon={false} onClick={openModal}>
             Get My Free Quote
           </Button>
 

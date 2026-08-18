@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import Button from "@/components/ui/button";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const BetterWaySection = () => {
+  const { openModal } = useQuoteModal();
+
   return (
     <section className="border-y border-gray-200 bg-gray-50 px-6 py-16 sm:px-8 lg:px-36 lg:py-20">
       <div className="mx-auto flex container flex-col items-center gap-10 lg:flex-row lg:gap-10">
@@ -55,15 +59,14 @@ const BetterWaySection = () => {
 
             {/* CTA */}
             <div className="mt-2">
-              <Link href="#quote">
-                <Button
-                  variant="primary"
-                  showIcon={false}
-                  className="!rounded-[10px] !border-green-600 !bg-green-600 !px-6 !py-3.5 !font-['Barlow_Condensed'] !text-xl !font-bold !uppercase !tracking-wide !text-white !shadow-[0px_6px_0px_0px_rgba(6,120,6,1)] hover:!border-green-700 hover:!bg-green-700"
-                >
-                  Get My Free Quote
-                </Button>
-              </Link>
+              <Button
+                variant="primary"
+                showIcon={false}
+                onClick={openModal}
+                className="!rounded-[10px] !border-green-600 !bg-green-600 !px-6 !py-3.5 !font-['Barlow_Condensed'] !text-xl !font-bold !uppercase !tracking-wide !text-white !shadow-[0px_6px_0px_0px_rgba(6,120,6,1)] hover:!border-green-700 hover:!bg-green-700"
+              >
+                Get My Free Quote
+              </Button>
             </div>
           </div>
         </div>
@@ -73,3 +76,4 @@ const BetterWaySection = () => {
 };
 
 export default BetterWaySection;
+

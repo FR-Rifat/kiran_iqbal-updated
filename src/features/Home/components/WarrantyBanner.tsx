@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Button from "@/components/ui/button";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const sectionBg = "/section-bg.png";
 
 const WarrantyBanner = () => {
+  const { openModal } = useQuoteModal();
+
   return (
     <section className="relative w-full overflow-hidden ">
       <Image
@@ -42,7 +47,7 @@ const WarrantyBanner = () => {
 
         {/* Call to Action */}
         <div className="shrink-0 mt-2 md:mt-0">
-          <Button variant="secondary" showIcon={false}>
+          <Button variant="secondary" showIcon={false} onClick={openModal}>
             Get My Quote
           </Button>
         </div>

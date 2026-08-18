@@ -1,6 +1,11 @@
+"use client";
+
 import Button from "@/components/ui/button";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const FinalCTA = () => {
+  const { openModal } = useQuoteModal();
+
   return (
     <section className="relative w-full overflow-hidden bg-[linear-gradient(90deg,#009900_0%,#003300_100%)]">
 
@@ -17,7 +22,12 @@ const FinalCTA = () => {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button variant="primary" showIcon={false} className="bg-white shadow-[0px_6px_0px_0px_rgba(0,0,0,0.18)]">
+            <Button
+              variant="primary"
+              showIcon={false}
+              onClick={openModal}
+              className="bg-white shadow-[0px_6px_0px_0px_rgba(0,0,0,0.18)]"
+            >
               <span className="text-green-600">
                 Get My Free Quote
               </span>

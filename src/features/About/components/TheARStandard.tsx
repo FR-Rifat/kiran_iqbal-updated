@@ -11,11 +11,11 @@ const TheARStandard = () => {
           </span>
 
           <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight md:text-5xl">
-            <span className="text-gray-900">WHAT </span>
-            <span className="text-green-600">YOU </span>
-            <span className="text-gray-900">CAN EXPECT </span>
-            <span className="text-green-600">FROM </span>
-            <span className="text-gray-900">US</span>
+            <span className="text-gray-500">WHAT </span>
+            <span className="text-green-600/80">YOU </span>
+            <span className="text-gray-500">CAN EXPECT </span>
+            <span className="text-green-600/80">FROM </span>
+            <span className="text-gray-500">US</span>
           </h2>
 
           <p className="max-w-4xl font-['Inter'] text-base font-normal leading-5 text-gray-600">
@@ -39,7 +39,7 @@ const TheARStandard = () => {
                 </div>
 
                 <div className="flex flex-col items-start gap-1.5">
-                  <h3 className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 text-gray-900 transition-colors duration-200 group-hover:text-green-600">
+                  <h3 className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 text-gray-500 transition-colors duration-200 group-hover:text-green-600">
                     {item.title}
                   </h3>
                   <p className="font-['Inter'] text-base font-normal leading-5 text-gray-600">

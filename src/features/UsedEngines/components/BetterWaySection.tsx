@@ -32,7 +32,7 @@ const BetterWaySection = () => {
             </p>
 
             {/* Heading */}
-            <h2 className="max-w-[550px] font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[1.05] text-slate-900 sm:text-5xl">
+            <h2 className="max-w-[550px] font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[1.05] text-slate-500 sm:text-5xl">
               A Better Way To <span className="text-green-600">Source</span>
               <br />
               Your <span className="text-green-600">Replacement</span> Engine

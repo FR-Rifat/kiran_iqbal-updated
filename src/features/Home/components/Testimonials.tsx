@@ -5,14 +5,14 @@ const Testimonials = () => {
   const { eyebrow, title, note, testimonials } = testimonialsData;
 
   return (
-    <section className="w-full bg-[#e8f7ea] px-5 py-12 sm:py-14">
+    <section className="w-full bg-[#43B36C]/40 px-5 py-12 sm:py-14">
       <div className="mx-auto flex w-full container flex-col items-center">
         <div className="flex w-full flex-col items-center gap-2 text-center">
           <span className="text-sm font-bold uppercase leading-6 tracking-[0.2em] text-green-600 font-['Barlow_Condensed']">
             {eyebrow}
           </span>
 
-          <h2 className="text-center text-3xl font-extrabold uppercase leading-[.95] tracking-wide text-zinc-900 font-['Barlow_Condensed'] sm:text-[36px]">
+          <h2 className="text-center text-3xl font-extrabold uppercase leading-[.95] tracking-wide text-zinc-700 font-['Barlow_Condensed'] sm:text-[36px]">
             {title}
           </h2>
         </div>

@@ -18,19 +18,21 @@ const Hero = () => {
   return (
     <section className="w-full overflow-hidden bg-[radial-gradient(circle_at_85%_-14%,rgba(33,159,33,.11),transparent_27%),linear-gradient(180deg,#fff_0%,#f3f5f3_100%)]">
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-8 px-5 py-10 lg:grid-cols-[1fr_1fr] lg:gap-12 lg:py-16">
-        <QuoteForm />
+        <div className="order-2 lg:order-1">
+          <QuoteForm />
+        </div>
 
-        <div className="flex min-w-0 flex-col items-start pt-1 lg:pt-5">
+        <div className="order-1 flex min-w-0 flex-col items-start pt-1 lg:order-2 lg:pt-5">
           <div className="mb-3 rounded-full bg-white px-3 py-1 outline outline-1 outline-offset-[-1px] outline-green-600">
             <span className="text-[11px] font-semibold uppercase leading-5 tracking-[.08em] text-green-600 font-['Barlow_Condensed']">
               ● Trusted U.S. Used-Parts Supplier
             </span>
           </div>
 
-          <h1 className="max-w-[590px] text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-zinc-900 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
+          <h1 className="max-w-[590px] text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-zinc-500 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
             Quality Used{" "}
-            <span className="text-green-600">Engines</span>  & {" "}
-            <span className="text-green-600">Transmissions</span>, <br /> Shipped Fast
+            <span className="text-green-600/80">Engines</span>  & {" "}
+            <span className="text-green-600/80">Transmissions</span>, <br /> Shipped Fast
           </h1>
 
           <p className="mt-5 max-w-[590px] text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
@@ -77,4 +79,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

@@ -4,7 +4,7 @@ const PaymentOptions = () => {
   const { eyebrow, title, description, options } = paymentOptionsData;
 
   return (
-    <section className="w-full px-5 py-12 sm:py-14">
+    <section className="w-full px-5 py-12 sm:py-14 bg-[#f4f8f4]">
       <div className="mx-auto flex w-full container flex-col items-center gap-7">
         <div className="flex w-full flex-col items-center gap-1">
           <span className="text-center text-sm font-bold uppercase leading-4 tracking-widest text-green-600 font-['Barlow_Condensed']">
@@ -12,7 +12,7 @@ const PaymentOptions = () => {
           </span>
 
           <div className="flex flex-col items-center justify-center gap-2">
-            <h2 className="text-center text-3xl font-extrabold uppercase tracking-wide text-zinc-900 font-['Barlow_Condensed'] sm:text-[36px]">
+            <h2 className="text-center text-3xl font-extrabold uppercase tracking-wide text-zinc-500 font-['Barlow_Condensed'] sm:text-[36px]">
               {title}
             </h2>
 
@@ -38,7 +38,7 @@ const PaymentOptions = () => {
                     {badges[idx] || "Payment Plan"}
                   </span>
 
-                  <h3 className="text-center text-xl font-extrabold uppercase leading-6 tracking-wide text-zinc-900 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
+                  <h3 className="text-center text-xl font-extrabold uppercase leading-6 tracking-wide text-zinc-500 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
                     {option.title}
                   </h3>
 

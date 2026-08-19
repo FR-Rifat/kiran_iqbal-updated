@@ -20,7 +20,7 @@ const FAQ = () => {
             {eyebrow}
           </span>
 
-          <h2 className="text-center text-5xl font-extrabold uppercase leading-[52.8px] tracking-wide text-zinc-900 font-['Barlow_Condensed']">
+          <h2 className="text-center text-5xl font-extrabold uppercase leading-[52.8px] tracking-wide text-zinc-500 font-['Barlow_Condensed']">
             {title.split(",")[0]},{" "}
             <span className="text-green-600">{title.split(",")[1]}</span>
           </h2>
@@ -46,7 +46,7 @@ const FAQ = () => {
                 >
                   <span
                     className={`text-xl font-bold uppercase leading-7 tracking-wide font-['Barlow_Condensed'] transition-colors duration-200 ${
-                      isOpen ? "text-green-600" : "text-zinc-900 group-hover:text-green-600"
+                      isOpen ? "text-green-600" : "text-zinc-500 group-hover:text-green-600"
                     }`}
                   >
                     {faq.question}

@@ -71,7 +71,7 @@ function ContactCard({
           {title}
         </p>
 
-        <div className="mt-1 font-['Barlow_Condensed'] text-2xl font-bold leading-7 text-slate-900">
+        <div className="mt-1 font-['Barlow_Condensed'] text-2xl font-bold leading-7 text-slate-500">
           {children}
         </div>
       </div>

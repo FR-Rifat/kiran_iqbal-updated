@@ -114,7 +114,7 @@ export const HowitWork2 = {
 export const whyChooseUsData = {
   eyebrow: "Why Buyers Choose Us",
   title: "Fewer Headaches. Better Parts.",
-  description: "A rebuilt gamble from a random yard costs you twice. Here's what you get with Yards & Parts.",
+  description: "A rebuilt gamble from a random yard costs you twice. Here's what you get with A&R Auto Parts.",
   features: [
     {
       title: "3-Year Warranty",
@@ -233,7 +233,7 @@ export const footerData = {
   description: "Quality used engines and transmissions shipped nationwide, backed by a 3-year unlimited-mileage warranty. Based in the Houston / Sugar Land, TX area.",
   hours: "Mon–Fri, 8am–6pm ET",
   phone: "(800) 555-0148",
-  email: "support@northlineparts.com",
+  email: "info@yardsandparts.us",
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -249,7 +249,7 @@ export const footerData = {
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Disclaimer", href: "/disclaimer" },
   ],
-  copyright: "© 2026 Northline Parts. All rights reserved.",
+  copyright: "© 2026 A&R Auto Parts. All rights reserved.",
   tagline: "Reliable recycled automotive parts, responsibly sourced.",
 };
 

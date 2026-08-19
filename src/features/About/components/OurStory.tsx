@@ -20,8 +20,8 @@ const OurStory = () => {
             Our Story
           </span>
 
-          <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-slate-900 sm:text-5xl">
-            Built on <span className="text-green-600">experience.</span> Focused on <span className="text-green-600">you.</span>
+          <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-slate-500 sm:text-5xl">
+            Built on <span className="text-green-600/80">experience.</span> Focused on <span className="text-green-600">you.</span>
           </h2>
 
           <div className="flex flex-col gap-2">

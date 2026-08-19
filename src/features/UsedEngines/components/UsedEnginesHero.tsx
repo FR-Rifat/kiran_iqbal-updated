@@ -20,12 +20,12 @@ const UsedEnginesHero = () => {
     <section className="overflow-hidden bg-[radial-gradient(circle_at_85%_-10%,rgba(33,159,33,0.1),transparent_26rem),linear-gradient(180deg,#ffffff_0%,#f3f5f3_100%)]">
       <div className="mx-auto flex container flex-col gap-10 px-5 py-12 sm:py-14 lg:flex-row lg:items-center lg:gap-12 lg:py-16">
         {/* Quote Form */}
-        <div className="w-full lg:flex-1">
+        <div className="order-2 w-full lg:order-1 lg:flex-1">
           <QuoteForm title="GET YOUR QUOTE" />
         </div>
 
         {/* Hero Content */}
-        <div className="flex w-full flex-1 flex-col items-start gap-5">
+        <div className="order-1 flex w-full flex-1 flex-col items-start gap-5 lg:order-2">
           {/* Eyebrow */}
           <div className="inline-flex items-center rounded-full border border-green-600 bg-white px-3.5 py-1.5">
             <span className="font-['Barlow_Condensed'] text-sm font-semibold uppercase tracking-[0.18em] text-green-600 sm:text-base">
@@ -34,8 +34,8 @@ const UsedEnginesHero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-[650px] font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.92] tracking-wide text-zinc-900 sm:text-6xl lg:text-[64px] lg:leading-[0.96]">
-            Quality <span className="text-green-600">Used Engines</span>
+          <h1 className="max-w-[650px] font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.92] tracking-wide text-zinc-500 sm:text-6xl lg:text-[64px] lg:leading-[0.96]">
+            Quality <span className="text-green-600/80">Used Engines</span>
             <br />
             Built To Get You Back On The Road.
           </h1>
@@ -85,4 +85,3 @@ const UsedEnginesHero = () => {
 };
 
 export default UsedEnginesHero;
-

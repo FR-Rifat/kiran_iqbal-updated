@@ -30,7 +30,7 @@ const UsedTransmissionsDetails = () => {
               QUALITY YOU CAN TRUST
             </span>
 
-            <h2 className="mt-3 max-w-xl font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[0.95] text-gray-900 transition-colors duration-300 sm:text-5xl">
+            <h2 className="mt-3 max-w-xl font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[0.95] text-gray-500 transition-colors duration-300 sm:text-5xl">
               A BETTER WAY TO SOURCE YOUR{" "}
               <span className="text-green-600">REPLACEMENT TRANSMISSION</span>
             </h2>
@@ -103,8 +103,8 @@ const UsedTransmissionsDetails = () => {
               WHAT WE SUPPLY
             </span>
 
-            <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight text-gray-900 md:text-5xl">
-              USED <span className="text-green-600">TRANSMISSIONS</span> FOR CARS,
+            <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight text-gray-500 md:text-5xl">
+              USED <span className="text-green-600/80">TRANSMISSIONS</span> FOR CARS,
               TRUCKS &amp; SUVs
             </h2>
 
@@ -130,7 +130,7 @@ const UsedTransmissionsDetails = () => {
 
                 {/* Content */}
                 <div className="flex flex-col items-start gap-1.5">
-                  <h3 className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 text-gray-900 transition-colors duration-200 group-hover:text-green-600">
+                  <h3 className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 text-gray-500 transition-colors duration-200 group-hover:text-green-600">
                     {title}
                   </h3>
 
@@ -149,7 +149,7 @@ const UsedTransmissionsDetails = () => {
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Transmission Options
           </p>
-          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-slate-950 sm:text-5xl">
+          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-slate-500 sm:text-5xl">
             Transmissions For <span className="text-green-600">The Brands</span>{" "}
             You Drive
           </h2>

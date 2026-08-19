@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
           </span>
 
           <div className="flex w-full flex-col items-center gap-2">
-            <h2 className="text-center text-3xl font-extrabold uppercase leading-none tracking-wide text-zinc-900 font-['Barlow_Condensed'] sm:text-[36px]">
+            <h2 className="text-center text-3xl font-extrabold uppercase leading-none tracking-wide text-zinc-500 font-['Barlow_Condensed'] sm:text-[36px]">
               {title}
             </h2>
 
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
                   </div>
 
                   <div className="flex w-full flex-col items-start gap-2">
-                    <h3 className="w-full text-lg font-bold uppercase tracking-wide text-zinc-900 font-['Barlow_Condensed'] transition-colors duration-200 group-hover:text-green-600">
+                    <h3 className="w-full text-lg font-bold uppercase tracking-wide text-zinc-500 font-['Barlow_Condensed'] transition-colors duration-200 group-hover:text-green-600">
                       {feature.title}
                     </h3>
                     <p className="w-full text-[12px] font-normal leading-5 text-slate-600 font-['Inter']">

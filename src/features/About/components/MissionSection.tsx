@@ -10,8 +10,8 @@ const MissionSection = () => {
           </span>
 
           <div className="flex flex-col items-center gap-2">
-            <h2 className="text-center font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-slate-900 sm:text-5xl">
-              Quality <span className="text-green-600">Parts.</span> Honest Service. Fast <span className="text-green-600">Support.</span>
+            <h2 className="text-center font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-slate-500 sm:text-5xl">
+              Quality <span className="text-green-600/80">Parts.</span> Honest Service. Fast <span className="text-green-600/80">Support.</span>
             </h2>
 
             <p className="text-center font-['Inter'] text-base font-normal leading-5 text-gray-600">
@@ -28,7 +28,7 @@ const MissionSection = () => {
               </div>
 
               <div className="flex flex-col items-start gap-2">
-                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-900 group-hover:text-green-600 transition-colors duration-200">
+                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-500 group-hover:text-green-600 transition-colors duration-200">
                   QUALITY USED PARTS
                 </h3>
 
@@ -46,7 +46,7 @@ const MissionSection = () => {
               </div>
 
               <div className="flex flex-col items-start gap-2">
-                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-900 group-hover:text-green-600 transition-colors duration-200">
+                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-500 group-hover:text-green-600 transition-colors duration-200">
                   HONEST PRICING
                 </h3>
 
@@ -64,7 +64,7 @@ const MissionSection = () => {
               </div>
 
               <div className="flex flex-col items-start gap-2">
-                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-900 group-hover:text-green-600 transition-colors duration-200">
+                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-500 group-hover:text-green-600 transition-colors duration-200">
                   FAST SHIPPING
                 </h3>
 
@@ -82,7 +82,7 @@ const MissionSection = () => {
               </div>
 
               <div className="flex flex-col items-start gap-2">
-                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-900 group-hover:text-green-600 transition-colors duration-200">
+                <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase tracking-wide text-zinc-500 group-hover:text-green-600 transition-colors duration-200">
                   DEDICATED SUPPORT
                 </h3>
 

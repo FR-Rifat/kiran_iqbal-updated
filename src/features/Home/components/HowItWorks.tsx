@@ -4,7 +4,7 @@ const HowItWorks = () => {
   const { eyebrow, title, description, steps } = howItWorksData;
 
   return (
-    <section className="w-full px-6 py-20 lg:px-36">
+    <section className="w-full px-6 py-20 lg:px-36 bg-[#f4f8f4]">
       <div className="mx-auto flex w-full container flex-col items-center gap-8">
         <div className="flex w-full flex-col items-center justify-center gap-1">
           <span className="text-center text-base font-bold uppercase tracking-widest text-green-600 font-['Barlow_Condensed']">
@@ -12,7 +12,7 @@ const HowItWorks = () => {
           </span>
 
           <div className="flex w-full flex-col items-center justify-center gap-2">
-            <h2 className="text-center text-5xl font-extrabold uppercase tracking-wider text-zinc-900 font-['Barlow_Condensed']">
+            <h2 className="text-center text-5xl font-extrabold uppercase tracking-wider text-zinc-500 font-['Barlow_Condensed']">
               {title}
             </h2>
 
@@ -35,7 +35,7 @@ const HowItWorks = () => {
               </div>
 
               <div className="flex flex-1 flex-col gap-2.5">
-                <h3 className="text-2xl font-bold uppercase tracking-wide text-zinc-900 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
+                <h3 className="text-2xl font-bold uppercase tracking-wide text-zinc-500 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
                   {step.title}
                 </h3>
 

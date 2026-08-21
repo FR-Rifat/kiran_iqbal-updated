@@ -13,7 +13,7 @@ const RefundsReturnsPolicy = () => (
     <div className="container mx-auto max-w-6xl space-y-12">
       {policies.map((policy, index) => (
         <article key={`${policy.title}-${index}`} className="border-l-4 border-green-600 pl-4 sm:pl-5">
-          <h2 className="font-['Barlow_Condensed'] text-2xl font-bold capitalize text-slate-900">{policy.title}</h2>
+          <h2 className="font-['Barlow_Condensed'] text-2xl font-bold capitalize text-gray-900">{policy.title}</h2>
           <div className="mt-3 space-y-2 text-sm leading-relaxed text-slate-600 sm:text-base">
             {policy.paragraphs.map((paragraph, paragraphIndex) => <p key={paragraphIndex}>{paragraph}</p>)}
           </div>

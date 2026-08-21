@@ -32,14 +32,14 @@ const BetterWaySection = () => {
             </p>
 
             {/* Heading */}
-            <h2 className="max-w-[550px] font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[1.05] text-slate-500 sm:text-5xl">
+            <h2 className="max-w-[550px] font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[1.05] text-gray-900 sm:text-5xl">
               A Better Way To <span className="text-green-600">Source</span>
               <br />
               Your <span className="text-green-600">Replacement</span> Engine
             </h2>
 
             {/* Description */}
-            <div className="mt-2 flex max-w-[600px] flex-col gap-2 font-['Inter'] text-base leading-6 text-gray-600">
+            <div className="mt-2 flex max-w-150 flex-col gap-2 font-['Inter'] text-base leading-6 text-gray-600">
               <p>
                 Finding the right used engine doesn&apos;t have to mean
                 searching through endless listings or calling multiple
@@ -63,7 +63,7 @@ const BetterWaySection = () => {
                 variant="primary"
                 showIcon={false}
                 onClick={openModal}
-                className="!rounded-[10px] !border-green-600 !bg-green-600 !px-6 !py-3.5 !font-['Barlow_Condensed'] !text-xl !font-bold !uppercase !tracking-wide !text-white !shadow-[0px_6px_0px_0px_rgba(6,120,6,1)] hover:!border-green-700 hover:!bg-green-700"
+                className="rounded-[10px]! border-green-600! bg-green-600! px-6! py-3.5! font-['Barlow_Condensed']! text-xl! font-bold! uppercase! tracking-wide! text-white! shadow-[0px_6px_0px_0px_rgba(6,120,6,1)]! hover:border-green-700! hover:bg-green-700!"
               >
                 Get My Free Quote
               </Button>

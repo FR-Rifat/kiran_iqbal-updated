@@ -12,7 +12,7 @@ const PaymentOptions = () => {
           </span>
 
           <div className="flex flex-col items-center justify-center gap-2">
-            <h2 className="text-center text-3xl font-extrabold uppercase tracking-wide text-zinc-500 font-['Barlow_Condensed'] sm:text-[36px]">
+            <h2 className="text-center text-3xl font-extrabold uppercase tracking-wide text-gray-900 font-['Barlow_Condensed'] sm:text-[36px]">
               {title}
             </h2>
 
@@ -38,7 +38,7 @@ const PaymentOptions = () => {
                     {badges[idx] || "Payment Plan"}
                   </span>
 
-                  <h3 className="text-center text-xl font-extrabold uppercase leading-6 tracking-wide text-zinc-500 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
+                  <h3 className="text-center text-xl font-extrabold uppercase leading-6 tracking-wide text-gray-900 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
                     {option.title}
                   </h3>
 

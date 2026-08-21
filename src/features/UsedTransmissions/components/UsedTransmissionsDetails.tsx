@@ -30,15 +30,15 @@ const UsedTransmissionsDetails = () => {
               QUALITY YOU CAN TRUST
             </span>
 
-            <h2 className="mt-3 max-w-xl font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[0.95] text-gray-500 transition-colors duration-300 sm:text-5xl">
+            <h2 className="mt-3 max-w-xl font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-[0.95] text-gray-900 transition-colors duration-300 sm:text-5xl">
               A BETTER WAY TO SOURCE YOUR{" "}
               <span className="text-green-600">REPLACEMENT TRANSMISSION</span>
             </h2>
 
             <p className="mt-5 max-w-xl font-['Inter'] text-base font-normal leading-7 text-gray-600">
               Finding the right transmission shouldn’t mean taking a chance. We
-              help identify the correct unit for your vehicle, check availability,
-              and confirm fitment before it ships.
+              help identify the correct unit for your vehicle, check
+              availability, and confirm fitment before it ships.
             </p>
 
             {/* Feature Cards */}
@@ -54,7 +54,10 @@ const UsedTransmissionsDetails = () => {
                   className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3.5 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-600/40 hover:bg-white hover:shadow-md"
                 >
                   <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-600 transition-all duration-300 group-hover:bg-green-600 group-hover:text-white">
-                    <FiCheckCircle aria-hidden className="size-4 stroke-[2.5]" />
+                    <FiCheckCircle
+                      aria-hidden
+                      className="size-4 stroke-[2.5]"
+                    />
                   </div>
 
                   <span className="font-['Inter'] text-sm font-semibold leading-5 text-gray-700 transition-colors duration-300 group-hover:text-gray-900">
@@ -103,9 +106,9 @@ const UsedTransmissionsDetails = () => {
               WHAT WE SUPPLY
             </span>
 
-            <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight text-gray-500 md:text-5xl">
-              USED <span className="text-green-600/80">TRANSMISSIONS</span> FOR CARS,
-              TRUCKS &amp; SUVs
+            <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight text-gray-900 md:text-5xl">
+              USED <span className="text-green-600/80">TRANSMISSIONS</span> FOR
+              CARS, TRUCKS &amp; SUVs
             </h2>
 
             <p className="max-w-4xl font-['Inter'] text-base font-normal leading-5 text-gray-600">
@@ -118,7 +121,7 @@ const UsedTransmissionsDetails = () => {
             {transmissionTypes.map(({ title, description, icon: Icon }) => (
               <article
                 key={title}
-                className="group flex flex-col items-start gap-4 rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-600/40 hover:shadow-md"
+                className="group flex flex-col items-start gap-8 rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-600/40 hover:shadow-md"
               >
                 {/* Icon */}
                 <div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-green-100 text-green-600 transition-all duration-300 group-hover:bg-green-600 group-hover:text-white group-hover:shadow-[0_6px_16px_rgba(22,163,74,0.18)]">
@@ -129,8 +132,8 @@ const UsedTransmissionsDetails = () => {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col items-start gap-1.5">
-                  <h3 className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 text-gray-500 transition-colors duration-200 group-hover:text-green-600">
+                <div className="flex flex-col items-start gap-2">
+                  <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase leading-5 text-gray-900 transition-colors duration-200 group-hover:text-green-600">
                     {title}
                   </h3>
 
@@ -149,7 +152,7 @@ const UsedTransmissionsDetails = () => {
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Transmission Options
           </p>
-          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-slate-500 sm:text-5xl">
+          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-gray-900 sm:text-5xl">
             Transmissions For <span className="text-green-600">The Brands</span>{" "}
             You Drive
           </h2>
@@ -157,9 +160,9 @@ const UsedTransmissionsDetails = () => {
             {brands.map((brand) => (
               <div
                 key={brand}
-                className="group flex min-h-[70px] cursor-default items-center justify-center rounded-lg border border-slate-200 bg-white px-3 font-['Barlow_Condensed'] text-xl font-bold text-slate-900 shadow-sm transition-all duration-300 ease-out hover:border-green-600/40 hover:bg-green-50/30 hover:text-green-700 hover:shadow-[0_4px_12px_rgba(22,163,74,0.08)]"
+                className="group flex min-h-17.5 cursor-default items-center justify-center rounded-lg border border-slate-200 bg-white px-3 font-['Barlow_Condensed'] text-xl font-bold text-gray-900 shadow-sm transition-all duration-300 ease-out hover:border-green-500/40 hover:shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:text-green-700"
               >
-                <span className="transition-transform duration-300 group-hover:scale-[1.03]">
+                <span className="transition-transform duration-300 group-hover:scale-[1.02]">
                   {brand}
                 </span>
               </div>

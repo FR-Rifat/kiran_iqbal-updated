@@ -11,11 +11,11 @@ const TheARStandard = () => {
           </span>
 
           <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight md:text-5xl">
-            <span className="text-gray-500">WHAT </span>
+            <span className="text-gray-900">WHAT </span>
             <span className="text-green-600/80">YOU </span>
-            <span className="text-gray-500">CAN EXPECT </span>
+            <span className="text-gray-900">CAN EXPECT </span>
             <span className="text-green-600/80">FROM </span>
-            <span className="text-gray-500">US</span>
+            <span className="text-gray-900">US</span>
           </h2>
 
           <p className="max-w-4xl font-['Inter'] text-base font-normal leading-5 text-gray-600">
@@ -32,14 +32,14 @@ const TheARStandard = () => {
             return (
               <div
                 key={item.title}
-                className="group flex flex-col items-start gap-4 rounded-2xl bg-gray-50 p-6 border border-gray-200 transition-all duration-300 hover:border-green-600/40 hover:shadow-md hover:-translate-y-1"
+                className="group flex flex-col items-start gap-8 rounded-2xl bg-gray-50 p-6 border border-gray-200 transition-all duration-300 hover:border-green-600/40 hover:shadow-md hover:-translate-y-1"
               >
                 <div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-green-100 text-green-600 transition-colors duration-300 group-hover:bg-green-600 group-hover:text-white">
-                  <Icon className="size-5 stroke-[2]" />
+                  <Icon className="size-5 stroke-2" />
                 </div>
 
-                <div className="flex flex-col items-start gap-1.5">
-                  <h3 className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 text-gray-500 transition-colors duration-200 group-hover:text-green-600">
+                <div className="flex flex-col items-start gap-2">
+                  <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase leading-5 text-gray-900 transition-colors duration-200 group-hover:text-green-600">
                     {item.title}
                   </h3>
                   <p className="font-['Inter'] text-base font-normal leading-5 text-gray-600">

@@ -16,7 +16,7 @@ const AboutHero = () => {
             {eyebrow}
           </span>
 
-          <h2 className="font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-tight tracking-wide text-zinc-500 md:text-6xl">
+          <h2 className="font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-tight tracking-wide text-gray-900 md:text-6xl">
             {title.normal1}{" "}
             <span className="text-green-600/80">{title.highlight1}</span>{" "}
             {title.normal2}{" "}

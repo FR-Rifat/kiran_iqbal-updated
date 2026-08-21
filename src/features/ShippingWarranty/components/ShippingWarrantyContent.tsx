@@ -98,7 +98,7 @@ const ShippingWarrantyContent = () => {
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Our Shipping Process
           </p>
-          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-slate-900 sm:text-5xl">
+          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-gray-900 sm:text-5xl">
             From Order To Delivery In{" "}
             <span className="text-green-600">4 Simple Steps</span>
           </h2>
@@ -111,7 +111,7 @@ const ShippingWarrantyContent = () => {
                 <span className="font-['Barlow_Condensed'] text-3xl font-extrabold text-green-600">
                   0{index + 1}
                 </span>
-                <h3 className="mt-3 font-['Barlow_Condensed'] text-xl font-bold uppercase text-slate-900">
+                <h3 className="mt-3 font-['Barlow_Condensed'] text-xl font-bold uppercase text-gray-900">
                   {step}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
@@ -142,16 +142,16 @@ const ShippingWarrantyContent = () => {
             {deliveryExpectations.map(({ title, text, icon: Icon }) => (
               <article
                 key={title}
-                className="group flex flex-col items-start gap-4 rounded-2xl border border-gray-200 bg-gray-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-600/40 hover:shadow-[0_8px_20px_rgba(22,163,74,0.06)]"
+                className="group flex flex-col items-start gap-8 rounded-2xl border border-gray-200 bg-gray-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-600/40 hover:shadow-[0_8px_20px_rgba(22,163,74,0.06)]"
               >
                 {/* Icon */}
                 <div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-green-100 text-green-600 transition-all duration-300 group-hover:bg-green-600 group-hover:text-white group-hover:shadow-[0_4px_12px_rgba(22,163,74,0.15)]">
-                  <Icon aria-hidden className="size-5 stroke-[2]" />
+                  <Icon aria-hidden className="size-5 stroke-2" />
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col items-start gap-1.5">
-                  <h3 className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 text-gray-900 transition-colors duration-200 group-hover:text-green-600">
+                <div className="flex flex-col items-start gap-2">
+                  <h3 className="font-['Barlow_Condensed'] text-xl font-bold uppercase leading-5 text-gray-900 transition-colors duration-200 group-hover:text-green-600">
                     {title}
                   </h3>
 
@@ -165,7 +165,7 @@ const ShippingWarrantyContent = () => {
         </div>
       </section>
       <section className="w-full border-t border-b border-gray-200 bg-white px-6 py-16 lg:px-20 lg:py-20">
-        <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-6">
+        <div className="mx-auto flex w-full max-w-300 flex-col items-center gap-6">
           {/* Header */}
           <div className="flex w-full flex-col items-center gap-5 text-center">
             <p className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 tracking-widest text-green-600">

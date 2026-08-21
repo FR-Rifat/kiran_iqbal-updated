@@ -12,7 +12,7 @@ const WhoWeAre = () => {
           </span>
 
           <div className="flex w-full flex-col items-center justify-center gap-2">
-            <h2 className="text-center text-5xl font-extrabold uppercase tracking-wider text-zinc-500 font-['Barlow_Condensed']">
+            <h2 className="text-center text-5xl font-extrabold uppercase tracking-wider text-gray-900 font-['Barlow_Condensed']">
               {title}
             </h2>
 
@@ -35,7 +35,7 @@ const WhoWeAre = () => {
               </div>
 
               <div className="flex flex-1 flex-col gap-2.5">
-                <h3 className="text-2xl font-bold uppercase tracking-wide text-zinc-500 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
+                <h3 className="text-2xl font-bold uppercase tracking-wide text-gray-900 font-['Barlow_Condensed'] group-hover:text-green-600 transition-colors duration-200">
                   {step.title}
                 </h3>
 

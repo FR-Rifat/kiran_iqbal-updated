@@ -34,7 +34,7 @@ const UsedEnginesHero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-162.5 font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.92] tracking-wide text-zinc-500 sm:text-6xl lg:text-[64px] lg:leading-[0.96]">
+          <h1 className="max-w-162.5 font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.92] tracking-wide text-gray-900 sm:text-6xl lg:text-[64px] lg:leading-[0.96]">
             Quality <span className="text-green-600/80">Used Engines</span>
             <br />
             Built To Get You Back On The Road.

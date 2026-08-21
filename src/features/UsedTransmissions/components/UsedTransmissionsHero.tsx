@@ -31,7 +31,7 @@ const UsedTransmissionsHero = () => {
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Quality Used Transmissions
           </p>
-          <h1 className="mt-3 max-w-150 font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.9] tracking-tight text-slate-500 sm:text-6xl lg:text-7xl">
+          <h1 className="mt-3 max-w-150 font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.9] tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
             Quality <span className="text-green-600/80">Used Transmissions</span>{" "}
             Built To Keep You Moving.
           </h1>

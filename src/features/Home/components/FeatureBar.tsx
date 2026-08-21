@@ -9,7 +9,7 @@ const TrustBar = () => {
 
           return (
             <div key={item.title} className="flex items-center justify-center gap-2.5 transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5 cursor-default">
-              <Icon className="size-[26px] shrink-0 text-white stroke-[2]" />
+              <Icon className="size-6.5 shrink-0 text-white stroke-2" />
 
               <div className="flex h-11 flex-col justify-center">
                 <h3 className="text-[19px] font-bold uppercase leading-5 tracking-tight text-white font-['Barlow_Condensed']">

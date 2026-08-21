@@ -73,7 +73,7 @@ function ChecklistGroup({
 }) {
   return (
     <section>
-      <h2 className="font-['Barlow_Condensed'] text-3xl font-extrabold capitalize text-slate-900">
+      <h2 className="font-['Barlow_Condensed'] text-3xl font-extrabold capitalize text-gray-900">
         {title}
       </h2>
       <p className="mt-1 text-sm text-slate-600">{description}</p>
@@ -83,7 +83,7 @@ function ChecklistGroup({
             key={section.title}
             className="border-l-2 border-green-600 pl-4"
           >
-            <h3 className="font-['Barlow_Condensed'] text-xl font-bold capitalize text-slate-900">
+            <h3 className="font-['Barlow_Condensed'] text-xl font-bold capitalize text-gray-900">
               {section.title}
             </h3>
             <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-slate-600">

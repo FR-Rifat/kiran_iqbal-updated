@@ -20,7 +20,7 @@ const OurStory = () => {
             Our Story
           </span>
 
-          <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-black/90 sm:text-5xl">
+          <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-gray-900 sm:text-5xl">
             Built on <span className="text-green-600/90">experience.</span> Focused on <span className="text-green-600/90">you.</span>
           </h2>
 

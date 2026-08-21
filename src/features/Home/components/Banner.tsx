@@ -23,13 +23,13 @@ const Hero = () => {
         </div>
 
         <div className="order-1 flex min-w-0 flex-col items-start pt-1 lg:order-2 lg:pt-5">
-          <div className="mb-3 rounded-full bg-white px-3 py-1 outline outline-1 outline-offset-[-1px] outline-green-600">
+          <div className="mb-3 rounded-full bg-white px-3 py-1 outline -outline-offset-1 outline-green-600">
             <span className="text-[11px] font-semibold uppercase leading-5 tracking-[.08em] text-green-600 font-['Barlow_Condensed']">
               ● Trusted U.S. Used-Parts Supplier
             </span>
           </div>
 
-          <h1 className="max-w-147.5 text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-zinc-500 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
+          <h1 className="max-w-147.5 text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-gray-900 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
             Quality Used <span className="text-green-600/80">Engines</span> &{" "}
             <span className="text-green-600/80">Transmissions</span>, <br />{" "}
             Shipped Fast
@@ -49,7 +49,7 @@ const Hero = () => {
               return (
                 <div
                   key={item.label}
-                  className="flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 outline outline-1 outline-offset-[-1px] outline-green-600"
+                  className="flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 outline-1 -outline-offset-1 outline-green-600"
                 >
                   <Icon className="size-3.5 text-green-600" />
                   <span className="text-[11px] font-semibold leading-5 text-green-600 font-['Inter']">
@@ -59,13 +59,6 @@ const Hero = () => {
               );
             })}
           </div>
-
-          {/* <div className="mt-5 flex flex-wrap items-center gap-3">
-            <Button variant="primary" showIcon={false} onClick={openModal}>
-              Get My Free Quote
-            </Button>
-            <a href="tel:2815550142"><Button variant="secondary">(281) 555-0142</Button></a>
-          </div> */}
 
           <div className="mt-5 flex items-center gap-2.5">
             <span className="text-xs tracking-[.15em] text-green-600">

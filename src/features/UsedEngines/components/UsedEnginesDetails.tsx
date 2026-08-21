@@ -25,7 +25,7 @@ const UsedEnginesDetails = () => {
               What We Supply
             </span>
 
-            <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight text-gray-500 md:text-5xl">
+            <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight text-gray-900 md:text-5xl">
               Used Engines For Cars,{" "}
               <span className="text-green-600">Trucks &amp; SUVs</span>
             </h2>
@@ -53,7 +53,7 @@ const UsedEnginesDetails = () => {
 
                 {/* Content */}
                 <div className="flex flex-col items-start gap-1.5">
-                  <h3 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase leading-7 text-gray-500 transition-colors duration-200 group-hover:text-green-600">
+                  <h3 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase leading-7 text-gray-900 transition-colors duration-200 group-hover:text-green-600">
                     {title}
                   </h3>
 
@@ -72,17 +72,17 @@ const UsedEnginesDetails = () => {
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Engine Options
           </p>
-          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-slate-500 sm:text-5xl">
-            Engines For <span className="text-green-600/80">The Brands</span> You
-            Drive
+          <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-none text-gray-900 sm:text-5xl">
+            Engines For <span className="text-green-600/80">The Brands</span>{" "}
+            You Drive
           </h2>
           <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {brands.map((brand) => (
               <div
                 key={brand}
-                className="group flex min-h-17.5 cursor-default items-center justify-center rounded-lg border border-slate-200 bg-white px-3 font-['Barlow_Condensed'] text-xl font-bold text-slate-500 shadow-sm transition-all duration-300 ease-out hover:border-green-600/40 hover:bg-green-50/30 hover:text-green-700 hover:shadow-[0_4px_12px_rgba(22,163,74,0.08)]"
+                className="group flex min-h-17.5 cursor-default items-center justify-center rounded-lg border border-slate-200 bg-white px-3 font-['Barlow_Condensed'] text-xl font-bold text-slate-800 shadow-sm transition-all duration-300 ease-out hover:border-green-500/40 hover:shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:text-green-700"
               >
-                <span className="transition-transform duration-300 group-hover:scale-[1.03]">
+                <span className="transition-transform duration-300 group-hover:scale-[1.02]">
                   {brand}
                 </span>
               </div>

@@ -12,7 +12,7 @@ const Testimonials = () => {
             {eyebrow}
           </span>
 
-          <h2 className="text-center text-3xl font-extrabold uppercase leading-[.95] tracking-wide text-zinc-700 font-['Barlow_Condensed'] sm:text-[36px]">
+          <h2 className="text-center text-3xl font-extrabold uppercase leading-[.95] tracking-wide text-gray-900 font-['Barlow_Condensed'] sm:text-[36px]">
             {title}
           </h2>
         </div>

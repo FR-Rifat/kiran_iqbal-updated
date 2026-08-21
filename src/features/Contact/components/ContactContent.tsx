@@ -56,13 +56,13 @@ function ContactCard({
 }: CardProps) {
   return (
     <div
-      className={`flex items-center gap-4 rounded-xl bg-[#F5F5F5] py-4 px-4 ${
+      className={`flex items-center gap-4 rounded-xl bg-[#ffffff] py-4 px-4 ${
         bordered
           ? "border border-slate-200 shadow-[0_2px_8px_rgba(15,23,42,0.04)]"
           : ""
       }`}
     >
-      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-green-100">
+      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#E6F5E6]">
         <Icon className="size-6 text-green-600" />
       </div>
 

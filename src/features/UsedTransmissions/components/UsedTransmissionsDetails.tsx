@@ -22,7 +22,7 @@ const UsedTransmissionsDetails = () => {
 
   return (
     <>
-      <section className="w-full border-t border-b border-gray-200 bg-white px-6 py-16 lg:px-20 lg:py-20">
+      <section className="w-full border-t border-b border-gray-200 bg-[#E6F5E6] px-6 py-16 lg:px-20 lg:py-20">
         <div className="container mx-auto grid w-full items-center gap-10 lg:grid-cols-2 lg:gap-14">
           {/* Content */}
           <div className="order-2 flex flex-col items-start lg:order-1">
@@ -95,7 +95,7 @@ const UsedTransmissionsDetails = () => {
         </div>
       </section>
 
-      <section className="w-full border-t border-b border-gray-200 bg-[#f4f8f4] px-6 py-16 lg:px-20 lg:py-20">
+      <section className="w-full border-t border-b border-gray-200 bg-[#ffffff] px-6 py-16 lg:px-20 lg:py-20">
         <div className="mx-auto flex w-full container flex-col items-center gap-10">
           {/* Header */}
           <div className="flex w-full flex-col items-center gap-3 text-center">
@@ -144,7 +144,7 @@ const UsedTransmissionsDetails = () => {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-[#E6F5E6] py-16 sm:py-20">
         <div className="container mx-auto px-5 text-center">
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Transmission Options

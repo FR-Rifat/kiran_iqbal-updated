@@ -1,5 +1,5 @@
 const ContactHero = () => (
-  <section className="bg-[radial-gradient(circle_at_85%_0%,rgba(33,159,33,0.12),transparent_24rem),linear-gradient(180deg,#ffffff_0%,#f3f5f3_100%)] px-5 py-20 text-center sm:py-28">
+  <section className="bg-[#e6f5e6] px-5 py-20 text-center sm:py-28">
     <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
       24/7 Customer Support
     </p>

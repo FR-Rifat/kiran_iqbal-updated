@@ -8,7 +8,7 @@ const BetterWaySection = () => {
   const { openModal } = useQuoteModal();
 
   return (
-    <section className="border-y border-gray-200 bg-gray-50 px-6 py-16 sm:px-8 lg:px-36 lg:py-20">
+    <section className="border-y border-gray-200 bg-[#e6f5e6] px-6 py-16 sm:px-8 lg:px-36 lg:py-20">
       <div className="mx-auto flex container flex-col items-center gap-10 lg:flex-row lg:gap-10">
         {/* Image */}
         <div className="w-full flex-1 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-[0px_1px_2px_-1px_rgba(0,0,0,0.1),0px_1px_3px_0px_rgba(0,0,0,0.1)]">

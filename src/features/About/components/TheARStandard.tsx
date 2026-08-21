@@ -2,7 +2,7 @@ import { standards } from "@/Content/data";
 
 const TheARStandard = () => {
   return (
-    <section className="w-full border-t border-b border-gray-200 bg-white px-6 py-16 lg:px-20 lg:py-20">
+    <section className="w-full border-t border-b border-gray-200 bg-[#e6f5e6] px-6 py-16 lg:px-20 lg:py-20">
       <div className="mx-auto flex w-full container flex-col items-center gap-10 ">
         {/* Header */}
         <div className="flex flex-col items-center gap-3 text-center w-full">

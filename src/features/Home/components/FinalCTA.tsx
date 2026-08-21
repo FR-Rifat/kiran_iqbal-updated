@@ -33,7 +33,7 @@ const FinalCTA = () => {
               </span>
             </Button>
 
-            <Button variant="secondary" className="!border-2 !border-white/60 !bg-transparent !text-white !outline-none">
+            <Button variant="secondary" className="border-2! border-white/60! bg-transparent! text-white! outline-none!">
               <span className="text-white">
                 Call (281) 555-0142
               </span>
@@ -41,8 +41,6 @@ const FinalCTA = () => {
           </div>
         </div>
       </div>
-
-      <div className="pointer-events-none absolute -right-16 -top-16 size-72 rounded-full bg-[#003300]/30" />
     </section>
   );
 };

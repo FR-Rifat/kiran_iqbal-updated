@@ -2,10 +2,10 @@ import { FiStar } from "react-icons/fi";
 import { testimonialsData } from "@/Content/data";
 
 const Testimonials = () => {
-  const { eyebrow, title, note, testimonials } = testimonialsData;
+  const { eyebrow, title, testimonials } = testimonialsData;
 
   return (
-    <section className="w-full bg-[#43B36C]/40 px-5 py-12 sm:py-14">
+    <section className="w-full bg-[#E6F5E6]/40 px-5 py-12 sm:py-14">
       <div className="mx-auto flex w-full container flex-col items-center">
         <div className="flex w-full flex-col items-center gap-2 text-center">
           <span className="text-sm font-bold uppercase leading-6 tracking-[0.2em] text-green-600 font-['Barlow_Condensed']">
@@ -62,10 +62,6 @@ const Testimonials = () => {
             </article>
           ))}
         </div>
-
-        <p className="mt-7 text-center text-xs leading-5 text-slate-500 font-['Inter']">
-          {note}
-        </p>
       </div>
     </section>
   );

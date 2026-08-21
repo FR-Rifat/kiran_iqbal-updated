@@ -7,7 +7,7 @@ const OurStory = () => {
   const { openModal } = useQuoteModal();
 
   return (
-    <section className="w-full border-y border-gray-200 px-6 py-20 lg:px-20 lg:py-20">
+    <section className="w-full border-y border-gray-200 bg-[#e6f5e6] px-6 py-20 lg:px-20 lg:py-20">
       <div className="mx-auto flex w-full container flex-col items-center gap-10 lg:flex-row">
         <div className="w-full overflow-hidden rounded-2xl border border-gray-300 shadow-[0px_1px_2px_-1px_rgba(0,0,0,0.10),0px_1px_3px_0px_rgba(0,0,0,0.10)] lg:flex-1">
           <div className="relative aspect-[619/363] w-full">
@@ -20,8 +20,8 @@ const OurStory = () => {
             Our Story
           </span>
 
-          <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-slate-500 sm:text-5xl">
-            Built on <span className="text-green-600/80">experience.</span> Focused on <span className="text-green-600">you.</span>
+          <h2 className="font-['Barlow_Condensed'] text-4xl font-extrabold uppercase leading-tight tracking-wide text-black/90 sm:text-5xl">
+            Built on <span className="text-green-600/90">experience.</span> Focused on <span className="text-green-600/90">you.</span>
           </h2>
 
           <div className="flex flex-col gap-2">

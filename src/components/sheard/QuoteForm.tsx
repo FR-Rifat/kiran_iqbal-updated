@@ -240,9 +240,6 @@ export default function QuoteForm({
           isSubmitted ? "text-green-700" : "text-neutral-500"
         }`}
       >
-        {isSubmitted
-          ? "Thanks — a parts specialist will contact you shortly."
-          : "We respect your privacy and never share your information."}
       </p>
     </form>
   );

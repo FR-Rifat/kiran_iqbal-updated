@@ -18,7 +18,7 @@ export const trustBarItems = [
     icon: FiShield,
   },
   {
-    title: "5–7 Days",
+    title: "2–2–3 Days",
     subtitle: "Fast ship-out",
     icon: FiTruck,
   },
@@ -37,22 +37,26 @@ export const trustBarItems = [
 export const howItWorksData = {
   eyebrow: "Simple & Fast",
   title: "Get The Right Part In 3 Steps",
-  description: "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
+  description:
+    "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
   steps: [
     {
       number: "01",
       title: "Get Your Quote",
-      description: "Tell us the year, make, model and part. We match it to in-stock, low-mileage inventory and give you a firm price fast.",
+      description:
+        "Tell us the year, make, model and part. We match it to in-stock, low-mileage inventory and give you a firm price fast.",
     },
     {
       number: "02",
       title: "Confirm & Pay",
-      description: "We verify fitment by VIN so you get the right unit the first time. Secure checkout, financing, or split payments.",
+      description:
+        "We verify fitment by VIN so you get the right unit the first time. Secure checkout, financing, or split payments.",
     },
     {
       number: "03",
       title: "Fast Ship-Out",
-      description: "Most units ship in 5–7 business days to your home or shop, with tracking and your warranty in writing.",
+      description:
+        "Most units ship in 2–2–3 business days to your home or shop, with tracking and your warranty in writing.",
     },
   ],
 };
@@ -79,7 +83,7 @@ export const howItWorksData2 = {
       number: "03",
       title: "FAST SHIP-OUT",
       description:
-        "Most units ship in 5–7 business days to your home or shop, with tracking and your warranty in writing.",
+        "Most units ship in 2–2–3 business days to your home or shop, with tracking and your warranty in writing.",
     },
   ],
 };
@@ -118,7 +122,7 @@ export const whyChooseUsData = {
   features: [
     {
       title: "3-Year Warranty",
-      description: "Unlimited-mileage coverage in writing—one of the strongest guarantees in used parts.",
+      description: "Unlimited mileage coverage in writing one of the strongest guarantees in used parts.",
       icon: FiShield,
     },
     {
@@ -142,8 +146,8 @@ export const whyChooseUsData = {
       icon: FiCreditCard,
     },
     {
-      title: "Real U.S. Support",
-      description: "Talk to an actual parts specialist — no bots, no runaround, before and after you buy.",
+      title: "Real Time Support",
+      description: "Talk to an actual parts specialist no bots, no runaround, before and after you buy.",
       icon: FiHeadphones,
     },
   ],
@@ -172,7 +176,6 @@ export const paymentOptionsData = {
 export const testimonialsData = {
   eyebrow: "Real Results",
   title: "Trusted By Shops & DIY Buyers",
-  note: "Sample reviews shown replace with your verified customer testimonials before running ads.",
   testimonials: [
     {
       initials: "MR",
@@ -204,27 +207,33 @@ export const faqData = {
   faqs: [
     {
       question: "How Fast Will I Get My Part?",
-      answer: "Most orders ship in 5–7 business days with tracking. If you're on a tight timeline, call us and we'll check the fastest available option for your vehicle.",
+      answer:
+        "Most orders ship in 2–2–3 business days with tracking. If you're on a tight timeline, call us and we'll check the fastest available option for your vehicle.",
     },
     {
       question: "Are Your Engines And Transmissions Tested?",
-      answer: "Yes. Every unit is tested and inspected before it ships to make sure it meets our quality standards.",
+      answer:
+        "Yes. Every unit is tested and inspected before it ships to make sure it meets our quality standards.",
     },
     {
       question: "What Does The Warranty Cover?",
-      answer: "Our engines and transmissions are backed by a 3-year unlimited-mileage warranty. Coverage details and terms are provided with your purchase.",
+      answer:
+        "Our engines and transmissions are backed by a 3-year unlimited-mileage warranty. Coverage details and terms are provided with your purchase.",
     },
     {
       question: "How Do I Know It Will Fit My Vehicle?",
-      answer: "We verify fitment using your vehicle's VIN to help make sure you receive the correct engine or transmission the first time.",
+      answer:
+        "We verify fitment using your vehicle's VIN to help make sure you receive the correct engine or transmission the first time.",
     },
     {
       question: "Do You Offer Financing?",
-      answer: "Yes. We offer flexible payment options including Afterpay and monthly financing for eligible customers.",
+      answer:
+        "Yes. We offer flexible payment options including Afterpay and monthly financing for eligible customers.",
     },
     {
       question: "Can You Ship To My Mechanic's Shop?",
-      answer: "Yes. We can ship your order directly to your home or your mechanic's shop with tracking.",
+      answer:
+        "Yes. We can ship your order directly to your home or your mechanic's shop with tracking.",
     },
   ],
 };
@@ -277,7 +286,7 @@ export const trustBarData = [
     icon: "warranty",
   },
   {
-    title: "5–7 DAYS",
+    title: "2–2–3 DAYS",
     subtitle: "Fast nationwide shipping",
     icon: "shipping",
   },
@@ -338,7 +347,7 @@ export const HowitWork1 = {
       number: "03",
       title: "FAST SHIP-OUT",
       description:
-        "Most units ship in 5–7 business days to your home or shop, with tracking and your warranty in writing.",
+        "Most units ship in 2–2–3 business days to your home or shop, with tracking and your warranty in writing.",
     },
   ],
 };

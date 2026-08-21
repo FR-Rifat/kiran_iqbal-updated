@@ -17,7 +17,7 @@ const brands = ["Ford", "Chevrolet", "GMC", "Toyota", "Honda", "Dodge", "Chrysle
 const UsedEnginesDetails = () => {
   return (
     <>
-      <section className="w-full border-b border-gray-200 bg-white px-6 py-16 lg:px-20 lg:py-20">
+      <section className="w-full border-b border-gray-200 bg-[#ffffff] px-6 py-16 lg:px-20 lg:py-20">
         <div className="container mx-auto flex w-full flex-col items-center">
           {/* Header */}
           <div className="flex w-full max-w-3xl flex-col items-center gap-3 text-center">
@@ -67,7 +67,7 @@ const UsedEnginesDetails = () => {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-20">
+      <section className="bg-[#e6f5e6] py-16 sm:py-20">
         <div className="container mx-auto px-5 text-center">
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Engine Options
@@ -80,7 +80,7 @@ const UsedEnginesDetails = () => {
             {brands.map((brand) => (
               <div
                 key={brand}
-                className="group flex min-h-[70px] cursor-default items-center justify-center rounded-lg border border-slate-200 bg-white px-3 font-['Barlow_Condensed'] text-xl font-bold text-slate-500 shadow-sm transition-all duration-300 ease-out hover:border-green-600/40 hover:bg-green-50/30 hover:text-green-700 hover:shadow-[0_4px_12px_rgba(22,163,74,0.08)]"
+                className="group flex min-h-17.5 cursor-default items-center justify-center rounded-lg border border-slate-200 bg-white px-3 font-['Barlow_Condensed'] text-xl font-bold text-slate-500 shadow-sm transition-all duration-300 ease-out hover:border-green-600/40 hover:bg-green-50/30 hover:text-green-700 hover:shadow-[0_4px_12px_rgba(22,163,74,0.08)]"
               >
                 <span className="transition-transform duration-300 group-hover:scale-[1.03]">
                   {brand}

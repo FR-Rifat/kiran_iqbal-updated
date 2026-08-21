@@ -17,7 +17,7 @@ const UsedEnginesHero = () => {
   const { openModal } = useQuoteModal();
 
   return (
-    <section className="overflow-hidden bg-[radial-gradient(circle_at_85%_-10%,rgba(33,159,33,0.1),transparent_26rem),linear-gradient(180deg,#ffffff_0%,#f3f5f3_100%)]">
+    <section className="overflow-hidden bg-[#E6F5E6]">
       <div className="mx-auto flex container flex-col gap-10 px-5 py-12 sm:py-14 lg:flex-row lg:items-center lg:gap-12 lg:py-16">
         {/* Quote Form */}
         <div className="order-2 w-full lg:order-1 lg:flex-1">
@@ -34,7 +34,7 @@ const UsedEnginesHero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-[650px] font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.92] tracking-wide text-zinc-500 sm:text-6xl lg:text-[64px] lg:leading-[0.96]">
+          <h1 className="max-w-162.5 font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.92] tracking-wide text-zinc-500 sm:text-6xl lg:text-[64px] lg:leading-[0.96]">
             Quality <span className="text-green-600/80">Used Engines</span>
             <br />
             Built To Get You Back On The Road.

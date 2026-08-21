@@ -16,7 +16,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="w-full overflow-hidden bg-[radial-gradient(circle_at_85%_-14%,rgba(33,159,33,.11),transparent_27%),linear-gradient(180deg,#fff_0%,#f3f5f3_100%)]">
+    <section className="w-full bg-[#E6F5E6]">
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-8 px-5 py-10 lg:grid-cols-[1fr_1fr] lg:gap-12 lg:py-16">
         <div className="order-2 lg:order-1">
           <QuoteForm />
@@ -29,25 +29,28 @@ const Hero = () => {
             </span>
           </div>
 
-          <h1 className="max-w-[590px] text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-zinc-500 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
-            Quality Used{" "}
-            <span className="text-green-600/80">Engines</span>  & {" "}
-            <span className="text-green-600/80">Transmissions</span>, <br /> Shipped Fast
+          <h1 className="max-w-147.5 text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-zinc-500 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
+            Quality Used <span className="text-green-600/80">Engines</span> &{" "}
+            <span className="text-green-600/80">Transmissions</span>, <br />{" "}
+            Shipped Fast
           </h1>
 
-          <p className="mt-5 max-w-[590px] text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
+          <p className="mt-5 max-w-147.5 text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
             Low-mileage, Tested & Inspected Units Backed by a{" "}
             <span className="font-semibold">3-year Unlimited</span>-mileage
-            Warranty. Get a Firm Quote in Minutes Most Orders Ship in 5–7
+            Warranty. Get a Firm Quote in Minutes Most Orders Ship in 2–2–3
             Business Days.
           </p>
 
-          <div className="mt-5 flex max-w-[620px] flex-wrap items-center gap-2">
+          <div className="mt-5 flex max-w-155 flex-wrap items-center gap-2">
             {trustItems.map((item) => {
               const Icon = item.icon;
 
               return (
-                <div key={item.label} className="flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 outline outline-1 outline-offset-[-1px] outline-green-600">
+                <div
+                  key={item.label}
+                  className="flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 outline outline-1 outline-offset-[-1px] outline-green-600"
+                >
                   <Icon className="size-3.5 text-green-600" />
                   <span className="text-[11px] font-semibold leading-5 text-green-600 font-['Inter']">
                     {item.label}

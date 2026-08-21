@@ -21,7 +21,7 @@ const UsedTransmissionsHero = () => {
   };
 
   return (
-    <section className="overflow-hidden bg-[radial-gradient(circle_at_85%_0%,rgba(33,159,33,0.12),transparent_24rem),linear-gradient(180deg,#ffffff_0%,#f3f5f3_100%)]">
+    <section className="overflow-hidden bg-[#E6F5E6]">
       <div className="container mx-auto grid gap-10 px-5 py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start lg:gap-12 lg:py-16">
         <div className="order-2 lg:order-1">
           <QuoteForm />
@@ -31,10 +31,9 @@ const UsedTransmissionsHero = () => {
           <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
             Quality Used Transmissions
           </p>
-          <h1 className="mt-3 max-w-[600px] font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.9] tracking-tight text-slate-500 sm:text-6xl lg:text-7xl">
+          <h1 className="mt-3 max-w-150 font-['Barlow_Condensed'] text-5xl font-extrabold uppercase leading-[0.9] tracking-tight text-slate-500 sm:text-6xl lg:text-7xl">
             Quality <span className="text-green-600/80">Used Transmissions</span>{" "}
-            Built To
-            <br className="hidden sm:block" /> Keep You Moving.
+            Built To Keep You Moving.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-600">
             Find quality used transmissions for your car, truck, or SUV. Our

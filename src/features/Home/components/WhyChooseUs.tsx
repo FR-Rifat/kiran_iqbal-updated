@@ -4,7 +4,7 @@ const WhyChooseUs = () => {
   const { eyebrow, title, description, features } = whyChooseUsData;
 
   return (
-    <section className="w-full bg-[#f8f9f6] px-5 py-12 sm:py-14">
+    <section className="w-full bg-[#E6F5E6] px-5 py-12 sm:py-14">
       <div className="mx-auto flex w-full container flex-col items-center gap-7">
         <div className="flex w-full flex-col items-center gap-1">
           <span className="text-center text-base font-bold uppercase tracking-widest text-green-600 font-['Barlow_Condensed']">
@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
           </span>
 
           <div className="flex w-full flex-col items-center gap-2">
-            <h2 className="text-center text-3xl font-extrabold uppercase leading-none tracking-wide text-zinc-500 font-['Barlow_Condensed'] sm:text-[36px]">
+            <h2 className="text-center text-3xl font-extrabold uppercase leading-none tracking-wide text-black-600 font-['Barlow_Condensed'] sm:text-[36px]">
               {title}
             </h2>
 

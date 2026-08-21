@@ -2,6 +2,13 @@
 
 import { FormEvent, InputHTMLAttributes, useState } from "react";
 import Button from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 interface QuoteFormProps {
   title?: string;
@@ -268,23 +275,18 @@ function SelectField({
         {label}
       </label>
 
-      <select
-        id={id}
-        value={value}
-        required
-        onChange={(event) => onChange(event.target.value)}
-        className="min-h-12 w-full appearance-none rounded-lg border border-slate-200 bg-slate-50 px-4 text-sm text-neutral-700 outline-none transition-all duration-200 hover:border-green-600/40 focus:border-green-600 focus:bg-white focus:ring-4 focus:ring-green-100"
-      >
-        <option value="" disabled>
-          {placeholder}
-        </option>
-
-        {options.map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
+      <Select value={value} onValueChange={onChange} required>
+        <SelectTrigger id={id} aria-label={label} className="w-full">
+          <SelectValue placeholder={placeholder} />
+        </SelectTrigger>
+        <SelectContent position="popper">
+          {options.map((option) => (
+            <SelectItem key={option} value={option}>
+              {option}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
     </div>
   );
 }

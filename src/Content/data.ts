@@ -7,29 +7,30 @@ export const navItems = [
   { label: "About", href: "/about" },
   { label: "Used Engines", href: "/used-engines" },
   { label: "Used Transmissions", href: "/used-transmissions" },
+  { label: "Buying Guides", href: "/guides/how-to-buy-a-used-engine" },
   { label: "Contact", href: "/contact" },
 ];
 
 
 export const trustBarItems = [
   {
-    title: "3-Year",
-    subtitle: "Unlimited-mile warranty",
+    title: "Written quote",
+    subtitle: "Part and price details",
     icon: FiShield,
   },
   {
-    title: "2–2–3 Days",
-    subtitle: "Fast ship-out",
+    title: "Fitment review",
+    subtitle: "Vehicle details checked",
     icon: FiTruck,
   },
   {
-    title: "Tested",
-    subtitle: "Inspected & verified",
+    title: "Delivery options",
+    subtitle: "Confirmed in your quote",
     icon: FiCheckCircle,
   },
   {
-    title: "Financing",
-    subtitle: "Split & monthly options",
+    title: "Clear next steps",
+    subtitle: "Review before purchase",
     icon: FiCreditCard,
   },
 ];
@@ -38,25 +39,25 @@ export const howItWorksData = {
   eyebrow: "Simple & Fast",
   title: "Get The Right Part In 3 Steps",
   description:
-    "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
+    "Share your vehicle details, review the written quote, and confirm the part information before purchase.",
   steps: [
     {
       number: "01",
       title: "Get Your Quote",
       description:
-        "Tell us the year, make, model and part. We match it to in-stock, low-mileage inventory and give you a firm price fast.",
+        "Tell us the year, make, model and part. A VIN or part number can help us review the requested configuration.",
     },
     {
       number: "02",
       title: "Confirm & Pay",
       description:
-        "We verify fitment by VIN so you get the right unit the first time. Secure checkout, financing, or split payments.",
+        "Review the quoted part, included components, price, delivery options, and written terms before you decide.",
     },
     {
       number: "03",
       title: "Fast Ship-Out",
       description:
-        "Most units ship in 2–2–3 business days to your home or shop, with tracking and your warranty in writing.",
+        "Once confirmed, follow the shipping and delivery instructions included with your order documentation.",
     },
   ],
 };
@@ -65,52 +66,52 @@ export const howItWorksData2 = {
   eyebrow: "Simple & Fast",
   title: "GET THE RIGHT TRANSMISSION IN 3 STEPS",
   description:
-    "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
+    "Share your vehicle details, review the written quote, and confirm the part information before purchase.",
   steps: [
     {
       number: "01",
       title: "GET YOUR QUOTE",
       description:
-        "Tell us the year, make, model and part. We match it to in-stock, low-mileage inventory and give you a firm price fast.",
+        "Tell us the year, make, model and part. A VIN or part number can help us review the requested configuration.",
     },
     {
       number: "02",
       title: "CONFIRM & PAY",
       description:
-        "We verify fitment by VIN so you get the right unit the first time. Secure checkout, financing, or split payments.",
+        "Review the quoted part, included components, price, delivery options, and written terms before you decide.",
     },
     {
       number: "03",
       title: "FAST SHIP-OUT",
       description:
-        "Most units ship in 2–2–3 business days to your home or shop, with tracking and your warranty in writing.",
+        "Once confirmed, follow the shipping and delivery instructions included with your order documentation.",
     },
   ],
 };
 
 export const HowitWork2 = {
-  eyebrow: "NATIONWIDE SHIPPING",
-  title: "WE SHIP REPLACEMENT PARTS ACROSS THE USA",
+  eyebrow: "DELIVERY DETAILS",
+  title: "REVIEW DELIVERY BEFORE YOU BUY",
   description:
-    "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
+    "Shipping method, destination requirements, timing, and charges are confirmed in the written quote for your part.",
   steps: [
     {
       number: "01",
-      title: "RESIDENTIAL DELIVERY",
+      title: "DELIVERY LOCATION",
       description:
-        "Replacement parts can be shipped to residential locations where available.",
+        "Your quote identifies any residential, business, or freight-terminal requirements that apply.",
     },
     {
       number: "02",
-      title: "COMMERCIAL DELIVERY",
+      title: "FREIGHT PREPARATION",
       description:
-        "Ship to a repair shop, business, warehouse, or approved location.",
+        "Review unloading, inspection, and delivery-receipt instructions before the shipment arrives.",
     },
     {
       number: "03",
-      title: "TRACKING INFORMATION",
+      title: "SHIPMENT UPDATES",
       description:
-        "Tracking information is provided when available so you can follow your shipment.",
+        "Available tracking and carrier information are provided in your order documentation.",
     },
   ],
 };
@@ -118,36 +119,36 @@ export const HowitWork2 = {
 export const whyChooseUsData = {
   eyebrow: "Why Buyers Choose Us",
   title: "Fewer Headaches. Better Parts.",
-  description: "A rebuilt gamble from a random yard costs you twice. Here's what you get with A&R Auto Parts.",
+  description: "The details that matter before you purchase a replacement part.",
   features: [
     {
-      title: "3-Year Warranty",
-      description: "Unlimited mileage coverage in writing one of the strongest guarantees in used parts.",
+      title: "Written Warranty Terms",
+      description: "Review the specific coverage, exclusions, and claim steps supplied for the quoted part.",
       icon: FiShield,
     },
     {
-      title: "Tested & Inspected",
-      description: "Compression and leak checks, fluids, and a visual inspection before anything ships to you.",
+      title: "Part Information",
+      description: "Ask what assembly is included and what condition information is available for the quoted part.",
       icon: FiCheckCircle,
     },
     {
-      title: "VIN-Verified Fitment",
-      description: "We match by your VIN so you get the correct engine or transmission the first time.",
+      title: "Fitment Review",
+      description: "Your vehicle details and VIN, when available, help review compatibility before you purchase.",
       icon: FiTarget,
     },
     {
-      title: "Nationwide Freight",
-      description: "Delivered to your driveway or your mechanic's shop, with tracking every step.",
+      title: "Delivery Details",
+      description: "Shipping timing, location requirements, and charges are confirmed in the written quote.",
       icon: FiTruck,
     },
     {
-      title: "Flexible Payments",
-      description: "Afterpay, financing, or our 60-Day Hold & Pay so you can move forward now.",
+      title: "Complete Pricing",
+      description: "Review the part price and applicable shipping, taxes, fees, and core charges before payment.",
       icon: FiCreditCard,
     },
     {
-      title: "Real Time Support",
-      description: "Talk to an actual parts specialist no bots, no runaround, before and after you buy.",
+      title: "Clear Documentation",
+      description: "Keep your quote, order documents, and delivery records for reference.",
       icon: FiHeadphones,
     },
   ],
@@ -155,50 +156,28 @@ export const whyChooseUsData = {
 
 export const paymentOptionsData = {
   eyebrow: "Pay Your Way",
-  title: "Don't Let Cash Flow Stop The Repair",
-  description: "Get your vehicle back on the road now and spread the cost.",
+  title: "Review Your Quote Before You Buy",
+  description: "Payment options, if available, are shown in the written quote for your part.",
   options: [
     {
-      title: "Split In 4",
-      description: "Use Afterpay to break your order into interest-free installments at checkout.",
+      title: "Part Price",
+      description: "Your quote identifies the price for the specific part and included components.",
     },
     {
-      title: "Monthly Financing",
-      description: "Apply in minutes and pay over time approvals available for a range of credit profiles.",
+      title: "Delivery Charges",
+      description: "Shipping method, destination requirements, timing, and charges are discussed before payment.",
     },
     {
-      title: "60-Day Hold & Pay",
-      description: "Reserve your exact unit today and pay within 60 days so you never lose the part you need.",
+      title: "Terms and Coverage",
+      description: "Review warranty, returns, core charges, taxes, and other applicable terms in writing.",
     },
   ],
 };
 
 export const testimonialsData = {
-  eyebrow: "Real Results",
-  title: "Trusted By Shops & DIY Buyers",
-  testimonials: [
-    {
-      initials: "MR",
-      name: "Marcus R.",
-      role: "Truck owner · Texas",
-      review: "Found the exact engine for my F-150 when three yards told me they were out. Shipped quick and started right up. Warranty put my mind at ease.",
-      rating: 5,
-    },
-    {
-      initials: "DT",
-      name: "Dave T.",
-      role: "Independent repair shop",
-      review: "We order transmissions for our shop through them regularly now. Fitment is verified by VIN so we stop getting the wrong units. Big time saver.",
-      rating: 5,
-    },
-    {
-      initials: "JL",
-      name: "Jenna L.",
-      role: "DIY buyer",
-      review: "The financing option let me get my Camry fixed the same week instead of waiting. Communication was clear the whole way through.",
-      rating: 5,
-    },
-  ],
+  eyebrow: "Before You Purchase",
+  title: "Review The Details That Matter",
+  testimonials: [],
 };
 
 export const faqData = {
@@ -208,41 +187,39 @@ export const faqData = {
     {
       question: "How Fast Will I Get My Part?",
       answer:
-        "Most orders ship in 2–2–3 business days with tracking. If you're on a tight timeline, call us and we'll check the fastest available option for your vehicle.",
+        "Delivery timing and tracking availability depend on the quoted part, carrier, and destination. These details are confirmed before payment.",
     },
     {
       question: "Are Your Engines And Transmissions Tested?",
       answer:
-        "Yes. Every unit is tested and inspected before it ships to make sure it meets our quality standards.",
+        "Ask your specialist what condition information and documentation are available for the specific part in your quote.",
     },
     {
       question: "What Does The Warranty Cover?",
       answer:
-        "Our engines and transmissions are backed by a 3-year unlimited-mileage warranty. Coverage details and terms are provided with your purchase.",
+        "Warranty availability, coverage, exclusions, and claim steps vary by quoted part and are supplied in writing before purchase.",
     },
     {
       question: "How Do I Know It Will Fit My Vehicle?",
       answer:
-        "We verify fitment using your vehicle's VIN to help make sure you receive the correct engine or transmission the first time.",
+        "Provide accurate vehicle details and a VIN when available. Confirm the exact quoted part, code, and configuration before purchase and installation.",
     },
     {
-      question: "Do You Offer Financing?",
+      question: "What Will My Quote Include?",
       answer:
-        "Yes. We offer flexible payment options including Afterpay and monthly financing for eligible customers.",
+        "Your quote should identify the part, included components, pricing, applicable shipping, taxes, fees, core charges, warranty terms, and delivery requirements.",
     },
     {
       question: "Can You Ship To My Mechanic's Shop?",
       answer:
-        "Yes. We can ship your order directly to your home or your mechanic's shop with tracking.",
+        "Eligible delivery locations and freight requirements are confirmed in your quote. Review the delivery documentation before accepting freight.",
     },
   ],
 };
 
 export const footerData = {
-  description: "Quality used engines and transmissions shipped nationwide, backed by a 3-year unlimited-mileage warranty. Based in the Houston / Sugar Land, TX area.",
-  hours: "Mon–Fri, 8am–6pm ET",
-  phone: "(800) 555-0148",
-  email: "info@yardsandparts.us",
+  description: "Request a quote for a replacement used engine or transmission. Part, fitment, delivery, pricing, and warranty details are confirmed before purchase.",
+  hours: "Hours are confirmed when contact details are published.",
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -256,6 +233,7 @@ export const footerData = {
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Use", href: "/terms" },
     { label: "Disclaimer", href: "/disclaimer" },
   ],
   copyright: "© 2026 A&R Auto Parts. All rights reserved.",
@@ -271,33 +249,30 @@ export const aboutData = {
     highlight2: "TRUST.",
   },
   description:
-    "At A&R Auto Parts, we specialize in quality used engines and transmissions that deliver the performance you expect and the reliability you deserve. We're more than a parts supplier — we're your partner in getting back on the road with confidence.",
-  badges: ["Quality Used Parts", "Nationwide Shipping", "Tested & Inspected"],
-  rating: {
-    stars: 5,
-    text: "Rated by hundreds of shops & DIY buyers nationwide",
-  },
+    "A&R Auto Parts helps customers request quotes for replacement used engines and transmissions. We provide the available part, pricing, fitment, shipping, and warranty information in writing before a purchase decision.",
+  badges: ["Vehicle details reviewed", "Written quote", "Clear purchase terms"],
+  rating: { stars: 0, text: "Review the quoted part details before purchase." },
 };
 
 export const trustBarData = [
   {
-    title: "3-YEAR WARRANTY",
-    subtitle: "Unlimited-mileage coverage",
+    title: "WRITTEN QUOTE",
+    subtitle: "Part and price details",
     icon: "warranty",
   },
   {
-    title: "2–2–3 DAYS",
-    subtitle: "Fast nationwide shipping",
+    title: "FITMENT REVIEW",
+    subtitle: "Vehicle details checked",
     icon: "shipping",
   },
   {
-    title: "TESTED",
-    subtitle: "Inspected & verified",
+    title: "DELIVERY DETAILS",
+    subtitle: "Confirmed before payment",
     icon: "tested",
   },
   {
-    title: "FINANCING",
-    subtitle: "Flexible payment options",
+    title: "CLEAR TERMS",
+    subtitle: "Review before purchase",
     icon: "financing",
   },
 ];
@@ -305,22 +280,22 @@ export const trustBarData = [
 export const WHOWEARE = {
   eyebrow: "WHO WE ARE",
   title: "GET THE RIGHT PART IN 3 STEPS",
-  description: "No runaround, no rebuilt guesswork a firm price and the correct unit for your vehicle.",
+  description: "A&R Auto Parts helps customers request a written quote and review the part details before purchase.",
   steps: [
     {
       number: "01",
-      title: "QUALITY FIRST",
-      description: "Every engine and transmission is carefully selected and inspected.",
+      title: "VEHICLE DETAILS",
+      description: "Accurate vehicle information helps start a compatibility review.",
     },
     {
       number: "02",
-      title: "HONEST PRICING",
-      description: "Clear pricing and practical options without unnecessary surprises.",
+      title: "WRITTEN QUOTE",
+      description: "Review the available part, price, shipping, taxes, and charges before payment.",
     },
     {
       number: "03",
-      title: "REAL SUPPORT",
-      description: "Talk to knowledgeable people who understand automotive parts.",
+      title: "ORDER DOCUMENTS",
+      description: "Keep the quote, warranty, shipping, and delivery records for your order.",
     },
   ],
 };
@@ -329,48 +304,48 @@ export const HowitWork1 = {
   eyebrow: "SIMPLE & FAST",
   title: "GET THE RIGHT ENGINE IN 3 STEPS",
   description:
-    "No runaround, no rebuilding guesswork. We help you find the right engine for your vehicle.",
+    "Share your vehicle information, review the written quote, and confirm the specific engine details before purchase.",
   steps: [
     {
       number: "01",
       title: "GET YOUR QUOTE",
       description:
-        "Tell us the year, make, model and part. We match it to in-stock, low-mileage inventory and give you a firm price fast.",
+        "Tell us the year, make, model, engine details, and VIN when available so we can review the requested configuration.",
     },
     {
       number: "02",
       title: "CONFIRM & PAY",
       description:
-        "We verify fitment by VIN so you get the right unit the first time. Secure checkout, financing, or split payments.",
+        "Review the quoted engine, included components, delivered price, warranty terms, and delivery information before deciding.",
     },
     {
       number: "03",
       title: "FAST SHIP-OUT",
       description:
-        "Most units ship in 2–2–3 business days to your home or shop, with tracking and your warranty in writing.",
+        "Follow the shipping and freight-inspection instructions supplied with your order documentation.",
     },
   ],
 };
 
 export const standards = [
   {
-    title: "3-YEAR WARRANTY",
-    description: "Unlimited-mileage warranty coverage.",
+    title: "WRITTEN WARRANTY TERMS",
+    description: "Coverage and exclusions are identified for the specific quoted part.",
     icon: FiShield,
   },
   {
-    title: "TESTED & INSPECTED",
-    description: "Parts are inspected before shipping.",
+    title: "PART INFORMATION",
+    description: "Ask what condition information is available for the quoted part.",
     icon: FiCheckCircle,
   },
   {
-    title: "VIN-VERIFIED FITMENT",
-    description: "We help match the correct part to your vehicle.",
+    title: "FITMENT REVIEW",
+    description: "Vehicle details and VIN, when available, help review compatibility.",
     icon: FiTarget,
   },
   {
-    title: "NATIONWIDE SHIPPING",
-    description: "Fast and reliable delivery across the USA.",
+    title: "DELIVERY DETAILS",
+    description: "Timing, method, and charges are confirmed in your quote.",
     icon: FiTruck,
   },
   {
@@ -384,4 +359,3 @@ export const standards = [
     icon: FiHeadphones,
   },
 ];
-

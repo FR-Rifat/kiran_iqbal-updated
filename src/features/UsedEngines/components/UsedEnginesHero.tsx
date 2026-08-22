@@ -3,19 +3,15 @@
 import Image from "next/image";
 import { FiCheckCircle, FiShield, FiTarget } from "react-icons/fi";
 import QuoteForm from "@/components/sheard/QuoteForm";
-import Button from "@/components/ui/button";
-import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const proofPoints = [
-  { label: "3-Year Warranty", icon: FiShield },
-  { label: "Tested & Inspected", icon: FiCheckCircle },
-  { label: "Nationwide Shipping", icon: FiTarget },
-  { label: "Financing Available", icon: FiShield },
+  { label: "Written terms", icon: FiShield },
+  { label: "Part information", icon: FiCheckCircle },
+  { label: "Fitment review", icon: FiTarget },
+  { label: "Delivery details", icon: FiShield },
 ];
 
 const UsedEnginesHero = () => {
-  const { openModal } = useQuoteModal();
-
   return (
     <section className="overflow-hidden bg-[#E6F5E6]">
       <div className="mx-auto flex container flex-col gap-10 px-5 py-12 sm:py-14 lg:flex-row lg:items-center lg:gap-12 lg:py-16">
@@ -42,9 +38,7 @@ const UsedEnginesHero = () => {
 
           {/* Description */}
           <p className="max-w-[620px] font-['Inter'] text-base leading-7 text-gray-600 sm:text-lg">
-            Find quality used engines for your car, truck, or SUV. We help match
-            you with a reliable replacement based on your vehicle details,
-            engine size, and compatibility.
+            Request a used engine quote for your car, truck, or SUV. Provide your vehicle details so we can review the requested configuration and share the available part information in writing.
           </p>
 
           {/* Proof Points */}
@@ -58,25 +52,6 @@ const UsedEnginesHero = () => {
                 {label}
               </span>
             ))}
-          </div>
-          {/* <div className="mt-5 flex flex-wrap items-center gap-3">
-            <Button variant="primary" showIcon={false} onClick={openModal}>
-              Get My Free Quote
-            </Button>
-            <a href="tel:2815550142">
-              <Button variant="secondary">(281) 555-0142</Button>
-            </a>
-          </div> */}
-
-          {/* Rating */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="font-['Inter'] text-base tracking-widest text-green-600">
-              ★★★★★
-            </span>
-
-            <span className="font-['Inter'] text-sm leading-6 text-slate-600">
-              Rated by hundreds of shops & DIY buyers nationwide
-            </span>
           </div>
         </div>
       </div>

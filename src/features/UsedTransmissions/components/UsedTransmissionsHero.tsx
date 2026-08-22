@@ -5,9 +5,9 @@ import { FormEvent, useState } from "react";
 import { FiCheckCircle, FiShield, FiTarget } from "react-icons/fi";
 
 const proofPoints = [
-  { label: "3-Year Warranty", icon: FiShield },
-  { label: "Tested & Inspected", icon: FiCheckCircle },
-  { label: "VIN-Verified Fitment", icon: FiTarget },
+  { label: "Written terms", icon: FiShield },
+  { label: "Part information", icon: FiCheckCircle },
+  { label: "Fitment review", icon: FiTarget },
 ];
 
 const selectFields = ["Select Year", "Select Make", "Select Model", "Select Engine"];
@@ -36,9 +36,7 @@ const UsedTransmissionsHero = () => {
             Built To Keep You Moving.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-600">
-            Find quality used transmissions for your car, truck, or SUV. Our
-            fitment specialists help match the right unit, explain your options,
-            and get your vehicle back on the road.
+            Request a used transmission quote for your car, truck, or SUV. Vehicle details, VIN, and transmission information help us review the requested configuration before you purchase.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {proofPoints.map(({ label, icon: Icon }) => (

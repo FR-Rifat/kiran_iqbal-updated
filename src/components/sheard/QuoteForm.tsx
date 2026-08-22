@@ -1,7 +1,9 @@
 "use client";
 
 import { FormEvent, InputHTMLAttributes, useState } from "react";
+import Link from "next/link";
 import Button from "@/components/ui/button";
+import { approvedClaims, business } from "@/lib/business";
 import {
   Select,
   SelectContent,
@@ -9,6 +11,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
+declare global {
+  interface Window {
+    dataLayer?: { push: (event: Record<string, unknown>) => void };
+  }
+}
 
 interface QuoteFormProps {
   title?: string;
@@ -27,6 +35,7 @@ export interface QuoteFormData {
   phone: string;
   email: string;
   consent: boolean;
+  website?: string;
 }
 
 const yearOptions = [
@@ -90,8 +99,8 @@ const partOptions = [
 
 export default function QuoteForm({
   title = "Get Your Quote",
-  badge = "Under 2 Min",
-  description = "Tell us about your vehicle and we’ll get you a firm price fast.",
+  badge = "No Obligation",
+  description = "Tell us about your vehicle and we’ll review the information for your quote.",
   onSubmit,
   className = "",
 }: QuoteFormProps) {
@@ -106,6 +115,7 @@ export default function QuoteForm({
     phone: "",
     email: "",
     consent: false,
+    website: "",
   });
 
   const updateField = <K extends keyof QuoteFormData>(
@@ -122,12 +132,30 @@ export default function QuoteForm({
     }
   };
 
-  const submitQuote = (event: FormEvent<HTMLFormElement>) => {
+  const submitQuote = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    onSubmit?.(formData);
-    setIsSubmitted(true);
+    setSubmitState("loading");
+    setMessage("");
+    try {
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const result = (await response.json()) as { message?: string };
+      if (!response.ok) throw new Error(result.message ?? "Unable to send your request.");
+      onSubmit?.(formData);
+      window.dataLayer?.push({ event: "quote_submit_success" });
+      setIsSubmitted(true);
+      setSubmitState("success");
+      setMessage(result.message ?? "Thanks. Your request was sent successfully.");
+    } catch (error) {
+      setSubmitState("error");
+      setMessage(error instanceof Error ? error.message : "Unable to send your request.");
+    }
   };
+  const [submitState, setSubmitState] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [message, setMessage] = useState("");
 
   return (
     <form
@@ -145,7 +173,7 @@ export default function QuoteForm({
         </span>
       </div>
 
-      <p className="mt-2 text-sm leading-6 text-neutral-600">{description}</p>
+      <p className="mt-2 text-sm leading-6 text-neutral-600">{description} {approvedClaims.availability}</p>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         <SelectField
@@ -214,9 +242,19 @@ export default function QuoteForm({
             placeholder="Email Address"
             value={formData.email}
             autoComplete="email"
-            onChange={(value) => updateField("email", value)}
-          />
-        </div>
+          onChange={(value) => updateField("email", value)}
+        />
+      </div>
+
+      <input
+        aria-hidden="true"
+        tabIndex={-1}
+        autoComplete="off"
+        name="website"
+        value={formData.website}
+        onChange={(event) => updateField("website", event.target.value)}
+        className="hidden"
+      />
       </div>
 
       <label className="mt-4 flex cursor-pointer items-start gap-3 text-xs leading-5 text-neutral-600">
@@ -229,24 +267,23 @@ export default function QuoteForm({
         />
 
         <span>
-          By checking this box, I agree to receive text messages and calls from
-          A&amp;R Auto Parts about my quote request. Message and data rates may
-          apply. Reply STOP to opt out.
+          {business.socialConsentDisclosure} Read our{" "}
+          <Link className="text-green-700 underline" href="/privacy-policy">Privacy Policy</Link>{" "}
+          and <Link className="text-green-700 underline" href="/terms">Terms of Use</Link>.
         </span>
       </label>
 
       <div className="mt-5">
-        <Button variant="primary" showIcon={false} type="submit" className="w-full">
-          {isSubmitted ? "Quote Requested" : "Get My Free Quote"}
+        <Button variant="primary" showIcon={false} type="submit" className="w-full" disabled={submitState === "loading"}>
+          {submitState === "loading" ? "Sending Request…" : isSubmitted ? "Quote Request Sent" : "Request My Quote"}
         </Button>
       </div>
 
       <p
         aria-live="polite"
-        className={`mt-4 text-center text-xs font-semibold ${
-          isSubmitted ? "text-green-700" : "text-neutral-500"
-        }`}
+        className={`mt-4 text-center text-xs font-semibold ${submitState === "error" ? "text-red-700" : submitState === "success" ? "text-green-700" : "text-neutral-500"}`}
       >
+        {message}
       </p>
     </form>
   );

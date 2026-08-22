@@ -3,6 +3,7 @@
 import Button from "@/components/ui/button";
 import { aboutData } from "@/Content/data";
 import { useQuoteModal } from "@/components/sheard/QuoteModal";
+import { business } from "@/lib/business";
 
 const AboutHero = () => {
   const { openModal } = useQuoteModal();
@@ -44,10 +45,10 @@ const AboutHero = () => {
             Get My Free Quote
           </Button>
 
-          <Button variant="secondary">(281) 555-0142</Button>
+          {business.phone && <Button variant="secondary" href={`tel:${business.phone}`}>Call A&R Auto Parts</Button>}
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-2.5 pt-1">
+        {rating.stars > 0 && <div className="flex flex-wrap items-center justify-center gap-2.5 pt-1">
           <span className="font-['Segoe_UI_Symbol'] text-base tracking-widest text-green-600">
             {"★".repeat(rating.stars)}
           </span>
@@ -55,7 +56,8 @@ const AboutHero = () => {
           <span className="font-['Inter'] text-sm leading-5 text-slate-600 md:text-base">
             {rating.text}
           </span>
-        </div>
+        </div>}
+        {rating.stars === 0 && <p className="font-['Inter'] text-sm leading-5 text-slate-600 md:text-base">{rating.text}</p>}
       </div>
     </section>
   );

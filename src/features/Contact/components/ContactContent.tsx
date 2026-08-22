@@ -2,8 +2,7 @@
 
 import QuoteForm from "@/components/sheard/QuoteForm";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
-import Image from "next/image";
-import { Fullscreen } from "lucide-react";
+import { business } from "@/lib/business";
 
 const ContactContent = () => {
   return (
@@ -12,29 +11,26 @@ const ContactContent = () => {
         <QuoteForm />
 
         <aside className="flex w-full flex-col gap-4">
-          <ContactCard icon={FiMapPin} title="Our Address">
-            <address className="not-italic">
-              9801 Westheimer Rd, Suite # 444, Houston TX 77042
-            </address>
-          </ContactCard>
+          {business.address && <ContactCard icon={FiMapPin} title="Our Address"><address className="not-italic">{business.address}</address></ContactCard>}
 
-          <ContactCard icon={FiMail} title="Email Us">
+          {business.email && <ContactCard icon={FiMail} title="Email Us">
             <a
-              href="mailto:info@yardsandparts.us"
+              href={`mailto:${business.email}`}
               className="transition-colors duration-200 hover:text-green-600"
             >
-              info@yardsandparts.us
+              {business.email}
             </a>
-          </ContactCard>
+          </ContactCard>}
 
-          <ContactCard icon={FiPhone} title="Call Us">
+          {business.phone && <ContactCard icon={FiPhone} title="Call Us">
             <a
-              href="tel:+18554306250"
+              href={`tel:${business.phone}`}
               className="transition-colors duration-200 hover:text-green-600"
             >
-              855-430-6250
+              {business.phone}
             </a>
-          </ContactCard>
+          </ContactCard>}
+          {!business.phone && !business.email && <ContactCard icon={FiPhone} title="Contact details"><span>Our contact details are being verified. You can still submit a quote request.</span></ContactCard>}
         </aside>
       </div>
     </section>

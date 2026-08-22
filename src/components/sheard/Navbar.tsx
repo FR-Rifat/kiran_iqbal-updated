@@ -7,6 +7,7 @@ import { useState } from "react";
 import { FiMenu, FiPhone, FiX } from "react-icons/fi";
 import Button from "@/components/ui/button";
 import { navItems } from "@/Content/data";
+import { business } from "@/lib/business";
 
 const logo = "/logo1.png";
 
@@ -32,7 +33,7 @@ const Navbar = () => {
                 <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
 
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
-                  Free Shipping To Residential & Commercial Addresses
+                  Request a quote for replacement engines & transmissions
                 </span>
               </div>
 
@@ -40,7 +41,7 @@ const Navbar = () => {
                 <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
 
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
-                  Free Shipping To Residential & Commercial Addresses
+                  Fitment and delivery details confirmed before purchase
                 </span>
               </div>
             </div>
@@ -90,19 +91,17 @@ const Navbar = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:block">
-            <Button variant="primary">Call Now</Button>
-          </div>
+          {business.phone && <div className="hidden lg:block"><Button variant="primary" href={`tel:${business.phone}`}>Call Now</Button></div>}
 
           {/* Mobile Actions */}
           <div className="flex items-center gap-2 lg:hidden">
-            <a
-              href="tel:+18554306250"
+            {business.phone && <a
+              href={`tel:${business.phone}`}
               aria-label="Call A&R Auto Parts"
               className="inline-flex size-11 items-center justify-center rounded-lg border border-green-600 text-green-700 transition hover:bg-green-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
             >
               <FiPhone aria-hidden className="size-5" />
-            </a>
+            </a>}
 
             <button
               type="button"
@@ -147,12 +146,12 @@ const Navbar = () => {
                   );
                 })}
 
-                <a
-                  href="tel:+18554306250"
+                {business.phone && <a
+                  href={`tel:${business.phone}`}
                   className="mt-2 flex min-h-11 items-center justify-center rounded-lg bg-green-600 px-5 font-['Barlow_Condensed'] text-lg font-bold uppercase tracking-wide text-white shadow-[0_4px_0_#067806] transition hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
                 >
                   Call Now
-                </a>
+                </a>}
               </div>
             </nav>
           )}

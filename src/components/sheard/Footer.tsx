@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { footerData } from "@/Content/data";
+import { business } from "@/lib/business";
 
 const Footerimg = "/logo1.png";
 
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
           <div className="flex w-full flex-col items-start gap-5 lg:w-96">
             <Link href="/">
-              <Image src={Footerimg} alt="Northline Parts" width={200} height={62} className="h-16 w-48 object-contain" />
+              <Image src={Footerimg} alt="A&R Auto Parts" width={200} height={62} className="h-16 w-48 object-contain" />
             </Link>
 
             <p className="max-w-96 text-sm font-normal leading-4 text-gray-900 font-['Inter']">
@@ -21,7 +22,7 @@ const Footer = () => {
             <div className="text-sm font-semibold leading-5 text-gray-900 font-['Inter']">
               <div>{footerData.hours}</div>
               <div className="text-gray-900/70">
-                {footerData.phone} · {footerData.email}
+                {[business.phone, business.email].filter(Boolean).join(" · ") || "Contact details are available on our contact page."}
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import Button from "@/components/ui/button";
 import { useQuoteModal } from "@/components/sheard/QuoteModal";
+import { approvedClaims, business } from "@/lib/business";
 
 const FinalCTA = () => {
   const { openModal } = useQuoteModal();
@@ -13,11 +14,11 @@ const FinalCTA = () => {
         <div className="flex w-full flex-col items-center justify-center gap-7">
           <div className="flex w-full flex-col items-center justify-center gap-2 text-center">
             <h2 className="text-4xl font-extrabold uppercase leading-10 tracking-wide text-white font-['Barlow_Condensed']">
-              Get Your Firm Price Today
+              Request Your Part Quote
             </h2>
 
             <p className="text-base font-normal leading-6 text-slate-200 font-['Inter']">
-              Tell us your year, make and model we'll do the rest.
+              Tell us your vehicle details. {approvedClaims.availability}
             </p>
           </div>
 
@@ -33,11 +34,11 @@ const FinalCTA = () => {
               </span>
             </Button>
 
-            <Button variant="secondary" className="border-2! border-white/60! bg-transparent! text-white! outline-none!">
+            {business.phone && <Button variant="secondary" href={`tel:${business.phone}`} className="border-2! border-white/60! bg-transparent! text-white! outline-none!">
               <span className="text-white">
-                Call (281) 555-0142
+                Call A&R Auto Parts
               </span>
-            </Button>
+            </Button>}
           </div>
         </div>
       </div>

@@ -1,18 +1,15 @@
 "use client";
 
-import { FiPhone, FiShield, FiTruck, FiCheckCircle, FiCreditCard } from "react-icons/fi";
-import Button from "@/components/ui/button";
+import { FiShield, FiTruck, FiCheckCircle, FiCreditCard } from "react-icons/fi";
 import QuoteForm from "@/components/sheard/QuoteForm";
-import { useQuoteModal } from "@/components/sheard/QuoteModal";
+import { approvedClaims } from "@/lib/business";
 
 const Hero = () => {
-  const { openModal } = useQuoteModal();
-
   const trustItems = [
-    { label: "3-Year Warranty", icon: FiShield },
-    { label: "Tested & Inspected", icon: FiCheckCircle },
-    { label: "Nationwide Shipping", icon: FiTruck },
-    { label: "Financing Available", icon: FiCreditCard },
+    { label: "Written quote", icon: FiShield },
+    { label: "Fitment review", icon: FiCheckCircle },
+    { label: "Delivery details", icon: FiTruck },
+    { label: "Full-price review", icon: FiCreditCard },
   ];
 
   return (
@@ -25,21 +22,18 @@ const Hero = () => {
         <div className="order-1 flex min-w-0 flex-col items-start pt-1 lg:order-2 lg:pt-5">
           <div className="mb-3 rounded-full bg-white px-3 py-1 outline -outline-offset-1 outline-green-600">
             <span className="text-[11px] font-semibold uppercase leading-5 tracking-[.08em] text-green-600 font-['Barlow_Condensed']">
-              ● Trusted U.S. Used-Parts Supplier
+              ● Request a replacement-part quote
             </span>
           </div>
 
           <h1 className="max-w-147.5 text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-gray-900 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
-            Quality Used <span className="text-green-600/80">Engines</span> &{" "}
-            <span className="text-green-600/80">Transmissions</span>, <br />{" "}
-            Shipped Fast
+            Used <span className="text-green-600/80">Engines</span> &{" "}
+            <span className="text-green-600/80">Transmissions</span> <br />
+            Quote Request
           </h1>
 
           <p className="mt-5 max-w-147.5 text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
-            Low-mileage, Tested & Inspected Units Backed by a{" "}
-            <span className="font-semibold">3-year Unlimited</span>-mileage
-            Warranty. Get a Firm Quote in Minutes Most Orders Ship in 2–2–3
-            Business Days.
+            Send your vehicle information to start a quote request. {approvedClaims.fitment} {approvedClaims.pricing}
           </p>
 
           <div className="mt-5 flex max-w-155 flex-wrap items-center gap-2">
@@ -60,14 +54,6 @@ const Hero = () => {
             })}
           </div>
 
-          <div className="mt-5 flex items-center gap-2.5">
-            <span className="text-xs tracking-[.15em] text-green-600">
-              ★★★★★
-            </span>
-            <span className="text-sm leading-6 text-slate-600 font-['Inter']">
-              Rated by hundreds of shops & DIY buyers nationwide
-            </span>
-          </div>
         </div>
       </div>
     </section>

@@ -7,6 +7,9 @@ import WhatsAppButton from "@/components/sheard/WhatsAppButton";
 import SiteMotion from "@/components/sheard/SiteMotion";
 import SmoothScroll from "@/components/sheard/SmoothScroll";
 import { QuoteModalProvider } from "@/components/sheard/QuoteModal";
+import { JsonLd, organizationSchema } from "@/components/seo/JsonLd";
+import { business } from "@/lib/business";
+import { siteUrl } from "@/lib/seo";
 
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
@@ -21,8 +24,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kiran Iqbal — Independent Designer",
-  description: "A considered digital portfolio.",
+  metadataBase: siteUrl,
+  title: {
+    default: "Used Engines & Transmissions Quotes | A&R Auto Parts",
+    template: "%s | A&R Auto Parts",
+  },
+  description: business.description,
+  applicationName: business.name,
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -31,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlowCondensed.variable} ${inter.variable}`}>
+        <JsonLd data={organizationSchema} />
         <QuoteModalProvider>
           <SmoothScroll>
             <Navbar />
@@ -44,4 +54,3 @@ export default function RootLayout({
     </html>
   );
 }
-

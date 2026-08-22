@@ -1,6 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 
-const WHATSAPP_NUMBER = "12815550142";
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "12815550142";
 const WHATSAPP_MESSAGE = "Hi! I would like a quote for a used auto part.";
 
 export default function WhatsAppButton() {

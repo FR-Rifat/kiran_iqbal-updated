@@ -40,42 +40,40 @@ const deliveryExpectations: { title: string; text: string; icon: IconType }[] =
   [
     {
       title: "Shipping Time",
-      text: "Most orders ship within 5–7 business days.",
+      text: "Timing is confirmed in the written quote for your part and destination.",
       icon: FiClock,
     },
     {
       title: "Freight Delivery",
-      text: "Large parts ship by freight with tracking.",
+      text: "The shipping method and available tracking details are confirmed before payment.",
       icon: FiTruck,
     },
     {
       title: "Delivery Location",
-      text: "Ship to your home, shop, or approved location.",
+      text: "Eligible delivery locations and freight requirements are identified in your quote.",
       icon: FiMapPin,
     },
     {
       title: "Inspection At Delivery",
-      text: "Inspect the package before signing the delivery receipt.",
+      text: "Inspect freight before signing, and record visible damage on the delivery receipt.",
       icon: FiPackage,
     },
     {
       title: "Safe Handling",
-      text: "Parts are packed and transported with care.",
+      text: "Keep the packaging and delivery records until the part has been inspected.",
       icon: FiShield,
     },
     {
       title: "Professional Service",
-      text: "Contact our support team if you need assistance.",
+      text: "Use the reporting instructions in your order documentation if you have a concern.",
       icon: FiCheckCircle,
     },
   ];
 const exclusions = [
-  "Improper installation",
-  "Modifications or alterations of any kind",
-  "Labor or installation costs",
-  "Damage caused by abuse or neglect",
-  "Incorrect fitment or misuse",
-  "Damage caused by failure to follow manufacturer recommendations",
+  "The exact coverage and duration shown in the written quote",
+  "Required installation or maintenance conditions",
+  "Any exclusions that apply to the specific quoted part",
+  "The claim-reporting process and deadlines",
 ];
 const questions = [
   "How do I place an order?",
@@ -200,8 +198,7 @@ const ShippingWarrantyContent = () => {
 
           {/* Note */}
           <p className="text-center font-['Inter'] text-base font-normal leading-5 text-gray-600">
-            Warranty exclusions vary by product. Refer to the warranty
-            documentation associated with your order.
+            Warranty availability, coverage, exclusions, and claim steps vary by part. Refer to the written documentation associated with your quote and order.
           </p>
         </div>
       </section>

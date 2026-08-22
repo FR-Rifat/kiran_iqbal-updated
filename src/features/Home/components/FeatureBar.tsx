@@ -16,7 +16,7 @@ const TrustBar = () => {
                   {item.title}
                 </h3>
 
-                <p className="text-xs font-normal leading-5 text-stone-300 font-['Inter']">
+                <p className="text-xs font-normal leading-5 text-stone-100 font-['Inter']">
                   {item.subtitle}
                 </p>
               </div>

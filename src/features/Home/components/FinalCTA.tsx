@@ -30,7 +30,7 @@ const FinalCTA = () => {
               className="bg-white shadow-[0px_6px_0px_0px_rgba(0,0,0,0.18)]"
             >
               <span className="text-green-600">
-                Get My Free Quote
+                Get My Quote
               </span>
             </Button>
 

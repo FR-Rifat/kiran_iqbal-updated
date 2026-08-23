@@ -174,6 +174,7 @@ export default function QuoteForm({
       </div>
 
       <p className="mt-2 text-sm leading-6 text-neutral-600">{description} {approvedClaims.availability}</p>
+      <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-emerald-700">All fields are required</p>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         <SelectField
@@ -308,7 +309,7 @@ function SelectField({
 }: SelectFieldProps) {
   return (
     <div>
-      <label htmlFor={id} className="sr-only">
+      <label htmlFor={id} className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-700">
         {label}
       </label>
 
@@ -349,7 +350,7 @@ function InputField({
 }: InputFieldProps) {
   return (
     <div>
-      <label htmlFor={id} className="sr-only">
+      <label htmlFor={id} className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-700">
         {label}
       </label>
 

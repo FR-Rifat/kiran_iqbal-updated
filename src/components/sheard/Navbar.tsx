@@ -33,7 +33,7 @@ const Navbar = () => {
                 <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
 
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
-                  Request a quote for replacement engines & transmissions
+                  Get a written quote for the right used engine or transmission
                 </span>
               </div>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
 
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
-                  Fitment and delivery details confirmed before purchase
+                  Review vehicle details, price, delivery, and warranty information before purchase
                 </span>
               </div>
             </div>

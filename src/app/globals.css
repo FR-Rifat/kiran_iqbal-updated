@@ -127,3 +127,26 @@ body {
 .animate-marquee {
   animation: marquee 50s linear infinite;
 }
+
+/* Keep the existing desktop typography while giving long, uppercase headings
+   enough room to wrap naturally on narrow screens. */
+@media (max-width: 639px) {
+  h1 {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+  }
+
+  h2.text-5xl {
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+
+  h2.text-4xl {
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+
+/* #009900 is the established brand green used by the existing UI. */
+/* [class~="text-green-600"] {
+  color: #009900;
+} */

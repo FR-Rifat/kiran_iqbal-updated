@@ -143,18 +143,25 @@ export default function QuoteForm({
         body: JSON.stringify(formData),
       });
       const result = (await response.json()) as { message?: string };
-      if (!response.ok) throw new Error(result.message ?? "Unable to send your request.");
+      if (!response.ok)
+        throw new Error(result.message ?? "Unable to send your request.");
       onSubmit?.(formData);
       window.dataLayer?.push({ event: "quote_submit_success" });
       setIsSubmitted(true);
       setSubmitState("success");
-      setMessage(result.message ?? "Thanks. Your request was sent successfully.");
+      setMessage(
+        result.message ?? "Thanks. Your request was sent successfully.",
+      );
     } catch (error) {
       setSubmitState("error");
-      setMessage(error instanceof Error ? error.message : "Unable to send your request.");
+      setMessage(
+        error instanceof Error ? error.message : "Unable to send your request.",
+      );
     }
   };
-  const [submitState, setSubmitState] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [submitState, setSubmitState] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [message, setMessage] = useState("");
 
   return (
@@ -173,8 +180,12 @@ export default function QuoteForm({
         </span>
       </div>
 
-      <p className="mt-2 text-sm leading-6 text-neutral-600">{description} {approvedClaims.availability}</p>
-      <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-emerald-700">All fields are required</p>
+      <p className="mt-2 text-sm leading-6 text-neutral-600">
+        {description} {approvedClaims.availability}
+      </p>
+      <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-emerald-700">
+        All fields are required
+      </p>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         <SelectField
@@ -243,19 +254,19 @@ export default function QuoteForm({
             placeholder="Email Address"
             value={formData.email}
             autoComplete="email"
-          onChange={(value) => updateField("email", value)}
-        />
-      </div>
+            onChange={(value) => updateField("email", value)}
+          />
+        </div>
 
-      <input
-        aria-hidden="true"
-        tabIndex={-1}
-        autoComplete="off"
-        name="website"
-        value={formData.website}
-        onChange={(event) => updateField("website", event.target.value)}
-        className="hidden"
-      />
+        <input
+          aria-hidden="true"
+          tabIndex={-1}
+          autoComplete="off"
+          name="website"
+          value={formData.website}
+          onChange={(event) => updateField("website", event.target.value)}
+          className="hidden"
+        />
       </div>
 
       <label className="mt-4 flex cursor-pointer items-start gap-3 text-xs leading-5 text-neutral-600">
@@ -269,14 +280,30 @@ export default function QuoteForm({
 
         <span>
           {business.socialConsentDisclosure} Read our{" "}
-          <Link className="text-green-700 underline" href="/privacy-policy">Privacy Policy</Link>{" "}
-          and <Link className="text-green-700 underline" href="/terms">Terms of Use</Link>.
+          <Link className="text-green-700 underline" href="/privacy-policy">
+            Privacy Policy
+          </Link>{" "}
+          and{" "}
+          <Link className="text-green-700 underline" href="/terms">
+            Terms of Use
+          </Link>
+          .
         </span>
       </label>
 
       <div className="mt-5">
-        <Button variant="primary" showIcon={false} type="submit" className="w-full" disabled={submitState === "loading"}>
-          {submitState === "loading" ? "Sending Request…" : isSubmitted ? "Quote Request Sent" : "Request My Quote"}
+        <Button
+          variant="primary"
+          showIcon={false}
+          type="submit"
+          className="w-full"
+          disabled={submitState === "loading"}
+        >
+          {submitState === "loading"
+            ? "Sending Request…"
+            : isSubmitted
+              ? "Quote Request Sent"
+              : "Request My Quote"}
         </Button>
       </div>
 
@@ -309,7 +336,10 @@ function SelectField({
 }: SelectFieldProps) {
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-700">
+      <label
+        htmlFor={id}
+        className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-700"
+      >
         {label}
       </label>
 
@@ -350,7 +380,10 @@ function InputField({
 }: InputFieldProps) {
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-700">
+      <label
+        htmlFor={id}
+        className="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-700"
+      >
         {label}
       </label>
 

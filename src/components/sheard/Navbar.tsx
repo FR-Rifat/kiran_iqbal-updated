@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link
             href="/"
-            className="shrink-0 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-600"
+            className="shrink-0 rounded-sm focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-green-600"
             onClick={() => setIsMenuOpen(false)}
           >
             <Image

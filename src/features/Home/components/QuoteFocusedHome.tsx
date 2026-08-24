@@ -16,6 +16,8 @@ import {
 import QuoteForm from "@/components/sheard/QuoteForm";
 import { useQuoteModal } from "@/components/sheard/QuoteModal";
 import { approvedClaims } from "@/lib/business";
+import Button from "@/components/ui/button";
+import { whyChooseUsData } from "@/Content/data";
 
 const offers = [
   {
@@ -24,7 +26,7 @@ const offers = [
       "If your engine needs replacing, start by telling us about the vehicle. We’ll use those details to prepare your quote.",
     href: "/used-engines",
     icon: FiTool,
-    image: "/used-engines-workshop.jpg",
+    image: "/engines.jpeg",
     imageAlt: "Replacement engine in a workshop",
   },
   {
@@ -33,7 +35,7 @@ const offers = [
       "Transmission options can vary from one vehicle to the next. A written quote helps you review the details before you move forward.",
     href: "/used-transmissions",
     icon: FiSearch,
-    image: "/used-transmissions-workshop.jpg",
+    image: "/transmissions.jpeg",
     imageAlt: "Vehicle transmission in a workshop",
   },
 ];
@@ -105,6 +107,7 @@ const buyingGuides = [
 
 export default function QuoteFocusedHome() {
   const { openModal } = useQuoteModal();
+  const { eyebrow, title, description, features } = whyChooseUsData;
 
   return (
     <>
@@ -145,20 +148,28 @@ export default function QuoteFocusedHome() {
                 [FiTruck, "Check delivery details"],
               ].map(([Icon, text]) => {
                 const TrustIcon = Icon as typeof FiCheckCircle;
+
                 return (
                   <div
                     key={text as string}
-                    className="flex items-center gap-2 text-sm font-medium text-slate-700"
+                    className="inline-flex w-fit items-center justify-self-start gap-1.5 whitespace-nowrap rounded-full border border-green-600 bg-white px-3.5 py-1.5 font-['Inter'] text-xs font-semibold text-green-600 transition-all duration-300 hover:bg-green-50 sm:text-sm"
                   >
                     <TrustIcon
                       aria-hidden
                       className="size-5 shrink-0 text-green-600"
                     />
-                    {text as string}
+                    <span>{text as string}</span>
                   </div>
                 );
               })}
             </div>
+
+            <div className="mt-6 flex flex-col items-start gap-2 lg:flex-row ">
+              <Button variant="primary" showIcon={false} onClick={openModal} className="lg:hidden">Get Your Free Quote</Button>
+              <Button variant="secondary" showIcon={false} onClick={openModal} className="hidden lg:block cursor-pointer mt-2 lg:mt-0">Call (855)-430-6250</Button>
+
+            </div>
+
             {/* <a
               href="#quote"
               className="mt-6 inline-flex min-h-12 items-center justify-center rounded-lg bg-emerald-700 px-5 font-['Barlow_Condensed'] text-lg font-bold uppercase tracking-wide text-white shadow-[0_5px_0_#065f46] transition hover:-translate-y-0.5 hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:hidden"
@@ -205,10 +216,11 @@ export default function QuoteFocusedHome() {
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {offers.map(
               ({ title, description, href, icon: Icon, image, imageAlt }) => (
-                <Link
+                <button
                   key={title}
-                  href={href}
-                  className="group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 transition duration-200 hover:-translate-y-1 hover:border-emerald-500 hover:bg-white hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600"
+                  type="button"
+                  onClick={openModal}
+                  className="group block w-full text-left overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 transition duration-200 hover:-translate-y-1 hover:border-emerald-500 hover:bg-white hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600 cursor-pointer"
                 >
                   <div className="relative h-72 overflow-hidden bg-green-600">
                     <Image
@@ -230,7 +242,7 @@ export default function QuoteFocusedHome() {
                     <p className="mt-3 max-w-md leading-7 text-slate-600">
                       {description}
                     </p>
-                    <span className="mt-7 inline-flex items-center gap-2 font-semibold text-green-700">
+                    <span className="mt-7 inline-flex items-center gap-2 font-semibold text-green-700" >
                       See how to request a quote{" "}
                       <FiArrowRight
                         aria-hidden
@@ -238,14 +250,68 @@ export default function QuoteFocusedHome() {
                       />
                     </span>
                   </div>
-                </Link>
+                </button>
               ),
             )}
           </div>
         </div>
       </section>
 
-      <section className="bg-emerald-50 px-5 py-16 sm:py-20">
+      <section className="w-full bg-[#E6F5E6] px-5 py-12 sm:py-14">
+        <div className="mx-auto flex w-full container flex-col items-center gap-7">
+          <div className="flex w-full flex-col items-center gap-1">
+            <span className="text-center text-base font-bold uppercase tracking-widest text-green-600 font-['Barlow_Condensed']">
+              {eyebrow}
+            </span>
+
+            <div className="flex w-full flex-col items-center gap-2">
+              <h2 className="text-center text-3xl font-extrabold uppercase leading-none tracking-wide text-black-600 font-['Barlow_Condensed'] sm:text-[36px]">
+                {title}
+              </h2>
+
+              <p className="w-full text-center text-base font-normal text-slate-600 font-['Inter']">
+                {description}
+              </p>
+            </div>
+          </div>
+
+          <div className="grid w-full grid-cols-1 items-stretch gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature) => {
+              const Icon = feature.icon;
+
+              return (
+                <div
+                  key={feature.title}
+                  className="group flex h-full flex-col justify-between rounded-md bg-white p-4 border border-slate-200/90 transition-all duration-300 hover:border-green-600/40 hover:shadow-[0px_10px_20px_rgba(0,153,0,0.10)] hover:-translate-y-1"
+                >
+                  <div className="flex flex-col items-start gap-3">
+                    <div className="flex items-center gap-2">
+                      <div className="flex size-8 shrink-0 items-center justify-center rounded-md border border-green-600/20 bg-green-600/10 transition-all duration-300 group-hover:border-green-600 group-hover:bg-green-600">
+                        <Icon className="size-4 text-green-600 stroke-[2] transition-colors duration-300 group-hover:text-white" />
+                      </div>
+
+                      <h3 className="text-lg font-bold uppercase tracking-wide text-gray-900 font-['Barlow_Condensed'] transition-colors duration-200 group-hover:text-green-600">
+                        {feature.title}
+                      </h3>
+                    </div>
+
+                    {/* <div className="flex w-full flex-col items-start gap-2">
+                      <h3 className="w-full text-lg font-bold uppercase tracking-wide text-gray-900 font-['Barlow_Condensed'] transition-colors duration-200 group-hover:text-green-600">
+                       {feature.title}
+                      </h3> 
+                      <p className="w-full text-[12px] font-normal leading-5 text-slate-600 font-['Inter']">
+                        {feature.description}
+                      </p>
+                    </div> */}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="bg-emerald-50 px-5 py-16 sm:py-20">
         <div className="container mx-auto grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.16em] text-emerald-700">
@@ -271,7 +337,7 @@ export default function QuoteFocusedHome() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-green-600 px-5 py-16 text-white sm:py-20">
         <div className="container mx-auto grid gap-10 lg:grid-cols-2 lg:gap-20">

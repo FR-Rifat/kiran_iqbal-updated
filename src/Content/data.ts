@@ -118,7 +118,7 @@ export const HowitWork2 = {
 
 export const whyChooseUsData = {
   eyebrow: "Why Buyers Choose Us",
-  title: "Fewer Headaches. Better Parts.",
+  title: "Easy Buying. Better Parts.",
   description: "The details that matter before you purchase a replacement part.",
   features: [
     {

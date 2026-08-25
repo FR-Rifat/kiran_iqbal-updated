@@ -19,13 +19,13 @@ export const trustBarItems = [
     icon: FiShield,
   },
   {
-    title: "Free Shipping",
+    title: "Home delivery",
     subtitle: "Nationwide delivery",
     icon: FiTruck,
   },
   {
-    title: "3-Year Warranty",
-    subtitle: "Long-term protection",
+    title: "3-Year Limited Warranty",
+    subtitle: "Written terms apply",
     icon: FiCheckCircle,
   },
   {
@@ -43,7 +43,7 @@ export const howItWorksData = {
   steps: [
     {
       number: "01",
-      title: "Get Your Quote",
+      title: "Tell Us What You Need",
       description:
         "Share your vehicle year, make, model, VIN, and the part you need so our team can locate the right match.",
     },
@@ -70,7 +70,7 @@ export const howItWorksData2 = {
   steps: [
     {
       number: "01",
-      title: "GET YOUR QUOTE",
+      title: "SUBMIT VEHICLE DETAILS",
       description:
         "Share the year, make, model, VIN, and transmission type so we can locate the right match.",
     },
@@ -78,7 +78,7 @@ export const howItWorksData2 = {
       number: "02",
       title: "CONFIRM & PAY",
       description:
-        "We confirm your A-grade transmission, promotional price, free shipping, and 3-year warranty.",
+        "We confirm your A-grade transmission, promotional price, delivery, and 3-year limited warranty details.",
     },
     {
       number: "03",
@@ -142,8 +142,8 @@ export const whyChooseUsData = {
       icon: FiTruck,
     },
     {
-      title: "3-Year Warranty",
-      description: "Buy with confidence knowing your quality replacement part is backed by long-term warranty protection.",
+      title: "3-Year Limited Warranty",
+      description: "Eligible replacement parts include long-term limited warranty protection, subject to the written warranty terms.",
       icon: FiCreditCard,
     },
     {
@@ -169,7 +169,7 @@ export const paymentOptionsData = {
     },
     {
       title: "Free Nationwide Shipping",
-      description: "Enjoy free shipping and dependable delivery for your replacement engine or transmission.",
+      description: "Enjoy Home delivery and dependable delivery for your replacement engine or transmission.",
     },
   ],
 };
@@ -197,7 +197,7 @@ export const faqData = {
     {
       question: "What Does The Warranty Cover?",
       answer:
-        "Our used engines and transmissions are backed by a 3-year warranty. Your warranty documents explain the coverage and simple claim process.",
+        "Eligible used engines and transmissions include a 3-year limited parts warranty. Coverage, installation requirements, exclusions, and claim steps are explained in your written warranty documents.",
     },
     {
       question: "How Do I Know It Will Fit My Vehicle?",
@@ -205,9 +205,9 @@ export const faqData = {
         "Provide your vehicle year, make, model, engine or transmission details, and VIN. Our team uses this information to identify and review the correct configuration.",
     },
     {
-      question: "What Will My Quote Include?",
+      question: "What Happens After I Submit My Vehicle?",
       answer:
-        "Your quote includes the available part details, price, shipping information, applicable charges, warranty information, and the next steps for ordering.",
+        "A parts specialist reviews your vehicle information, checks available engine or transmission options, and contacts you with part, price, shipping, warranty, and ordering details.",
     },
     {
       question: "Can You Ship To My Mechanic's Shop?",
@@ -219,7 +219,7 @@ export const faqData = {
 
 export const footerData = {
   description: "A&R Auto Parts is an online source for quality used engines and transmissions, helping customers find replacement powertrain parts for vehicles nationwide.",
-  hours: "Request a quote online or contact our parts specialists for assistance.",
+  hours: "Submit your vehicle details online or contact our parts specialists for assistance.",
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -250,7 +250,7 @@ export const aboutData = {
   },
   description:
     "A&R Auto Parts is a team of used-parts specialists helping customers find quality replacement engines and transmissions. We focus on dependable inventory, honest service, competitive pricing, and a simple buying experience.",
-  badges: ["A-grade quality", "Free nationwide shipping", "3-year warranty"],
+  badges: ["A-grade quality", "Free nationwide shipping", "3-year limited warranty"],
   rating: { stars: 0, text: "Quality parts and dedicated support from search to delivery." },
 };
 
@@ -261,13 +261,13 @@ export const trustBarData = [
     icon: "warranty",
   },
   {
-    title: "FREE SHIPPING",
+    title: "Home delivery",
     subtitle: "Nationwide delivery",
     icon: "shipping",
   },
   {
-    title: "3-YEAR WARRANTY",
-    subtitle: "Long-term protection",
+    title: "3-YEAR LIMITED WARRANTY",
+    subtitle: "Written terms apply",
     icon: "tested",
   },
   {
@@ -295,7 +295,7 @@ export const WHOWEARE = {
     {
       number: "03",
       title: "DELIVERY & PROTECTION",
-      description: "Enjoy free nationwide shipping and the confidence of a 3-year warranty.",
+      description: "Enjoy nationwide delivery and eligible 3-year limited warranty protection.",
     },
   ],
 };
@@ -308,7 +308,7 @@ export const HowitWork1 = {
   steps: [
     {
       number: "01",
-      title: "GET YOUR QUOTE",
+      title: "SUBMIT VEHICLE DETAILS",
       description:
         "Share the year, make, model, engine details, and VIN so we can locate the right match.",
     },
@@ -316,7 +316,7 @@ export const HowitWork1 = {
       number: "02",
       title: "CONFIRM & PAY",
       description:
-        "We confirm your A-grade engine, promotional price, free shipping, and 3-year warranty.",
+        "We confirm your A-grade engine, promotional price, delivery, and 3-year limited warranty details.",
     },
     {
       number: "03",
@@ -329,8 +329,8 @@ export const HowitWork1 = {
 
 export const standards = [
   {
-    title: "3-YEAR WARRANTY",
-    description: "Long-term warranty protection gives you added confidence in your replacement part.",
+    title: "3-YEAR LIMITED WARRANTY",
+    description: "Eligible replacement parts include long-term protection subject to the written warranty terms.",
     icon: FiShield,
   },
   {
@@ -344,7 +344,7 @@ export const standards = [
     icon: FiTarget,
   },
   {
-    title: "FREE SHIPPING",
+    title: "Home delivery",
     description: "Convenient nationwide delivery saves you time, travel, and junkyard hassle.",
     icon: FiTruck,
   },
@@ -354,8 +354,8 @@ export const standards = [
     icon: FiCreditCard,
   },
   {
-    title: "REAL U.S. SUPPORT",
-    description: "Talk directly with knowledgeable specialists.",
+    title: "EXPERIENCED PARTS SPECIALISTS",
+    description: "Talk directly with knowledgeable specialists throughout your purchase.",
     icon: FiHeadphones,
   },
 ];

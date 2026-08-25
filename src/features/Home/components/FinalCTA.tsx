@@ -18,7 +18,7 @@ const FinalCTA = () => {
             </h2>
 
             <p className="text-base font-normal leading-6 text-slate-200 font-['Inter']">
-              Save 20% and get free nationwide shipping on an A-grade used engine or transmission backed by a 3-year warranty.
+              Save 20% on eligible A-grade used engines and transmissions, with nationwide shipping and 3-year limited warranty options.
             </p>
           </div>
 

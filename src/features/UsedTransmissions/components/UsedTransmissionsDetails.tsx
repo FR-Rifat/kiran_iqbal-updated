@@ -46,8 +46,8 @@ const UsedTransmissionsDetails = () => {
               {[
                 "A-grade tested inventory",
                 "Expert VIN matching",
-                "Free nationwide shipping",
-                "3-year warranty protection",
+                "Nationwide delivery",
+                "3-year limited warranty protection",
               ].map((item) => (
                 <div
                   key={item}

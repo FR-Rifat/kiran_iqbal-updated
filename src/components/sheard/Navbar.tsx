@@ -33,7 +33,7 @@ const Navbar = () => {
                 <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
 
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
-                  Free Shipping • 20% Off Engines & Transmissions
+                  Home delivery • 20% Off Engines & Transmissions
                 </span>
               </div>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
 
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
-                  A-Grade Quality • 3-Year Warranty • Extra $100 Payment Discount
+                  A-Grade Quality • 3-Year Limited Warranty • Extra $100 Off with Cash App or Zelle
                 </span>
               </div>
             </div>

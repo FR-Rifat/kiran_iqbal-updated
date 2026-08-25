@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     const password = process.env.CRM_AUTH_PASSWORD;
     if (!username || !password) {
       console.error("CRM credentials are not configured.");
-      return NextResponse.json({ message: "Quote requests are temporarily unavailable. Please try again later." }, { status: 503 });
+      return NextResponse.json({ message: "Part requests are temporarily unavailable. Please try again later." }, { status: 503 });
     }
 
     const lead = new URLSearchParams(
@@ -46,7 +46,7 @@ export async function POST(request: Request) {
       throw new Error("Lead delivery failed");
     }
 
-    return NextResponse.json({ message: "Thanks. Your quote request was sent successfully." });
+    return NextResponse.json({ message: "Thanks. Your part request was sent successfully." });
   } catch (error) {
     console.error("Quote submission failed.", error);
     return NextResponse.json({ message: "We could not send your request. Please try again." }, { status: 500 });

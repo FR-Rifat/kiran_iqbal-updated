@@ -30,7 +30,7 @@ const ContactContent = () => {
               {business.phone}
             </a>
           </ContactCard>}
-          {!business.phone && !business.email && <ContactCard icon={FiPhone} title="Contact details"><span>Our contact details are being verified. You can still submit a quote request.</span></ContactCard>}
+          {!business.phone && !business.email && <ContactCard icon={FiPhone} title="Contact details"><span>Our contact details are being verified. You can still submit your vehicle and part request.</span></ContactCard>}
         </aside>
       </div>
     </section>

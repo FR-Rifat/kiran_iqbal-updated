@@ -25,7 +25,7 @@ const WarrantyBanner = () => {
           <div className="relative flex size-[110px] shrink-0 flex-col items-center justify-center rounded-full bg-white p-2 shadow-[0_0_0_8px_rgba(255,255,255,0.2)]">
             <span className="text-4xl font-extrabold text-green-600 font-['Barlow_Condensed']">✓</span>
             <span className="text-sm font-bold uppercase text-green-600 font-['Barlow_Condensed']  text-center">
-              3-Year Warranty
+              3-Year Limited Warranty
             </span>
           </div>
 
@@ -36,7 +36,7 @@ const WarrantyBanner = () => {
             </h2>
 
             <p className="text-sm sm:text-base font-normal text-white/90 font-['Inter']">
-              Get back on the road with confidence. Our A-grade used engines and transmissions are backed by a 3-year warranty and dedicated customer support.
+              Get back on the road with confidence. Eligible A-grade used engines and transmissions include a 3-year limited warranty, subject to written terms.
             </p>
           </div>
         </div>

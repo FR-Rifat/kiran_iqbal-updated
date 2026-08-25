@@ -14,7 +14,7 @@ import WarrantyBanner from "@/features/Home/components/WarrantyBanner";
 import Brands from "@/features/Home/components/Brands";
 import FindParts from "@/features/Home/components/FindParts";
 
-export const metadata: Metadata = pageMetadata("Quality Used Engines & Transmissions", "Find A-grade used engines and transmissions with free nationwide shipping, 20% savings, a 3-year warranty, and expert support.");
+export const metadata: Metadata = pageMetadata("Quality Used Engines & Transmissions", "Find A-grade used engines and transmissions with nationwide delivery, promotional savings, eligible 3-year limited warranty protection, and expert support.");
 
 export default function Home() {
   return <main className="overflow-hidden">

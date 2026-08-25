@@ -5,7 +5,7 @@ const offers = [
   {
     title: "Used Engines",
     description:
-      "We have a vast inventory of premium, low-mileage used engines and transmissions in stock. Skip the hassle of searching. We carry a wide range of gasoline and diesel engines from top brands like Ford, GMC, Honda, Chevy, Toyota, Dodge, Chrysler, and more.",
+      "Skip the hassle of searching. We source quality gasoline and diesel engine options for vehicles from Ford, GMC, Honda, Chevy, Toyota, Dodge, Chrysler, and more.",
     href: "/used-engines",
     image: "/engine-for-sale.webp",
     imageAlt: "Quality used engine for sale",

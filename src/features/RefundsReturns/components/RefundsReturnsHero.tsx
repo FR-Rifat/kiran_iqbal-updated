@@ -16,7 +16,7 @@ const RefundsReturnsHero = () => (
       <span className="text-green-600">Refunds &amp; Returns Policy</span>
     </h1>
     <p className="mt-5 text-base text-slate-600">
-      6-Month Peace-of-Mind Warranty – Easy Returns &amp; Replacements
+      Clear Return Guidance &amp; Written Warranty Terms
     </p>
     <ul className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-bold text-gray-900">
       {highlights.map((item) => (

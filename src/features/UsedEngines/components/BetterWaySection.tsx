@@ -53,7 +53,7 @@ const BetterWaySection = () => {
 
               <p>
                 We match your vehicle details with an A-grade engine, arrange
-                free nationwide shipping, and back your purchase with a 3-year warranty.
+                nationwide delivery, and eligible 3-year limited warranty protection.
               </p>
             </div>
 

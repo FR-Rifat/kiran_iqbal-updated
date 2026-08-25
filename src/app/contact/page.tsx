@@ -6,7 +6,7 @@ import { business } from "@/lib/business";
 import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = pageMetadata("Contact A&R Auto Parts", "Request a quote for a replacement used engine or transmission from A&R Auto Parts.", "/contact");
+export const metadata: Metadata = pageMetadata("Contact A&R Auto Parts", "Submit your vehicle details and find a replacement used engine or transmission from A&R Auto Parts.", "/contact");
 
 export default function ContactPage() {
   return (

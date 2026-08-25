@@ -178,7 +178,7 @@ export default function QuoteFocusedHome() {
             </a> */}
             <div className="relative mt-8 w-full overflow-hidden rounded-2xl border border-emerald-900/10 bg-white shadow-lg sm:mt-10">
               <Image
-                src="/used-engines-workshop.jpg"
+                src="/used-.jpg"
                 alt="Replacement engine in an auto workshop"
                 width={900}
                 height={520}

@@ -9,8 +9,8 @@ const Hero = () => {
   const trustItems = [
     { label: "A-grade quality", icon: FiShield },
     { label: "Correct part matching", icon: FiCheckCircle },
-    { label: "Free shipping", icon: FiTruck },
-    { label: "3-year warranty", icon: FiCreditCard },
+    { label: "Home delivery", icon: FiTruck },
+    { label: "3-year limited warranty", icon: FiCreditCard },
 
   ];
 
@@ -31,13 +31,13 @@ const Hero = () => {
           </div>
 
           <h1 className="max-w-147.5 text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-gray-900 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
-            High-Quality, Low-Mileage Used{" "}
+            Quality Used{" "}
             <span className="text-green-600/80">Engines</span> &{" "}
             <span className="text-green-600/80">Transmissions</span>
           </h1>
 
           <p className="mt-5 max-w-147.5 text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
-            Skip the junkyard hassle. Get the right A-grade replacement part with free nationwide shipping, a 3-year warranty, and expert support from search to delivery.
+            Skip the junkyard hassle. Tell us about your vehicle and our specialists will help locate the right A-grade replacement part with nationwide shipping and eligible 3-year limited warranty protection.
           </p>
 
           <div className="mt-5 flex max-w-155 flex-wrap items-center gap-2">
@@ -58,8 +58,8 @@ const Hero = () => {
             })}
           </div>
                       <div className="mt-6 flex flex-col items-start gap-2 lg:flex-row ">
-              <Button variant="primary" showIcon={false} onClick={openModal} className="lg:hidden">Get Your Free Quote</Button>
-              <Button variant="secondary" showIcon={false} onClick={openModal} className="hidden lg:block cursor-pointer mt-2 lg:mt-0">Call (855)-430-6250</Button>
+              <Button variant="primary" showIcon={false} onClick={openModal} className="lg:hidden">Find My Part</Button>
+              <Button variant="secondary" showIcon={false} onClick={openModal} className="hidden lg:block cursor-pointer mt-2 lg:mt-0">Call 855-430-6250</Button>
 
             </div>
 

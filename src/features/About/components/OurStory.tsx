@@ -34,7 +34,7 @@ const OurStory = () => {
             </p>
 
             <p className="font-['Inter'] text-base font-normal leading-5 text-gray-600">
-              Our goal is simple: remove the junkyard hassle with A-grade quality, competitive savings, free shipping, a 3-year warranty, and dependable support.
+              Our goal is simple: remove the junkyard hassle with A-grade quality, competitive savings, home delivery, eligible 3-year limited warranty protection, and dependable support.
             </p>
           </div>
 

@@ -313,7 +313,7 @@ export default function QuoteForm({
           {submitState === "loading"
             ? "Sending Request…"
             : isSubmitted
-              ? "Quote Request Sent"
+              ? "Part Request Sent"
               : "Find My Part"}
         </Button>
       </div>

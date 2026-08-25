@@ -6,8 +6,8 @@ import QuoteForm from "@/components/sheard/QuoteForm";
 
 const proofPoints = [
   { label: "A-grade quality", icon: FiShield },
-  { label: "Free shipping", icon: FiCheckCircle },
-  { label: "3-year warranty", icon: FiTarget },
+  { label: "Home delivery", icon: FiCheckCircle },
+  { label: "3-year limited warranty", icon: FiTarget },
   { label: "20% off", icon: FiShield },
 ];
 
@@ -38,7 +38,7 @@ const UsedEnginesHero = () => {
 
           {/* Description */}
           <p className="max-w-[620px] font-['Inter'] text-base leading-7 text-gray-600 sm:text-lg">
-            Skip endless listings and junkyard calls. Our specialists make it easy to find an A-grade, low-mileage replacement engine with free shipping and a 3-year warranty.
+            Skip endless listings and junkyard calls. Our specialists make it easy to find an A-grade replacement engine with home delivery and eligible 3-year limited warranty protection.
           </p>
 
           {/* Proof Points */}

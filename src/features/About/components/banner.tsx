@@ -42,7 +42,7 @@ const AboutHero = () => {
 
         <div className="flex flex-wrap items-center justify-center gap-3 pt-1">
           <Button variant="primary" showIcon={false} onClick={openModal}>
-            Get My Free Quote
+            Find My Part
           </Button>
 
           {business.phone && <Button variant="secondary" href={`tel:${business.phone}`}>Call A&R Auto Parts</Button>}

@@ -5,8 +5,8 @@ import { FiCheckCircle, FiShield, FiTarget } from "react-icons/fi";
 
 const proofPoints = [
   { label: "A-grade quality", icon: FiShield },
-  { label: "Free shipping", icon: FiCheckCircle },
-  { label: "3-year warranty", icon: FiTarget },
+  { label: "Home delivery", icon: FiCheckCircle },
+  { label: "3-year limited warranty", icon: FiTarget },
 ];
 
 const UsedTransmissionsHero = () => {
@@ -26,7 +26,7 @@ const UsedTransmissionsHero = () => {
             Built To Keep You Moving.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-600">
-            Avoid the junkyard search. Our specialists help you find the right automatic, manual, or CVT transmission with A-grade quality, free shipping, and a 3-year warranty.
+            Avoid the junkyard search. Our specialists help you find the right automatic, manual, or CVT transmission with A-grade quality, home delivery, and eligible 3-year limited warranty protection.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {proofPoints.map(({ label, icon: Icon }) => (

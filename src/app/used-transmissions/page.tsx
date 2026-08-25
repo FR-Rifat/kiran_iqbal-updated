@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/components/seo/JsonLd";
 import { faqData } from "@/Content/data";
 
-export const metadata: Metadata = pageMetadata("Quality Used Transmissions For Sale", "Find an A-grade used automatic, manual, or CVT transmission with free nationwide shipping, 20% savings, and a 3-year warranty.", "/used-transmissions");
+export const metadata: Metadata = pageMetadata("Quality Used Transmissions For Sale", "Find an A-grade used automatic, manual, or CVT transmission with nationwide delivery, promotional savings, and eligible 3-year limited warranty protection.", "/used-transmissions");
 
 export default function UsedTransmissionsPage() {
   return (

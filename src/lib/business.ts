@@ -2,14 +2,14 @@ export const business = {
   name: "A&R Auto Parts",
   description:
     "A&R Auto Parts supplies quality used engines and transmissions for cars, trucks, and SUVs across the United States.",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.yardsandparts.us",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kiran-iqbal.vercel.app",
   serviceArea: "United States",
   // Add verified values in the deployment environment before enabling ads.
   phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE,
   email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL,
   address: process.env.NEXT_PUBLIC_BUSINESS_ADDRESS,
   socialConsentDisclosure:
-    "By submitting, you agree that A&R Auto Parts may contact you about this quote request using the contact details you provide. Consent is not required to buy. Message and data rates may apply. Reply STOP to opt out of texts.",
+    "By submitting, you agree that A&R Auto Parts may contact you about this part request using the contact details you provide. Consent is not required to buy. Message and data rates may apply. Reply STOP to opt out of texts.",
 } as const;
 
 export const approvedClaims = {

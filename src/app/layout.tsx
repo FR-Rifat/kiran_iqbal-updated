@@ -26,7 +26,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   title: {
-    default: "Used Engines & Transmissions Quotes | A&R Auto Parts",
+    default: "Quality Used Engines & Transmissions | A&R Auto Parts",
     template: "%s | A&R Auto Parts",
   },
   description: business.description,

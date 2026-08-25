@@ -11,8 +11,8 @@ const HowItWorks = () => {
             {eyebrow}
           </span>
 
-          <div className="flex w-full flex-col items-center justify-center gap-2">
-            <h2 className="text-center text-5xl font-extrabold uppercase tracking-wider text-gray-900 font-['Barlow_Condensed']">
+          <div className="text-center text-3xl font-extrabold uppercase leading-none tracking-wide text-black-600 font-['Barlow_Condensed'] sm:text-[36px]">
+            <h2 className="">
               {title}
             </h2>
 

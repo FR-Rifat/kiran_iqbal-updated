@@ -39,7 +39,7 @@ export const howItWorksData = {
   eyebrow: "Easy & Secure",
   title: "Get The Right Part In 3 Easy Steps",
   description:
-    "We make it simple to find and order the right used engine or transmission for your vehicle.",
+    "",
   steps: [
     {
       number: "01",
@@ -119,7 +119,7 @@ export const HowitWork2 = {
 export const whyChooseUsData = {
   eyebrow: "Why Choose Us",
   title: "Quality You Can Trust",
-  description: "Reliable used powertrain parts, a large selection, and helpful support from quote to delivery.",
+  description: "",
   features: [
     {
       title: "A-Grade Quality",

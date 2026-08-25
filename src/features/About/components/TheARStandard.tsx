@@ -19,8 +19,8 @@ const TheARStandard = () => {
           </h2>
 
           <p className="max-w-4xl font-['Inter'] text-base font-normal leading-5 text-gray-600">
-            Our mission is to make the process of finding a replacement engine
-            or transmission simple, transparent, and reliable.
+            Everything we do is designed to make finding a quality replacement
+            engine or transmission easier, faster, and more convenient.
           </p>
         </div>
 

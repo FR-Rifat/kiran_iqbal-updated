@@ -8,8 +8,8 @@ const ContactHero = () => (
       <span className="text-green-600/80">Specialists</span>
     </h1>
     <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-600">
-      Need immediate assistance with fitment, quote verification, or shipping
-      details? Our team is standing by.
+      Need help finding the right used engine or transmission? Share your vehicle
+      details and our specialists will make the process fast, simple, and stress-free.
     </p>
   </section>
 );

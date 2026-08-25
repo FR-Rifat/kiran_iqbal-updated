@@ -5,10 +5,10 @@ import { FiCheckCircle, FiShield, FiTarget } from "react-icons/fi";
 import QuoteForm from "@/components/sheard/QuoteForm";
 
 const proofPoints = [
-  { label: "Written terms", icon: FiShield },
-  { label: "Part information", icon: FiCheckCircle },
-  { label: "Fitment review", icon: FiTarget },
-  { label: "Delivery details", icon: FiShield },
+  { label: "A-grade quality", icon: FiShield },
+  { label: "Free shipping", icon: FiCheckCircle },
+  { label: "3-year warranty", icon: FiTarget },
+  { label: "20% off", icon: FiShield },
 ];
 
 const UsedEnginesHero = () => {
@@ -17,7 +17,7 @@ const UsedEnginesHero = () => {
       <div className="mx-auto flex container flex-col gap-10 px-5 py-12 sm:py-14 lg:flex-row lg:items-center lg:gap-12 lg:py-16">
         {/* Quote Form */}
         <div className="order-2 w-full lg:order-1 lg:flex-1">
-          <QuoteForm title="GET YOUR QUOTE" />
+          <QuoteForm title="FIND YOUR ENGINE" />
         </div>
 
         {/* Hero Content */}
@@ -38,7 +38,7 @@ const UsedEnginesHero = () => {
 
           {/* Description */}
           <p className="max-w-[620px] font-['Inter'] text-base leading-7 text-gray-600 sm:text-lg">
-            Request a used engine quote for your car, truck, or SUV. Provide your vehicle details so we can review the requested configuration and share the available part information in writing.
+            Skip endless listings and junkyard calls. Our specialists make it easy to find an A-grade, low-mileage replacement engine with free shipping and a 3-year warranty.
           </p>
 
           {/* Proof Points */}

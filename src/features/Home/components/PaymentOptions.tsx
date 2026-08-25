@@ -24,7 +24,7 @@ const PaymentOptions = () => {
 
         <div className="grid w-full grid-cols-1 items-stretch gap-3 md:grid-cols-3">
           {options.map((option, idx) => {
-            const badges = ["Installments", "Flexible Terms", "Zero Risk Reserve"];
+            const badges = ["Limited-Time Offer", "Extra Savings", "Buy With Confidence"];
 
             return (
               <div

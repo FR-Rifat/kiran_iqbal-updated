@@ -52,8 +52,8 @@ const BetterWaySection = () => {
               </p>
 
               <p>
-                We focus on vehicle compatibility, engine details, quality
-                checks, and dependable delivery.
+                We match your vehicle details with an A-grade engine, arrange
+                free nationwide shipping, and back your purchase with a 3-year warranty.
               </p>
             </div>
 
@@ -65,7 +65,7 @@ const BetterWaySection = () => {
                 onClick={openModal}
                 className="rounded-[10px]! border-green-600! bg-green-600! px-6! py-3.5! font-['Barlow_Condensed']! text-xl! font-bold! uppercase! tracking-wide! text-white! shadow-[0px_6px_0px_0px_rgba(6,120,6,1)]! hover:border-green-700! hover:bg-green-700!"
               >
-                Get My Free Quote
+                Find My Engine
               </Button>
             </div>
           </div>

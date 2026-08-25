@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/components/seo/JsonLd";
 import { faqData } from "@/Content/data";
 
-export const metadata: Metadata = pageMetadata("Used Engine Quotes", "Request a used engine quote and review vehicle fitment, part information, delivery options, pricing, and warranty terms before purchase.", "/used-engines");
+export const metadata: Metadata = pageMetadata("Quality Used Engines For Sale", "Find an A-grade, low-mileage used engine with expert part matching, free nationwide shipping, 20% savings, and a 3-year warranty.", "/used-engines");
 
 export default function UsedEnginesPage() {
   return (

@@ -11,7 +11,7 @@ import React from 'react'
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = pageMetadata("About A&R Auto Parts", "Learn how A&R Auto Parts handles replacement engine and transmission quote requests and part information.", "/about");
+export const metadata: Metadata = pageMetadata("About A&R Auto Parts", "Meet the used-parts specialists making it easier to find A-grade replacement engines and transmissions with nationwide service and dependable support.", "/about");
 
 export default function page() {
   return (

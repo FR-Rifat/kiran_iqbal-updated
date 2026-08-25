@@ -13,7 +13,7 @@ const WarrantyBanner = () => {
     <section className="relative w-full overflow-hidden ">
       <Image
         src={sectionBg}
-        alt="Review written warranty terms for your quoted part"
+        alt="Warranty options for used engines and transmissions"
         fill
         priority
         className="object-cover object-center"
@@ -25,18 +25,18 @@ const WarrantyBanner = () => {
           <div className="relative flex size-[110px] shrink-0 flex-col items-center justify-center rounded-full bg-white p-2 shadow-[0_0_0_8px_rgba(255,255,255,0.2)]">
             <span className="text-4xl font-extrabold text-green-600 font-['Barlow_Condensed']">✓</span>
             <span className="text-sm font-bold uppercase text-green-600 font-['Barlow_Condensed']  text-center">
-              Written Terms
+              3-Year Warranty
             </span>
           </div>
 
           {/* Banner Details */}
           <div className="flex flex-1 flex-col gap-1.5 w-full">
             <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-extrabold uppercase tracking-wide text-white font-['Barlow_Condensed']">
-              Review Warranty Terms Before Purchase
+              Quality Parts. Long-Term Protection.
             </h2>
 
             <p className="text-sm sm:text-base font-normal text-white/90 font-['Inter']">
-              Warranty availability, duration, coverage, exclusions, and claim steps vary by part. Review the written documentation provided with your quote before purchase.
+              Get back on the road with confidence. Our A-grade used engines and transmissions are backed by a 3-year warranty and dedicated customer support.
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ const WarrantyBanner = () => {
         {/* Call to Action */}
         <div className="shrink-0 mt-2 md:mt-0">
           <Button variant="secondary" showIcon={false} onClick={openModal}>
-            Get My Quote
+            Find My Part
           </Button>
         </div>
       </div>

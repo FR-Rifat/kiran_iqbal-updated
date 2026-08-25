@@ -2,15 +2,19 @@
 
 import { FiShield, FiTruck, FiCheckCircle, FiCreditCard } from "react-icons/fi";
 import QuoteForm from "@/components/sheard/QuoteForm";
-import { approvedClaims } from "@/lib/business";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
+import Button from "@/components/ui/button";
 
 const Hero = () => {
   const trustItems = [
-    { label: "Written quote", icon: FiShield },
-    { label: "Fitment review", icon: FiCheckCircle },
-    { label: "Delivery details", icon: FiTruck },
-    { label: "Full-price review", icon: FiCreditCard },
+    { label: "A-grade quality", icon: FiShield },
+    { label: "Correct part matching", icon: FiCheckCircle },
+    { label: "Free shipping", icon: FiTruck },
+    { label: "3-year warranty", icon: FiCreditCard },
+
   ];
+
+    const { openModal } = useQuoteModal();
 
   return (
     <section className="w-full bg-[#E6F5E6]">
@@ -22,18 +26,18 @@ const Hero = () => {
         <div className="order-1 flex min-w-0 flex-col items-start pt-1 lg:order-2 lg:pt-5">
           <div className="mb-3 rounded-full bg-white px-3 py-1 outline -outline-offset-1 outline-green-600">
             <span className="text-[11px] font-semibold uppercase leading-5 tracking-[.08em] text-green-600 font-['Barlow_Condensed']">
-              ● Request a replacement-part quote
+              ● 20% off engines & transmissions
             </span>
           </div>
 
           <h1 className="max-w-147.5 text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-gray-900 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
-            Used <span className="text-green-600/80">Engines</span> &{" "}
-            <span className="text-green-600/80">Transmissions</span> <br />
-            Quote Request
+            High-Quality, Low-Mileage Used{" "}
+            <span className="text-green-600/80">Engines</span> &{" "}
+            <span className="text-green-600/80">Transmissions</span>
           </h1>
 
           <p className="mt-5 max-w-147.5 text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
-            Send your vehicle information to start a quote request. {approvedClaims.fitment} {approvedClaims.pricing}
+            Skip the junkyard hassle. Get the right A-grade replacement part with free nationwide shipping, a 3-year warranty, and expert support from search to delivery.
           </p>
 
           <div className="mt-5 flex max-w-155 flex-wrap items-center gap-2">
@@ -53,6 +57,11 @@ const Hero = () => {
               );
             })}
           </div>
+                      <div className="mt-6 flex flex-col items-start gap-2 lg:flex-row ">
+              <Button variant="primary" showIcon={false} onClick={openModal} className="lg:hidden">Get Your Free Quote</Button>
+              <Button variant="secondary" showIcon={false} onClick={openModal} className="hidden lg:block cursor-pointer mt-2 lg:mt-0">Call (855)-430-6250</Button>
+
+            </div>
 
         </div>
       </div>

@@ -36,18 +36,18 @@ const UsedTransmissionsDetails = () => {
             </h2>
 
             <p className="mt-5 max-w-xl font-['Inter'] text-base font-normal leading-7 text-gray-600">
-              Finding the right transmission shouldn’t mean taking a chance. We
-              help identify the correct unit for your vehicle, check
-              availability, and confirm fitment before it ships.
+              Skip the endless listings and junkyard calls. Our specialists
+              locate the right A-grade transmission for your vehicle and make
+              ordering, warranty protection, and nationwide delivery simple.
             </p>
 
             {/* Feature Cards */}
             <div className="mt-7 grid w-full gap-3 sm:grid-cols-2">
               {[
-                "Tested & inspected inventory",
-                "VIN-matched fitment",
-                "Nationwide freight delivery",
-                "Warranty in writing",
+                "A-grade tested inventory",
+                "Expert VIN matching",
+                "Free nationwide shipping",
+                "3-year warranty protection",
               ].map((item) => (
                 <div
                   key={item}
@@ -75,7 +75,7 @@ const UsedTransmissionsDetails = () => {
                 onClick={openModal}
                 className="!rounded-[10px] !border-green-600 !bg-green-600 !px-6 !py-3.5 !font-['Barlow_Condensed'] !text-xl !font-bold !uppercase !tracking-wide !text-white !shadow-[0px_6px_0px_0px_rgba(6,120,6,1)] hover:!border-green-700 hover:!bg-green-700"
               >
-                Get My Free Quote
+                Find My Transmission
               </Button>
             </div>
           </div>

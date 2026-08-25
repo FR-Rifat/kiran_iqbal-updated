@@ -2,7 +2,7 @@
 
 import Button from "@/components/ui/button";
 import { useQuoteModal } from "@/components/sheard/QuoteModal";
-import { approvedClaims, business } from "@/lib/business";
+import { business } from "@/lib/business";
 
 const FinalCTA = () => {
   const { openModal } = useQuoteModal();
@@ -14,11 +14,11 @@ const FinalCTA = () => {
         <div className="flex w-full flex-col items-center justify-center gap-7">
           <div className="flex w-full flex-col items-center justify-center gap-2 text-center">
             <h2 className="text-4xl font-extrabold uppercase leading-10 tracking-wide text-white font-['Barlow_Condensed']">
-              Request Your Part Quote
+              Ready To Find The Right Part?
             </h2>
 
             <p className="text-base font-normal leading-6 text-slate-200 font-['Inter']">
-              Tell us your vehicle details. {approvedClaims.availability}
+              Save 20% and get free nationwide shipping on an A-grade used engine or transmission backed by a 3-year warranty.
             </p>
           </div>
 
@@ -30,7 +30,7 @@ const FinalCTA = () => {
               className="bg-white shadow-[0px_6px_0px_0px_rgba(0,0,0,0.18)]"
             >
               <span className="text-green-600">
-                Get My Quote
+                Find My Part
               </span>
             </Button>
 

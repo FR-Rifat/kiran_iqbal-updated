@@ -7,7 +7,7 @@ import HowItWorks2 from "@/features/ShippingWarranty/components/HowitWork3";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = pageMetadata("Shipping & Warranty Information", "Review how delivery, freight inspection, and warranty terms are confirmed for an A&R Auto Parts quote.", "/shipping-warranty");
+export const metadata: Metadata = pageMetadata("Free Shipping & 3-Year Warranty", "Learn about free nationwide shipping and 3-year warranty protection for A&R Auto Parts used engines and transmissions.", "/shipping-warranty");
 
 export default function ShippingWarrantyPage() {
   return (

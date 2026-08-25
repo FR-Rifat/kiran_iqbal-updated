@@ -5,13 +5,27 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import { JsonLd, faqSchema } from "@/components/seo/JsonLd";
 import { faqData } from "@/Content/data";
+import Banner from "@/features/Home/components/Banner";
+import HowItWorks from "@/features/Home/components/HowItWorks";
+import WhyChooseUs from "@/features/Home/components/WhyChooseUs";
+import PaymentOptions from "@/features/Home/components/PaymentOptions";
+import TrustBar from "@/features/Home/components/FeatureBar";
+import WarrantyBanner from "@/features/Home/components/WarrantyBanner";
+import Brands from "@/features/Home/components/Brands";
 
-export const metadata: Metadata = pageMetadata("Used Engines & Transmissions Quotes", "Request a written quote for a replacement used engine or transmission. Review fitment, price, delivery, and warranty details before purchase.");
+export const metadata: Metadata = pageMetadata("Quality Used Engines & Transmissions", "Find A-grade used engines and transmissions with free nationwide shipping, 20% savings, a 3-year warranty, and expert support.");
 
 export default function Home() {
   return <main className="overflow-hidden">
     <JsonLd data={faqSchema(faqData.faqs.map(({ question, answer }) => ({ question, answer })))} />
-    <QuoteFocusedHome />
+    {/* <QuoteFocusedHome /> */}
+    <Banner />
+    <TrustBar />
+    <HowItWorks />
+    <WhyChooseUs />
+    <WarrantyBanner />
+    {/* <PaymentOptions /> */}
+    <Brands />
     <FAQ/>
     <FinalCTA/>
   </main>;

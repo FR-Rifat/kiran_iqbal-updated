@@ -1,7 +1,7 @@
 export const business = {
   name: "A&R Auto Parts",
   description:
-    "A&R Auto Parts helps U.S. customers request quotes for replacement used engines and transmissions.",
+    "A&R Auto Parts supplies quality used engines and transmissions for cars, trucks, and SUVs across the United States.",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.yardsandparts.us",
   serviceArea: "United States",
   // Add verified values in the deployment environment before enabling ads.

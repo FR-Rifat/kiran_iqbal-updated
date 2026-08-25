@@ -1,30 +1,20 @@
 "use client";
 
 import QuoteForm from "@/components/sheard/QuoteForm";
-import { FormEvent, useState } from "react";
 import { FiCheckCircle, FiShield, FiTarget } from "react-icons/fi";
 
 const proofPoints = [
-  { label: "Written terms", icon: FiShield },
-  { label: "Part information", icon: FiCheckCircle },
-  { label: "Fitment review", icon: FiTarget },
+  { label: "A-grade quality", icon: FiShield },
+  { label: "Free shipping", icon: FiCheckCircle },
+  { label: "3-year warranty", icon: FiTarget },
 ];
 
-const selectFields = ["Select Year", "Select Make", "Select Model", "Select Engine"];
-
 const UsedTransmissionsHero = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const submitQuote = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsSubmitted(true);
-  };
-
   return (
     <section className="overflow-hidden bg-[#E6F5E6]">
       <div className="container mx-auto grid gap-10 px-5 py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start lg:gap-12 lg:py-16">
         <div className="order-2 lg:order-1">
-          <QuoteForm />
+          <QuoteForm title="FIND YOUR TRANSMISSION" />
         </div>
 
         <div className="order-1 pt-2 lg:order-2 lg:pt-8">
@@ -36,7 +26,7 @@ const UsedTransmissionsHero = () => {
             Built To Keep You Moving.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-600">
-            Request a used transmission quote for your car, truck, or SUV. Vehicle details, VIN, and transmission information help us review the requested configuration before you purchase.
+            Avoid the junkyard search. Our specialists help you find the right automatic, manual, or CVT transmission with A-grade quality, free shipping, and a 3-year warranty.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {proofPoints.map(({ label, icon: Icon }) => (

@@ -90,17 +90,14 @@ const modelOptions = [
 ];
 
 const partOptions = [
-  "Used Engine",
-  "Used Transmission",
   "Engine",
   "Transmission",
-  "Other Part",
 ];
 
 export default function QuoteForm({
-  title = "Get Your Quote",
-  badge = "No Obligation",
-  description = "Tell us about your vehicle and we’ll review the information for your quote.",
+  title = "Find Your Part",
+  badge = "Fast & Easy",
+  description = "Tell us about your vehicle and our specialists will locate the right engine or transmission for you.",
   onSubmit,
   className = "",
 }: QuoteFormProps) {
@@ -303,7 +300,7 @@ export default function QuoteForm({
             ? "Sending Request…"
             : isSubmitted
               ? "Quote Request Sent"
-              : "Request My Quote"}
+              : "Find My Part"}
         </Button>
       </div>
 

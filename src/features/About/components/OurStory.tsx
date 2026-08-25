@@ -30,16 +30,16 @@ const OurStory = () => {
             </p>
 
             <p className="font-['Inter'] text-base font-normal leading-5 text-gray-600">
-              We work with trusted automotive parts suppliers to help customers find the right replacement for their vehicle.
+              We work with a nationwide network of trusted automotive suppliers to bring quality used powertrain parts directly to our customers.
             </p>
 
             <p className="font-['Inter'] text-base font-normal leading-5 text-gray-600">
-              Our goal is simple provide quality parts, fair pricing, clear communication, and dependable support from quote to delivery.
+              Our goal is simple: remove the junkyard hassle with A-grade quality, competitive savings, free shipping, a 3-year warranty, and dependable support.
             </p>
           </div>
 
           <Button variant="primary" className="mt-4" showIcon={false} onClick={openModal}>
-            Learn About Our Process
+            Find My Part
           </Button>
         </div>
       </div>

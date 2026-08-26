@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const brands = [
   { name: "Ford", logo: "/brands/ford.svg" },
@@ -22,6 +25,8 @@ const brands = [
 ];
 
 export default function Brands() {
+  const { openModalWithSelection } = useQuoteModal();
+
   return (
     <section className="bg-[#e6f5e6] py-16 sm:py-20">
         <div className="container mx-auto px-5 text-center">
@@ -34,9 +39,12 @@ export default function Brands() {
           </h2>
           <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {brands.map((brand) => (
-              <div
+              <button
+                type="button"
                 key={brand.name}
-                className="group flex min-h-28 cursor-default flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-5 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:border-green-500/40 hover:shadow-[0_12px_28px_rgba(0,153,0,0.10)]"
+                onClick={() => openModalWithSelection({ make: brand.name })}
+                aria-label={`Find a part for ${brand.name}`}
+                className="group flex min-h-28 cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-5 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:border-green-500/40 hover:shadow-[0_12px_28px_rgba(0,153,0,0.10)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
               >
                 <div className="relative h-10 w-full max-w-24 transition-transform duration-300 group-hover:scale-105 sm:h-11">
                   <Image
@@ -50,7 +58,7 @@ export default function Brands() {
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-wide text-slate-700 transition-colors duration-300 group-hover:text-green-700">
                   {brand.name}
                 </span>
-              </div>
+              </button>
             ))}
           </div>
         </div>

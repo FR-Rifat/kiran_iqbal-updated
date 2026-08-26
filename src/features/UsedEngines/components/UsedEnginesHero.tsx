@@ -1,15 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { FiCheckCircle, FiShield, FiTarget } from "react-icons/fi";
+import { FiCheckCircle, FiCreditCard, FiShield, FiTarget, FiTruck } from "react-icons/fi";
 import QuoteForm from "@/components/sheard/QuoteForm";
 
 const proofPoints = [
-  { label: "A-grade quality", icon: FiShield },
-  { label: "Home delivery", icon: FiCheckCircle },
-  { label: "3-year limited warranty", icon: FiTarget },
-  { label: "20% off", icon: FiShield },
+    { label: "A Grade Quality", icon: FiShield },
+    { label: "Exact VIN Match Fitment", icon: FiCheckCircle },
+    { label: "Fast ship out time 2-3 days", icon: FiTruck },
+    { label: " Tested and inspected.  ", icon: FiCreditCard },
+    { label: " 3 Years warranty Unlimited Miles", icon: FiShield },
 ];
+
+
 
 const UsedEnginesHero = () => {
   return (
@@ -24,8 +27,9 @@ const UsedEnginesHero = () => {
         <div className="order-1 flex w-full flex-1 flex-col items-start gap-5 lg:order-2">
           {/* Eyebrow */}
           <div className="inline-flex items-center rounded-full border border-green-600 bg-white px-3.5 py-1.5">
-            <span className="font-['Barlow_Condensed'] text-sm font-semibold uppercase tracking-[0.18em] text-green-600 sm:text-base">
-              ● Quality Used Engines
+            <span className="font-['Barlow_Condensed'] text-sm font-semibold text-green-600 sm:text-base">
+              ● 99.8% Customer Satisfaction Rate & 4.9 Star Ratings ⭐⭐⭐⭐ BBB
+              - A Accredited Company
             </span>
           </div>
 
@@ -38,7 +42,9 @@ const UsedEnginesHero = () => {
 
           {/* Description */}
           <p className="max-w-[620px] font-['Inter'] text-base leading-7 text-gray-600 sm:text-lg">
-            Skip endless listings and junkyard calls. Our specialists make it easy to find an A-grade replacement engine with home delivery and eligible 3-year limited warranty protection.
+            we dont works with broad network of junkyards we are a network of
+            more than 2000+ junkyards all across United States carrying over
+            20million OEM engines and transmission in inventory
           </p>
 
           {/* Proof Points */}

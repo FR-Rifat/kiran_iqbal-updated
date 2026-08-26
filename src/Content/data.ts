@@ -1,4 +1,4 @@
-import { FiShield, FiTruck, FiCheckCircle, FiCreditCard, FiTarget, FiHeadphones } from "react-icons/fi";
+import { FiShield, FiTruck, FiCheckCircle, FiCreditCard, FiTarget, FiHeadphones, FiClock, FiPackage } from "react-icons/fi";
 
 
 
@@ -14,24 +14,24 @@ export const navItems = [
 
 export const trustBarItems = [
   {
-    title: "A-Grade Quality",
-    subtitle: "Tested & inspected parts",
-    icon: FiShield,
-  },
-  {
-    title: "Home delivery",
-    subtitle: "Nationwide delivery",
+    title: "Free Nationwide Shipping on All Orders",
+    subtitle: "Delivery across the United States",
     icon: FiTruck,
   },
   {
-    title: "3-Year Limited Warranty",
-    subtitle: "Written terms apply",
-    icon: FiCheckCircle,
+    title: "Tested, Inspected & Guaranteed to Fit",
+    subtitle: "Quality checked for vehicle compatibility",
+    icon: FiShield,
   },
   {
-    title: "20% Off",
-    subtitle: "Engines & transmissions",
-    icon: FiCreditCard,
+    title: "Quote in Just 10 Minutes",
+    subtitle: "Fast response from a parts specialist",
+    icon: FiClock,
+  },
+  {
+    title: "Ship Out  Within 2-3 Days of Order booked.",
+    subtitle: "Prompt processing and dispatch updates",
+    icon: FiPackage,
   },
 ];
 
@@ -185,36 +185,81 @@ export const faqData = {
   title: "Questions, Answered",
   faqs: [
     {
-      question: "How Fast Will I Get My Part?",
-      answer:
-        "Delivery time depends on part availability, freight preparation, carrier schedules, and destination. Your specialist will provide the available shipping details for your order.",
+      question: "How Do I Place an Order?",
+      answer: `You can order in two ways:
+
+- Call our Sales Team at 855-430-6250 — our parts specialists will help you check availability, pricing, and shipping details.
+- Order Online (Coming Soon) — We’re launching a secure online ordering system soon.
+
+Accepted Payment Methods:
+- All major credit cards: VISA, MasterCard, American Express, Discover
+- Cashier’s Check or Money Order (via mail)
+
+Note: Orders paid by check or money order take longer to process.`
     },
     {
-      question: "Are Your Engines And Transmissions Tested?",
-      answer:
-        "Our inventory is inspected and reviewed before approval for sale. Ask your specialist about the available condition and testing information for your specific part.",
+      question: "Do You Offer Financing?",
+      answer: "Yes, we offer Afterpay, Pay Tomorrow, Acima, and in-house financing options too."
     },
     {
-      question: "What Does The Warranty Cover?",
-      answer:
-        "Eligible used engines and transmissions include a 3-year limited parts warranty. Coverage, installation requirements, exclusions, and claim steps are explained in your written warranty documents.",
+      question: "Can I Pick Up My Parts In Person?",
+      answer: `Unfortunately, local pickup is not available.
+Our inventory ships from multiple warehouse partners across the U.S.
+
+Good news: All orders ship free anywhere in the U.S.`
     },
     {
-      question: "How Do I Know It Will Fit My Vehicle?",
-      answer:
-        "Provide your vehicle year, make, model, engine or transmission details, and VIN. Our team uses this information to identify and review the correct configuration.",
+      question: "What’s Included with a Used Engine?",
+      answer: `Each used engine assembly includes:
+- Engine block
+- Cylinder head(s)
+- Pistons
+- Camshaft
+- Crankshaft
+
+Bonus parts like sensors or manifolds may be included but are not guaranteed or covered under warranty.`
     },
     {
-      question: "What Happens After I Submit My Vehicle?",
-      answer:
-        "A parts specialist reviews your vehicle information, checks available engine or transmission options, and contacts you with part, price, shipping, warranty, and ordering details.",
+      question: "How Long Does Shipping Take?",
+      answer: `Most orders are delivered within 7–10 business days.
+You’ll receive tracking updates after shipment.
+
+Note: Delays may occur due to weather or holidays.`
     },
     {
-      question: "Can You Ship To My Mechanic's Shop?",
-      answer:
-        "Yes, eligible orders can be shipped to repair shops and qualifying commercial locations. Confirm unloading and freight requirements with your specialist.",
+      question: "Can You Deliver to a Residential Address?",
+      answer: `Yes — we deliver to both residential and business addresses nationwide at no extra charge.
+
+Note: $100 surcharge applies if liftgate service is needed.`
     },
-  ],
+    {
+      question: "What If My Order Is Damaged, Incorrect, or Defective?",
+      answer: `We offer a 30-Day Return & Refund Guarantee.
+If your part is:
+- Damaged
+- Incorrect
+- Defective
+
+We’ll cover return shipping and offer a replacement or full refund.
+See Returns & Refund Policy page for details.`
+    },
+    {
+      question: "Do You Offer a Warranty on Used Engines & Transmissions?",
+      answer: `Yes — all engines and transmissions include up to a 6-month warranty.
+Warranty coverage may vary depending on part and vehicle.
+
+Call 855-430-6250 to confirm coverage before purchase.`
+    },
+    {
+      question: "What If My Engine or Transmission Fails?",
+      answer: `If failure occurs during the warranty period:
+1. Call 855-430-6250 immediately.
+2. Our technical team will assist with diagnostics.
+3. If unresolved, we’ll guide you through the warranty replacement process.
+
+See our Warranty Policy page for details.`
+    }
+  ]
 };
 
 export const footerData = {

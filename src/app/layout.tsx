@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/sheard/Navbar";
 import Footer from "@/components/sheard/Footer";
 import WhatsAppButton from "@/components/sheard/WhatsAppButton";
+import FloatingCallButton from "@/components/sheard/FloatingCallButton";
 import SiteMotion from "@/components/sheard/SiteMotion";
 import SmoothScroll from "@/components/sheard/SmoothScroll";
 import { QuoteModalProvider } from "@/components/sheard/QuoteModal";
@@ -46,6 +47,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <FloatingCallButton />
             <WhatsAppButton />
             <SiteMotion />
           </SmoothScroll>

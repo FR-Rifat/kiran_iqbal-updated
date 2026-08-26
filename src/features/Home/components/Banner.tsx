@@ -7,14 +7,14 @@ import Button from "@/components/ui/button";
 
 const Hero = () => {
   const trustItems = [
-    { label: "A-grade quality", icon: FiShield },
-    { label: "Correct part matching", icon: FiCheckCircle },
-    { label: "Home delivery", icon: FiTruck },
-    { label: "3-year limited warranty", icon: FiCreditCard },
-
+    { label: "A Grade Quality", icon: FiShield },
+    { label: "Exact VIN Match Fitment", icon: FiCheckCircle },
+    { label: "Fast ship out time 2-3 days", icon: FiTruck },
+    { label: " Tested and inspected.  ", icon: FiCreditCard },
+    { label: " 3 Years warranty Unlimited Miles", icon: FiShield },
   ];
 
-    const { openModal } = useQuoteModal();
+  const { openModal } = useQuoteModal();
 
   return (
     <section className="w-full bg-[#E6F5E6]">
@@ -26,18 +26,20 @@ const Hero = () => {
         <div className="order-1 flex min-w-0 flex-col items-start pt-1 lg:order-2 lg:pt-5">
           <div className="mb-3 rounded-full bg-white px-3 py-1 outline -outline-offset-1 outline-green-600">
             <span className="text-[11px] font-semibold uppercase leading-5 tracking-[.08em] text-green-600 font-['Barlow_Condensed']">
-              ● 20% off engines & transmissions
+              ● 20% OFF On Selected Ford and Chevy Engines
             </span>
           </div>
 
           <h1 className="max-w-147.5 text-[42px] font-extrabold uppercase leading-[.92] tracking-[.015em] text-gray-900 font-['Barlow_Condensed'] sm:text-[52px] lg:text-[64px]">
-            Quality Used{" "}
-            <span className="text-green-600/80">Engines</span> &{" "}
+            Quality Used <span className="text-green-600/80">Engines</span> &{" "}
             <span className="text-green-600/80">Transmissions</span>
           </h1>
 
           <p className="mt-5 max-w-147.5 text-[15px] leading-6 text-slate-600 font-['Inter'] sm:text-base">
-            Skip the junkyard hassle. Tell us about your vehicle and our specialists will help locate the right A-grade replacement part with nationwide shipping and eligible 3-year limited warranty protection.
+            Quality Engines & Transmissions at Best Discounted price - 50% Less
+            than Delaers Price - So Skip the junkyard and sketchy Dealership
+            Deals . Book your Qaulity A Grade Engine & Transmissions And
+            experience Amazon like shopping experience.
           </p>
 
           <div className="mt-5 flex max-w-155 flex-wrap items-center gap-2">
@@ -57,12 +59,23 @@ const Hero = () => {
               );
             })}
           </div>
-                      <div className="mt-6 flex flex-col items-start gap-2 lg:flex-row ">
-              <Button variant="primary" showIcon={false} onClick={openModal} className="lg:hidden">Find My Part</Button>
-              <Button variant="secondary" showIcon={false} onClick={openModal} className="hidden lg:block cursor-pointer mt-2 lg:mt-0">Call 855-430-6250</Button>
-
-            </div>
-
+          <div className="mt-6 flex flex-col items-start gap-2 lg:flex-row ">
+            <Button
+              variant="primary"
+              showIcon={false}
+              onClick={openModal}
+              className="lg:hidden"
+            >
+              Find My Part
+            </Button>
+            <Button
+              variant="secondary"
+              showIcon={false}
+              className="hidden lg:block cursor-pointer mt-2 lg:mt-0"
+            >
+              Call 855-430-6250
+            </Button>
+          </div>
         </div>
       </div>
     </section>

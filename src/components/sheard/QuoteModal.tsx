@@ -17,6 +17,8 @@ import QuoteForm, { QuoteFormData } from "./QuoteForm";
 export interface QuoteModalProps {
   isOpen: boolean;
   onClose: () => void;
+  initialMake?: string;
+  initialPart?: string;
   title?: string;
   badge?: string;
   description?: string;
@@ -26,6 +28,8 @@ export interface QuoteModalProps {
 export function QuoteModal({
   isOpen,
   onClose,
+  initialMake,
+  initialPart,
   title,
   badge,
   description,
@@ -93,6 +97,8 @@ export function QuoteModal({
                 title={title}
                 badge={badge}
                 description={description}
+                initialMake={initialMake}
+                initialPart={initialPart}
                 onSubmit={(data) => {
                   onSubmit?.(data);
                 }}
@@ -112,6 +118,7 @@ export function QuoteModal({
 interface QuoteModalContextType {
   isOpen: boolean;
   openModal: () => void;
+  openModalWithSelection: (options: { make?: string; part?: string }) => void;
   closeModal: () => void;
 }
 
@@ -121,14 +128,35 @@ const QuoteModalContext = createContext<QuoteModalContextType | undefined>(
 
 export function QuoteModalProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [initialSelection, setInitialSelection] = useState<{
+    make?: string;
+    part?: string;
+  }>({});
 
-  const openModal = () => setIsOpen(true);
+  const openModal = () => {
+    setInitialSelection({});
+    setIsOpen(true);
+  };
+  const openModalWithSelection = (options: {
+    make?: string;
+    part?: string;
+  }) => {
+    setInitialSelection(options);
+    setIsOpen(true);
+  };
   const closeModal = () => setIsOpen(false);
 
   return (
-    <QuoteModalContext.Provider value={{ isOpen, openModal, closeModal }}>
+    <QuoteModalContext.Provider
+      value={{ isOpen, openModal, openModalWithSelection, closeModal }}
+    >
       {children}
-      <QuoteModal isOpen={isOpen} onClose={closeModal} />
+      <QuoteModal
+        isOpen={isOpen}
+        onClose={closeModal}
+        initialMake={initialSelection.make}
+        initialPart={initialSelection.part}
+      />
     </QuoteModalContext.Provider>
   );
 }

@@ -17,7 +17,7 @@ export default function ShippingWarrantyPage() {
       <HowItWorks2/>
       <ShippingWarrantyContent />
       <FAQ/>
-      <FinalCTA />
+      {/* <FinalCTA /> */}
     </main>
   );
 }

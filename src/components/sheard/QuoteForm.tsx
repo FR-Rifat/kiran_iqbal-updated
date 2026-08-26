@@ -2,7 +2,7 @@
 
 import { FormEvent, InputHTMLAttributes, useState } from "react";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import Button from "@/components/ui/button";
 import { approvedClaims, business } from "@/lib/business";
 
@@ -16,6 +16,8 @@ interface QuoteFormProps {
   title?: string;
   badge?: string;
   description?: string;
+  initialMake?: string;
+  initialPart?: string;
   onSubmit?: (data: QuoteFormData) => void;
   className?: string;
 }
@@ -67,6 +69,11 @@ const makeOptions = [
   "BMW",
   "Mercedes-Benz",
   "Audi",
+  "Chrysler",
+  "Volkswagen",
+  "Lexus",
+  "Land Rover",
+  "Volvo",
   "Other",
 ];
 
@@ -85,6 +92,11 @@ const modelsByMake: Record<string, string[]> = {
   BMW: ["128i", "135i", "228i", "230i", "318i", "320i", "325i", "328i", "330e", "330i", "335i", "340i", "428i", "430i", "435i", "440i", "525i", "528i", "530e", "530i", "535i", "540i", "550i", "640i", "650i", "740i", "750i", "760i", "I3", "I8", "M2", "M3", "M4", "M5", "M6", "M8", "X1", "X2", "X3", "X4", "X5", "X6", "X7", "Z3", "Z4", "Other"],
   "Mercedes-Benz": ["300D", "300E", "300SL", "AMG GT", "A Class", "B Class", "C Class", "CL Class", "CLA Class", "CLK", "CLS", "E Class", "G Class", "GL Class", "GLA Class", "GLC Class", "GLE Class", "GLK Class", "GLS Class", "ML Series", "Metris", "R Class", "S Class", "SL Class", "SLC Class", "SLK", "Other"],
   Audi: ["A1", "A3", "A4", "A5", "A6", "A7", "A8", "Q2", "Q3", "Q4", "Q5", "Q7", "Q8", "S3", "S4", "S5", "S6", "S7", "S8", "SQ5", "RS3", "RS4", "RS5", "RS6", "RS7", "R8", "AllRoad", "Cabriolet", "Coupe Quattro", "Other"],
+  Chrysler: ["Other"],
+  Volkswagen: ["Other"],
+  Lexus: ["Other"],
+  "Land Rover": ["Other"],
+  Volvo: ["Other"],
   Other: ["Other"],
 };
 
@@ -97,6 +109,8 @@ export default function QuoteForm({
   title = "Find Your Part",
   badge = "Fast & Easy",
   description = "Tell us about your vehicle and our specialists will locate the right engine or transmission for you.",
+  initialMake = "",
+  initialPart = "",
   onSubmit,
   className = "",
 }: QuoteFormProps) {
@@ -104,9 +118,9 @@ export default function QuoteForm({
 
   const [formData, setFormData] = useState<QuoteFormData>({
     year: "",
-    make: "",
+    make: initialMake,
     model: "",
-    part: "",
+    part: initialPart,
     name: "",
     phone: "",
     email: "",
@@ -171,9 +185,20 @@ export default function QuoteForm({
           {title}
         </h2>
 
-        <span className="shrink-0 rounded-full border border-green-700 px-3 py-1 font-['Barlow_Condensed'] text-[11px] font-bold uppercase tracking-wide text-green-700">
-          {badge}
-        </span>
+        {badge === "Fast & Easy" ? (
+          <a
+            href={`tel:${business.phone}`}
+            aria-label={`Call A&R Auto Parts at ${business.phone}`}
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-green-600 px-4 py-2 font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-wide text-white shadow-sm transition hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+          >
+            <Phone aria-hidden className="size-4" />
+            Call {business.phone}
+          </a>
+        ) : (
+          <span className="shrink-0 rounded-full border border-green-700 px-3 py-1 font-['Barlow_Condensed'] text-[11px] font-bold uppercase tracking-wide text-green-700">
+            {badge}
+          </span>
+        )}
       </div>
 
       <p className="mt-2 text-sm leading-6 text-neutral-600">
@@ -204,7 +229,7 @@ export default function QuoteForm({
               ...previous,
               make: value,
               model: "",
-              part: "",
+              part: initialPart,
             }))
           }
         />
@@ -220,7 +245,7 @@ export default function QuoteForm({
             setFormData((previous) => ({
               ...previous,
               model: value,
-              part: "",
+              part: initialPart,
             }))
           }
         />

@@ -87,6 +87,62 @@ const questions = [
   "What if my engine or transmission fails?",
 ];
 
+const policySections = [
+  {
+    title: "Coverage and Exclusions",
+    items: [
+      "Engine coverage applies to the supplied block, cylinder heads, and covered internal components. The block and heads are covered only when damaged by a covered internal component.",
+      "Turbochargers are separate components. Bolt-on accessories, wiring, sensors, electronics, belts, hoses, pumps, manifolds, harnesses, covers, brackets, flywheels, injectors, and high-pressure fuel or oil components are not covered unless expressly listed in writing.",
+      "Leaks from seals or gaskets, appearance, mileage, and damage caused by seals, gaskets, filters, lubrication, or cooling-system issues are not warranted.",
+      "Any attached accessories are supplied for convenience and are not part of the covered engine assembly.",
+    ],
+  },
+  {
+    title: "Activation and Duration",
+    items: [
+      "The part must be installed and coverage activated within 10 business days after delivery.",
+      "Unless a different written option was purchased, engines receive a 6-month parts-only limited warranty and other parts receive a 3-month parts-only limited warranty, measured from purchase and installation.",
+      "Available written options may include 60 months/50,000 miles, 36 months/36,000 miles, or 12 months/12,000 miles, whichever limit occurs first. The option shown on the order controls.",
+      "Coverage is parts-only. Labor and customer-arranged labor are not reimbursed.",
+    ],
+  },
+  {
+    title: "Mandatory Installation and Maintenance",
+    items: [
+      "Installation must be completed by an ASE-certified mechanic or licensed professional repair facility, with commercial service records retained.",
+      "Install a new thermostat and applicable timing belt, replace required seals, gaskets, filters, fluids, and service components, and follow the vehicle manufacturer’s procedures.",
+      "Change the engine oil and filter after the first 1,000 miles, then follow the manufacturer’s maintenance schedule.",
+      "The oil-pressure and temperature warning systems and speedometer must operate correctly. Handwritten maintenance records are not accepted for claims.",
+    ],
+  },
+  {
+    title: "Claims and Conditions That Void Coverage",
+    items: [
+      "Stop operating the vehicle after a problem is identified and contact A&R Auto Parts before authorizing diagnosis, repair, or disassembly.",
+      "A diagnostic report from an ASE-certified facility and all requested documents must be submitted within 5 business days after a claim begins.",
+      "Unauthorized disassembly, improper installation, racing use, overheating, insufficient lubrication or cooling, missing or melted heat tabs, continued operation, or false information voids coverage.",
+      "Returned units must remain assembled in the condition received unless A&R Auto Parts gives prior written authorization.",
+    ],
+  },
+  {
+    title: "Shipping, Damage, and Delivery",
+    items: [
+      "Orders ordinarily ship within 7–14 business days, subject to availability, preparation, carrier schedules, and destination.",
+      "Residential delivery carries a $150 charge unless a different written agreement applies. Freight-collect shipments are not accepted.",
+      "Shipping damage or broken items must be reported to A&R Auto Parts and the freight carrier within 48 hours. Visible damage must be written on the delivery receipt or bill of lading.",
+      "Returns, defective-item pickups, and core pickups must originate from the original shipping address.",
+    ],
+  },
+  {
+    title: "Core Returns and Limited Liability",
+    items: [
+      "When a core charge applies, the customer is responsible for return freight and the core must be returned within 30 days.",
+      "No core refund is available for a disassembled core or a block/head with cracks or holes.",
+      "Liability is limited to the available policy remedy. Labor, fluids, towing, freight, lost time or profit, rental transportation, and consequential or incidental losses are not covered.",
+    ],
+  },
+];
+
 const ShippingWarrantyContent = () => {
   const [openQuestion, setOpenQuestion] = useState<number | null>(0);
   return (
@@ -199,6 +255,38 @@ const ShippingWarrantyContent = () => {
           {/* Note */}
           <p className="text-center font-['Inter'] text-base font-normal leading-5 text-gray-600">
             Warranty availability, coverage, exclusions, and claim steps vary by part. Refer to the written documentation associated with your quote and order.
+          </p>
+        </div>
+      </section>
+      <section className="bg-slate-50 px-5 py-16 sm:py-20">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center">
+            <p className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-[0.18em] text-green-600">
+              Complete Policy Terms
+            </p>
+            <h2 className="mt-3 font-['Barlow_Condensed'] text-4xl font-extrabold uppercase text-gray-900 sm:text-5xl">
+              Shipping &amp; Warranty Requirements
+            </h2>
+          </div>
+          <div className="mt-10 space-y-5">
+            {policySections.map((section) => (
+              <article key={section.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+                <h3 className="font-['Barlow_Condensed'] text-2xl font-bold uppercase text-gray-900">
+                  {section.title}
+                </h3>
+                <ul className="mt-4 space-y-3">
+                  {section.items.map((item) => (
+                    <li key={item} className="flex gap-3 font-['Inter'] text-sm leading-6 text-slate-600 sm:text-base">
+                      <FiCheckCircle aria-hidden className="mt-1 size-4 shrink-0 text-green-600" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 text-center font-['Inter'] text-sm leading-6 text-slate-500">
+            The written quote, invoice, selected coverage option, and order documentation govern the specific transaction if they differ from this general summary.
           </p>
         </div>
       </section>

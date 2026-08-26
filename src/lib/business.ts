@@ -5,9 +5,11 @@ export const business = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kiran-iqbal.vercel.app",
   serviceArea: "United States",
   // Add verified values in the deployment environment before enabling ads.
-  phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE,
-  email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL,
-  address: process.env.NEXT_PUBLIC_BUSINESS_ADDRESS,
+  phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? "855-430-6250",
+  email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? "info@yardsandparts.us",
+  address:
+    process.env.NEXT_PUBLIC_BUSINESS_ADDRESS ??
+    "9801 Westheimer Rd, Suite # 444, Houston TX 77042",
   socialConsentDisclosure:
     "By submitting, you agree that A&R Auto Parts may contact you about this part request using the contact details you provide. Consent is not required to buy. Message and data rates may apply. Reply STOP to opt out of texts.",
 } as const;

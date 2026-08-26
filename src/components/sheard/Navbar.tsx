@@ -4,12 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { FiMenu, FiPhone, FiX } from "react-icons/fi";
+import { FiChevronDown, FiMenu, FiPhone, FiX } from "react-icons/fi";
 import Button from "@/components/ui/button";
 import { navItems } from "@/Content/data";
 import { business } from "@/lib/business";
 
 const logo = "/logo1.png";
+const policyLinks = [
+  { label: "Shipping & Warranty", href: "/shipping-warranty" },
+  { label: "Refunds & Returns", href: "/refunds-returns" },
+];
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -32,16 +36,17 @@ const Navbar = () => {
               <div className="flex items-center gap-2">
                 <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
 
-                <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
+                {/* <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
                   Home delivery • 20% Off Engines & Transmissions
-                </span>
+                </span> */}
               </div>
 
               <div className="flex items-center gap-2">
-                <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" />
+                {/* <span className="size-1.5 shrink-0 rounded-full bg-stone-50/70" /> */}
 
                 <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase leading-5 tracking-wide text-stone-50 sm:text-base">
-                  A-Grade Quality • 3-Year Limited Warranty • Extra $100 Off with Cash App or Zelle
+                  {/* A-Grade Quality • 3-Year Limited Warranty • Extra $100 Off with Cash App or Zelle */}
+                  Exciting News! Let’s  celebrate our launch, Avail  free shipping on all orders -Both Commercial and Residential. Use Promo Code LAUNCH-18 when booking your order over the phone.
                 </span>
               </div>
             </div>
@@ -73,7 +78,7 @@ const Navbar = () => {
             aria-label="Primary navigation"
             className="hidden items-center gap-4 lg:flex xl:gap-7"
           >
-            {navItems.map((item) => {
+            {navItems.filter((item) => item.href !== "/contact").map((item) => {
               const isActive = pathname === item.href;
 
               return (
@@ -88,20 +93,55 @@ const Navbar = () => {
                 </Link>
               );
             })}
-          </nav>
 
-          {/* Desktop CTA */}
-          {business.phone && <div className="hidden lg:block"><Button variant="primary" href={`tel:${business.phone}`}>Call Now</Button></div>}
+            <details className="group relative">
+              <summary className="flex cursor-pointer list-none items-center gap-1 whitespace-nowrap font-['Inter'] text-xs font-normal leading-4 text-gray-700 transition-colors hover:text-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-600 xl:text-sm [&::-webkit-details-marker]:hidden">
+                POLICIES
+                <FiChevronDown
+                  aria-hidden
+                  className="size-4 transition-transform group-open:rotate-180"
+                />
+              </summary>
+              <div className="absolute right-0 top-full z-50 mt-4 w-60 overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-xl">
+                {policyLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block rounded-lg px-4 py-3 font-['Inter'] text-sm font-medium text-gray-700 transition hover:bg-green-50 hover:text-green-700"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </details>
+
+            <Link
+              href="/contact"
+              className={`whitespace-nowrap text-xs leading-4 xl:text-sm ${navLinkClass(
+                pathname === "/contact",
+              )}`}
+            >
+              CONTACT
+            </Link>
+
+            <Button
+              variant="primary"
+              href={`tel:${business.phone}`}
+              className="px-4 py-2.5"
+            >
+              {business.phone}
+            </Button>
+          </nav>
 
           {/* Mobile Actions */}
           <div className="flex items-center gap-2 lg:hidden">
-            {business.phone && <a
+            <a
               href={`tel:${business.phone}`}
               aria-label="Call A&R Auto Parts"
               className="inline-flex size-11 items-center justify-center rounded-lg border border-green-600 text-green-700 transition hover:bg-green-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
             >
               <FiPhone aria-hidden className="size-5" />
-            </a>}
+            </a>
 
             <button
               type="button"
@@ -129,7 +169,7 @@ const Navbar = () => {
               className="absolute left-0 top-full w-full border-b border-slate-200 bg-white px-4 py-3 shadow-xl lg:hidden"
             >
               <div className="mx-auto flex max-w-2xl flex-col gap-1">
-                {navItems.map((item) => {
+                {navItems.filter((item) => item.href !== "/contact").map((item) => {
                   const isActive = pathname === item.href;
 
                   return (
@@ -146,15 +186,53 @@ const Navbar = () => {
                   );
                 })}
 
-                {business.phone && <a
-                  href={`tel:${business.phone}`}
-                  className="mt-2 flex min-h-11 items-center justify-center rounded-lg bg-green-600 px-5 font-['Barlow_Condensed'] text-lg font-bold uppercase tracking-wide text-white shadow-[0_4px_0_#067806] transition hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                <details className="group">
+                  <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between rounded-lg px-4 font-['Inter'] text-sm font-normal uppercase tracking-wide text-gray-700 transition hover:bg-slate-50 hover:text-green-600 [&::-webkit-details-marker]:hidden">
+                    Policies
+                    <FiChevronDown
+                      aria-hidden
+                      className="size-4 transition-transform group-open:rotate-180"
+                    />
+                  </summary>
+                  <div className="ml-4 border-l-2 border-green-100 pl-2">
+                    {policyLinks.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setIsMenuOpen(false)}
+                        className="flex min-h-11 items-center rounded-lg px-4 font-['Inter'] text-sm font-medium text-gray-700 transition hover:bg-green-50 hover:text-green-700"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
+
+                <Link
+                  href="/contact"
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`flex min-h-11 items-center rounded-lg px-4 text-sm uppercase tracking-wide ${navLinkClass(
+                    pathname === "/contact",
+                  )} ${
+                    pathname === "/contact"
+                      ? "bg-green-50"
+                      : "hover:bg-slate-50"
+                  }`}
                 >
-                  Call Now
-                </a>}
+                  Contact
+                </Link>
+
+                <Button
+                  variant="primary"
+                  href={`tel:${business.phone}`}
+                  className="mt-2 w-full"
+                >
+                  Call {business.phone}
+                </Button>
               </div>
             </nav>
           )}
+
         </div>
       </header>
     </>

@@ -4,6 +4,24 @@ import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { faqData } from "@/Content/data";
 
+const phoneNumber = "855-430-6250";
+
+const renderAnswer = (answer: string) =>
+  answer.split(phoneNumber).map((part, index, parts) => (
+    <span key={`${index}-${part}`}>
+      {part}
+      {index < parts.length - 1 && (
+        <a
+          href={`tel:${phoneNumber}`}
+          aria-label={`Call ${phoneNumber}`}
+          className="font-semibold text-green-700 underline decoration-green-300 underline-offset-2 transition hover:text-green-800 focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+        >
+          {phoneNumber}
+        </a>
+      )}
+    </span>
+  ));
+
 const FAQ = () => {
   const { eyebrow, title, faqs } = faqData;
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -69,8 +87,8 @@ const FAQ = () => {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-base font-normal leading-relaxed text-slate-600 font-['Inter'] border-t border-slate-100 pt-3 mt-1">
-                      {faq.answer}
+                    <p className="mt-1 whitespace-pre-wrap break-words border-t border-slate-100 px-6 pb-6 pt-4 font-['Inter'] text-base font-normal leading-7 text-slate-600">
+                      {renderAnswer(faq.answer)}
                     </p>
                   </div>
                 </div>

@@ -1,7 +1,9 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
-import { FiActivity, FiCheckCircle, FiCpu, FiHeadphones, FiSettings, FiShield, FiTarget, FiTruck } from "react-icons/fi";
+import { FiActivity, FiCpu, FiHeadphones, FiSettings, FiTarget, FiTruck } from "react-icons/fi";
 import type { IconType } from "react-icons";
+import { useQuoteModal } from "@/components/sheard/QuoteModal";
 
 const engineTypes: { title: string; description: string; icon: IconType }[] = [
   { title: "Gas Engines", description: "Dependable replacements for the vehicles you drive every day.", icon: FiSettings },
@@ -12,9 +14,30 @@ const engineTypes: { title: string; description: string; icon: IconType }[] = [
   { title: "Performance Engines", description: "Talk with a specialist about the right performance fit.", icon: FiHeadphones },
 ];
 
-const brands = ["Ford", "Chevrolet", "GMC", "Toyota", "Honda", "Dodge", "Chrysler", "Kia", "Hyundai", "Nissan", "BMW", "Mercedes-Benz", "Audi", "Volkswagen", "Lexus", "Jeep", "Land Rover", "Volvo"];
+const brands = [
+  { name: "Ford", logo: "/brands/ford.svg" },
+  { name: "Chevrolet", logo: "/brands/chevrolet.svg" },
+  { name: "GMC", logo: "/brands/gmc.svg" },
+  { name: "Toyota", logo: "/brands/toyota.svg" },
+  { name: "Honda", logo: "/brands/honda.svg" },
+  { name: "Dodge", logo: "/brands/dodge.svg" },
+  { name: "Chrysler", logo: "/brands/chrysler.svg" },
+  { name: "Kia", logo: "/brands/kia.svg" },
+  { name: "Hyundai", logo: "/brands/hyundai.svg" },
+  { name: "Nissan", logo: "/brands/nissan.svg" },
+  { name: "BMW", logo: "/brands/bmw.svg" },
+  { name: "Mercedes-Benz", logo: "/brands/mercedesbenz.svg" },
+  { name: "Audi", logo: "/brands/audi.svg" },
+  { name: "Volkswagen", logo: "/brands/volkswagen.svg" },
+  { name: "Lexus", logo: "/brands/lexus.svg" },
+  { name: "Jeep", logo: "/brands/jeep.svg" },
+  { name: "Land Rover", logo: "/brands/landrover.svg" },
+  { name: "Volvo", logo: "/brands/volvo.svg" },
+];
 
 const UsedEnginesDetails = () => {
+  const { openModalWithSelection } = useQuoteModal();
+
   return (
     <>
       <section className="w-full border-b border-gray-200 bg-[#ffffff] px-6 py-16 lg:px-20 lg:py-20">
@@ -78,14 +101,28 @@ const UsedEnginesDetails = () => {
           </h2>
           <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {brands.map((brand) => (
-              <div
-                key={brand}
-                className="group flex min-h-17.5 cursor-default items-center justify-center rounded-lg border border-slate-200 bg-white px-3 font-['Barlow_Condensed'] text-xl font-bold text-slate-800 shadow-sm transition-all duration-300 ease-out hover:border-green-500/40 hover:shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:text-green-700"
+              <button
+                type="button"
+                key={brand.name}
+                onClick={() =>
+                  openModalWithSelection({ make: brand.name, part: "Engine" })
+                }
+                aria-label={`Find an engine for ${brand.name}`}
+                className="group flex min-h-28 cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-5 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:border-green-500/40 hover:shadow-[0_12px_28px_rgba(0,153,0,0.10)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
               >
-                <span className="transition-transform duration-300 group-hover:scale-[1.02]">
-                  {brand}
+                <div className="relative h-10 w-full max-w-24 transition-transform duration-300 group-hover:scale-105 sm:h-11">
+                  <Image
+                    src={brand.logo}
+                    alt={`${brand.name} logo`}
+                    fill
+                    sizes="96px"
+                    className="object-contain"
+                  />
+                </div>
+                <span className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-wide text-slate-700 transition-colors duration-300 group-hover:text-green-700">
+                  {brand.name}
                 </span>
-              </div>
+              </button>
             ))}
           </div>
         </div>

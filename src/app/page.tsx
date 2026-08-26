@@ -13,22 +13,41 @@ import TrustBar from "@/features/Home/components/FeatureBar";
 import WarrantyBanner from "@/features/Home/components/WarrantyBanner";
 import Brands from "@/features/Home/components/Brands";
 import FindParts from "@/features/Home/components/FindParts";
+import Testimonials from "@/features/Home/components/Testimonials";
+import CallUs from "@/features/Home/components/CallUs";
+import OurProcess from "@/features/Home/components/OurProcess";
+import Number from "@/features/Home/components/Number";
 
-export const metadata: Metadata = pageMetadata("Quality Used Engines & Transmissions", "Find A-grade used engines and transmissions with nationwide delivery, promotional savings, eligible 3-year limited warranty protection, and expert support.");
+export const metadata: Metadata = pageMetadata(
+  "Quality Used Engines & Transmissions",
+  "Find A-grade used engines and transmissions with nationwide delivery, promotional savings, eligible 3-year limited warranty protection, and expert support.",
+);
 
 export default function Home() {
-  return <main className="overflow-hidden">
-    <JsonLd data={faqSchema(faqData.faqs.map(({ question, answer }) => ({ question, answer })))} />
-    {/* <QuoteFocusedHome /> */}
-    <Banner />
-    <TrustBar />
-    <HowItWorks />
-    <FindParts />
-    <WhyChooseUs />
-    <WarrantyBanner />
-    {/* <PaymentOptions /> */}
-    <Brands />
-    <FAQ/>
-    <FinalCTA/>
-  </main>;
+  return (
+    <main className="overflow-hidden">
+      <JsonLd
+        data={faqSchema(
+          faqData.faqs.map(({ question, answer }) => ({ question, answer })),
+        )}
+      />
+      {/* <QuoteFocusedHome /> */}
+      <Banner />
+      <TrustBar />
+      <HowItWorks />
+      <Number />
+      <FindParts />
+      {/* <Number /> */}
+      <OurProcess />
+      <WhyChooseUs />
+      <WarrantyBanner />
+      {/* <PaymentOptions /> */}
+      <Brands />
+      <Testimonials />
+
+      <FAQ />
+      <CallUs />
+      {/* <FinalCTA/> */}
+    </main>
+  );
 }

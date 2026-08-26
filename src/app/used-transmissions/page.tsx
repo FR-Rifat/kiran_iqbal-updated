@@ -20,7 +20,7 @@ export default function UsedTransmissionsPage() {
       <HowItWorks2 />
       <UsedTransmissionsDetails />
       <FAQ />
-      <FinalCTA />
+      {/* <FinalCTA /> */}
     </main>
   );
 }

@@ -4,8 +4,18 @@ import RefundsReturnsPolicy from "@/features/RefundsReturns/components/RefundsRe
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = pageMetadata("Refunds & Returns", "Review return, freight-inspection, and warranty-claim information before purchasing a replacement part.", "/refunds-returns");
+export const metadata: Metadata = pageMetadata(
+  "Refunds & Returns",
+  "Review return, freight-inspection, and warranty-claim information before purchasing a replacement part.",
+  "/refunds-returns",
+);
 
 export default function RefundsReturnsPage() {
-  return <main className="overflow-hidden"><RefundsReturnsHero /><RefundsReturnsPolicy /><FinalCTA /></main>;
+  return (
+    <main className="overflow-hidden">
+      <RefundsReturnsHero />
+      <RefundsReturnsPolicy />
+      {/* <FinalCTA /> */}
+    </main>
+  );
 }

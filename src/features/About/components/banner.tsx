@@ -10,7 +10,7 @@ const AboutHero = () => {
   const { eyebrow, title, description, badges, rating } = aboutData;
 
   return (
-    <section className="min-h-[69vh] w-full bg-[#e6f5e6] flex items-center">
+    <section className="flex w-full items-center bg-[#e6f5e6] px-5 py-12 sm:px-6 sm:py-16 md:min-h-[69vh] md:py-0">
       <div className="mx-auto flex w-full container flex-col items-center gap-6 text-center">
         <div className="flex w-full flex-col items-center gap-5">
           <span className="font-['Barlow_Condensed'] text-base font-bold uppercase leading-5 tracking-widest text-green-600">

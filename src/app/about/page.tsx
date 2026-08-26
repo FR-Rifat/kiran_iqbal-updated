@@ -23,7 +23,7 @@ export default function page() {
       <MissionSection/>
       <TheARStandard/>
       <FAQ/>
-      <FinalCTA/>
+      {/* <FinalCTA/> */}
     </div>
   )
 }

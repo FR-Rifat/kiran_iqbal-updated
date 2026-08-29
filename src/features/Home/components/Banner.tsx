@@ -73,7 +73,7 @@ const Hero = () => {
               showIcon={false}
               className="hidden lg:block cursor-pointer mt-2 lg:mt-0"
             >
-              Call 855-430-6250
+              Call 888 290-4476
             </Button>
           </div>
         </div>

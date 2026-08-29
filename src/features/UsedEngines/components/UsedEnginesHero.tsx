@@ -9,6 +9,7 @@ const proofPoints = [
     { label: "Exact VIN Match Fitment", icon: FiCheckCircle },
     { label: "Fast ship out time 2-3 days", icon: FiTruck },
     { label: " Tested and inspected.  ", icon: FiCreditCard },
+    { label: " 98% Customer Satisfaction", icon: FiTarget },
     { label: " 3 Years warranty Unlimited Miles", icon: FiShield },
 ];
 
@@ -28,8 +29,9 @@ const UsedEnginesHero = () => {
           {/* Eyebrow */}
           <div className="inline-flex items-center rounded-full border border-green-600 bg-white px-3.5 py-1.5">
             <span className="font-['Barlow_Condensed'] text-sm font-semibold text-green-600 sm:text-base">
-              ● 99.8% Customer Satisfaction Rate & 4.9 Star Ratings ⭐⭐⭐⭐ BBB
-              - A Accredited Company
+              {/* ● 99.8% Customer Satisfaction Rate &amp; 4.9 Star Ratings ⭐⭐⭐⭐ BBB */}
+              98% Customer Satisfaction
+              {/* - A Accredited Company */}
             </span>
           </div>
 
@@ -42,9 +44,9 @@ const UsedEnginesHero = () => {
 
           {/* Description */}
           <p className="max-w-[620px] font-['Inter'] text-base leading-7 text-gray-600 sm:text-lg">
-            we dont works with broad network of junkyards we are a network of
-            more than 2000+ junkyards all across United States carrying over
-            20million OEM engines and transmission in inventory
+            With a network of more than 2,000+ junkyards all across the United
+            States, carrying over 20 million OEM engines and transmissions in
+            inventory.
           </p>
 
           {/* Proof Points */}

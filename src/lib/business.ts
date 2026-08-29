@@ -5,7 +5,7 @@ export const business = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kiran-iqbal.vercel.app",
   serviceArea: "United States",
   // Add verified values in the deployment environment before enabling ads.
-  phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? "855-430-6250",
+  phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? "888 290-4476",
   email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? "info@yardsandparts.us",
   address:
     process.env.NEXT_PUBLIC_BUSINESS_ADDRESS ??

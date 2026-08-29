@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { faqData } from "@/Content/data";
 
-const phoneNumber = "855-430-6250";
+const phoneNumber = "888 290-4476";
 
 const renderAnswer = (answer: string) =>
   answer.split(phoneNumber).map((part, index, parts) => (

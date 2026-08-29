@@ -14,7 +14,7 @@ const BetterWaySection = () => {
         <div className="w-full flex-1 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-[0px_1px_2px_-1px_rgba(0,0,0,0.1),0px_1px_3px_0px_rgba(0,0,0,0.1)]">
           <div className="relative aspect-[559/408] w-full">
             <Image
-              src="/used-engines-workshop.jpg"
+              src="/used-engines-workshop-branded.png"
               alt="Quality used replacement engine"
               fill
               className="object-cover transition-transform duration-700 hover:scale-[1.02]"

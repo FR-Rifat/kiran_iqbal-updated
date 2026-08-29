@@ -188,7 +188,7 @@ export const faqData = {
       question: "How Do I Place an Order?",
       answer: `You can order in two ways:
 
-- Call our Sales Team at 855-430-6250 — our parts specialists will help you check availability, pricing, and shipping details.
+- Call our Sales Team at 888 290-4476 — our parts specialists will help you check availability, pricing, and shipping details.
 - Order Online (Coming Soon) — We’re launching a secure online ordering system soon.
 
 Accepted Payment Methods:
@@ -248,12 +248,12 @@ See Returns & Refund Policy page for details.`
       answer: `Yes — all engines and transmissions include up to a 6-month warranty.
 Warranty coverage may vary depending on part and vehicle.
 
-Call 855-430-6250 to confirm coverage before purchase.`
+Call 888 290-4476 to confirm coverage before purchase.`
     },
     {
       question: "What If My Engine or Transmission Fails?",
       answer: `If failure occurs during the warranty period:
-1. Call 855-430-6250 immediately.
+1. Call 888 290-4476 immediately.
 2. Our technical team will assist with diagnostics.
 3. If unresolved, we’ll guide you through the warranty replacement process.
 

@@ -4,6 +4,7 @@ import { FiShield, FiTruck, FiCheckCircle, FiCreditCard } from "react-icons/fi";
 import QuoteForm from "@/components/sheard/QuoteForm";
 import { useQuoteModal } from "@/components/sheard/QuoteModal";
 import Button from "@/components/ui/button";
+import { business } from "@/lib/business";
 
 const Hero = () => {
   const trustItems = [
@@ -71,9 +72,10 @@ const Hero = () => {
             <Button
               variant="secondary"
               showIcon={false}
-              className="hidden lg:block cursor-pointer mt-2 lg:mt-0"
+              href={`tel:${business.phone}`}
+              className="hidden lg:inline-flex cursor-pointer mt-2 lg:mt-0"
             >
-              Call 888 290-4476
+              Call {business.phone}
             </Button>
           </div>
         </div>

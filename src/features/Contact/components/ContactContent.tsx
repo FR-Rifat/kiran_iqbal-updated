@@ -3,6 +3,7 @@
 import QuoteForm from "@/components/sheard/QuoteForm";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import { business } from "@/lib/business";
+import { footerData } from "@/Content/data";
 
 const ContactContent = () => {
   return (
@@ -22,16 +23,21 @@ const ContactContent = () => {
             </ContactCard>
           )}
 
-          {business.email && (
-            <ContactCard icon={FiMail} title="Email Us">
-              <a
-                href={`mailto:${business.email}`}
-                className="transition-colors duration-200 hover:text-green-600"
-              >
-                {business.email}
-              </a>
-            </ContactCard>
-          )}
+          <ContactCard icon={FiMail} title="Email Us">
+            <div className="flex flex-col gap-2">
+              {footerData.emailInquiries?.map((item) => (
+                <div key={item.label} className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-1.5 leading-snug">
+                  <span className="font-semibold text-gray-800 text-sm">{item.label} :</span>
+                  <a
+                    href={`mailto:${item.email}`}
+                    className="font-medium text-emerald-800 transition-colors duration-200 hover:text-green-600 hover:underline break-all"
+                  >
+                    {item.email}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </ContactCard>
 
           {business.phone && (
             <ContactCard icon={FiPhone} title="Call Us">
@@ -74,17 +80,16 @@ function ContactCard({
 }: CardProps) {
   return (
     <div
-      className={`flex min-h-30 items-center gap-5 rounded-xl bg-white px-5 py-6 sm:px-7 ${
-        bordered
+      className={`flex min-h-28 items-start sm:items-center gap-5 rounded-xl bg-white px-5 py-6 sm:px-7 ${bordered
           ? "border border-slate-200 shadow-[0_2px_8px_rgba(15,23,42,0.04)]"
           : ""
-      }`}
+        }`}
     >
       <div className="flex size-14 shrink-0 items-center justify-center rounded-full bg-green-600 text-white shadow-[0_8px_20px_rgba(0,153,0,0.18)]">
         <Icon aria-hidden className="size-6" />
       </div>
 
-      <div className="min-w-0">
+      <div className="min-w-0 flex-1">
         <p className="font-['Barlow_Condensed'] text-xl font-bold text-gray-900">
           {title}
         </p>

@@ -6,7 +6,12 @@ export const business = {
   serviceArea: "United States",
   // Add verified values in the deployment environment before enabling ads.
   phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? "888 290-4476",
-  email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? " sales@arautoparts.com ",
+  email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? "Sales@arautoparts.com",
+  emails: {
+    parts: "Sales@arautoparts.com",
+    tracking: "Shipping@arautoparts.com",
+    support: "Support@arautoparts.com",
+  },
   address:
     process.env.NEXT_PUBLIC_BUSINESS_ADDRESS ??
     "9801 Westheimer Rd, Suite # 444, Houston TX 77042",

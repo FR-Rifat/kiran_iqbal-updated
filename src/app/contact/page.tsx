@@ -14,9 +14,9 @@ export default function ContactPage() {
       <ContactHero />
       <ContactContent />
       {business.address && <div className="bg-[#E6F5E6]">
-        <Map/>
+        <Map />
       </div>}
-      <FinalCTA />
+      {/* <FinalCTA /> */}
     </main>
   );
 }

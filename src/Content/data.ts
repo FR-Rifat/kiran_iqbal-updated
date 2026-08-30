@@ -265,6 +265,11 @@ See our Warranty Policy page for details.`
 export const footerData = {
   description: "A&R Auto Parts is an online source for quality used engines and transmissions, helping customers find replacement powertrain parts for vehicles nationwide.",
   hours: "Submit your vehicle details online or contact our parts specialists for assistance.",
+  emailInquiries: [
+    { label: "For Part Inquiries", email: "sales@arautoparts.com" },
+    { label: "For Order Tracking Details", email: "shipping@arautoparts.com" },
+    { label: "For all other Inquiries", email: "support@arautoparts.com" },
+  ],
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },

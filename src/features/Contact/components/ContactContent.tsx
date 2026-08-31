@@ -13,7 +13,7 @@ const ContactContent = () => {
           {business.address && (
             <ContactCard icon={FiMapPin} title="Our Address">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=9801+Westheimer+Rd+Suite+444+Houston+TX+77042"
+                href="https://maps.app.goo.gl/Po9YKX7jTm9MdW2y5"
                 target="_blank"
                 rel="noreferrer"
                 className="transition-colors duration-200 hover:text-green-600"

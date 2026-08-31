@@ -14,7 +14,7 @@ export const business = {
   },
   address:
     process.env.NEXT_PUBLIC_BUSINESS_ADDRESS ??
-    "9801 Westheimer Rd, Suite # 444, Houston TX 77042",
+    " ST. PETERSBURG, FL. US 33702",
   socialConsentDisclosure:
     "By submitting, you agree that A&R Auto Parts may contact you about this part request using the contact details you provide. Consent is not required to buy. Message and data rates may apply. Reply STOP to opt out of texts.",
 } as const;
